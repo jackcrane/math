@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>The Derivative :: Terminal</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="The derivative is a fundamental concept in calculus that allows us to analyze the rate of change of a function and find the slope of a curve at any point." />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="http://example.org/pages/derivative/" />
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="http://example.org/styles.css">
+
+
+
+<link rel="stylesheet" href="http://example.org/style.css">
+
+
+
+  <link rel="shortcut icon" href="http://example.org/img/theme-colors/blue.png">
+  <link rel="apple-touch-icon" href="http://example.org/img/theme-colors/blue.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+  
+    <meta name="twitter:site" content="" />
+  
+    <meta name="twitter:creator" content="" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="The Derivative">
+<meta property="og:description" content="The derivative is a fundamental concept in calculus that allows us to analyze the rate of change of a function and find the slope of a curve at any point." />
+<meta property="og:url" content="http://example.org/pages/derivative/" />
+<meta property="og:site_name" content="Terminal" />
+
+  
+    <meta property="og:image" content="http://example.org/img/favicon/blue.png">
+  
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+
+
+
+
+
+
+
+
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css"
+  integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0"
+  crossorigin="anonymous"
+/>
+
+
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js"
+  integrity="sha384-PwRUT/YqbnEjkZO0zZxNqcxACrXe+j766U2amXcgMg5457rve2Y7I6ZJSm2A0mS4"
+  crossorigin="anonymous"
+></script>
+
+
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js"
+  integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+  crossorigin="anonymous"
+  onload="renderMathInElement(document.body);"
+></script>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: "$$", right: "$$", display: true },
+        { left: "$", right: "$", display: false },
+      ],
+    });
+  });
+</script>
+
+<style>
+  .katex {
+    color: #23b0ff;
+    background-color: #23aeff1d;
+    padding: 0.5px 3px;
+    cursor: crosshair;
+    transition: 0.2s;
+    border: 1px solid transparent;
+  }
+  .katex:hover {
+    background-color: #23aeff3d;
+    border: 1px solid #23aeff;
+  }
+   
+  ::selection {
+    background: #23b0ff;
+    color: #fff;
+  }
+  @media print {
+     
+    body {
+      visibility: visible !important;
+      padding: 20px;
+    }
+    * {
+      visibility: visible !important;
+    }
+  }
+</style>
+
+
+</head>
+<body class="blue">
+
+
+<div class="container center headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Jack&#39;s Calculus sheets
+  </div>
+</a>
+
+    </div>
+    
+    
+  </div>
+  
+</header>
+
+
+  <div class="content">
+    
+<article class="post">
+  <h1 class="post-title">
+    <a href="http://example.org/pages/derivative/">The Derivative</a>
+  </h1>
+  <div class="post-meta">
+    
+    
+    
+  </div>
+
+  
+  
+
+
+  
+
+  <div class="post-content"><div>
+        <h1 id="the-derivative">The Derivative<a href="#the-derivative" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<blockquote>
+<p>The derivative is a fundamental concept in calculus that allows us to analyze the rate of change of a function and find the slope of a curve at any point.</p>
+</blockquote>
+<h2 id="introduction">Introduction<a href="#introduction" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>The derivative is a mathematical tool that allows us to analyze the rate of change of a function and find the slope of a curve at any point. It is a fundamental concept in calculus and is used in many areas of science, engineering, and economics. Understanding derivatives is crucial for solving a wide range of mathematical problems.</p>
+<h2 id="things-to-know">Things to Know<a href="#things-to-know" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Before we dive into the rules for finding derivatives, there are a few important things to keep in mind:</p>
+<ul>
+<li>The derivative is denoted using the symbol $f&rsquo;(x)$, which means &ldquo;the derivative of f(x) with respect to x&rdquo;.</li>
+<li>The derivative of a function f(x) at a point x is the slope of the tangent line to the curve of f(x) at that point.</li>
+<li>The rules for finding derivatives depend on the form of the function being differentiated and the technique used to differentiate it.</li>
+<li>Derivatives can be used to analyze the behavior of functions, find maximum and minimum values, and solve optimization problems.</li>
+</ul>
+<h2 id="example-problem">Example Problem<a href="#example-problem" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Let&rsquo;s start with a simple practice problem to illustrate how to find derivatives.</p>
+<p>Find the derivative of $f(x) = 3x^2 - 4x + 1$:</p>
+<p>Therefore, the derivative of $f(x) = 3x^2 - 4x + 1$ is $f&rsquo;(x) = 6x - 4$.</p>
+<p>To find the derivative, we use the power rule, which states that the derivative of a function of the form $f(x) = x^n$ is $f&rsquo;(x) = nx^{n-1}$. We apply this rule to each term in the expression $f(x) = 3x^2 - 4x + 1$:</p>
+<ul>
+<li>The derivative of the first term $3x^2$ is $6x$, since $2 \cdot 3x^{2-1} = 6x$.</li>
+<li>The derivative of the second term $-4x$ is $-4$, since $1 \cdot -4x^{1-1} = -4$.</li>
+<li>The derivative of the third term $1$ is $0$, since the derivative of a constant is always $0$.</li>
+<li>Putting these results together, we get:</li>
+</ul>
+<p>$f&rsquo;(x) = 6x - 4 + 0 = 6x - 4$</p>
+<p>Therefore, the derivative of $f(x) = 3x^2 - 4x + 1$ is $f&rsquo;(x) = 6x - 4$.</p>
+<p>It&rsquo;s worth noting that the derivative of a function represents the instantaneous rate of change of the function at any given point. In this case, the derivative $f&rsquo;(x) = 6x - 4$ tells us that the rate of change of the function $f(x) = 3x^2 - 4x + 1$ increases at a rate of $6$ units per unit of $x$. We can also use the derivative to find the slope of the tangent line to the curve of $f(x)$ at any point.</p>
+<h2 id="common-rules">Common Rules<a href="#common-rules" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>There are several common rules for finding derivatives, including:</p>
+<ul>
+<li>Power Rule: $\frac{d}{dx} x^n = nx^{n-1}$</li>
+<li>Constant Multiple Rule: $\frac{d}{dx} cf(x) = c\frac{d}{dx} f(x)$</li>
+<li>Sum and Difference Rule: $\frac{d}{dx} [f(x) \pm g(x)] = \frac{d}{dx} f(x) \pm \frac{d}{dx} g(x)$</li>
+<li>Product Rule: $\frac{d}{dx} [f(x)g(x)] = f(x)\frac{d}{dx} g(x) + g(x)\frac{d}{dx} f(x)$</li>
+<li>Quotient Rule: $\frac{d}{dx} \frac{f(x)}{g(x)} = \frac{g(x)\frac{d}{dx} f(x) - f(x)\frac{d}{dx} g(x)}{g(x)^2}$</li>
+<li>Chain Rule: $\frac{d}{dx} f(g(x)) = f&rsquo;(g(x))g&rsquo;(x)$</li>
+<li>Implicit Differentiation: If a function is defined implicitly, we can still find its derivative by differentiating both sides of the equation with respect to x.</li>
+</ul>
+<p>Remember that these rules are just a starting point and not all derivatives can be found using just these techniques. It&rsquo;s important to practice and get familiar with these techniques to develop your intuition for finding derivatives.</p>
+<h2 id="conclusion">Conclusion<a href="#conclusion" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>The derivative is a powerful mathematical tool that allows us to analyze the rate of change of a function and find the slope of a curve at any point. It is a fundamental concept in calculus and is used in many areas of science, engineering, and economics. By understanding the rules for finding derivatives and practicing</p>
+
+      </div></div>
+
+  
+    
+<div class="pagination">
+    <div class="pagination__title">
+        <span class="pagination__title-h">Read other posts</span>
+        <hr />
+    </div>
+    <div class="pagination__buttons">
+        
+        <span class="button previous">
+            <a href="http://example.org/pages/limit/">
+                <span class="button__icon">←</span>
+                <span class="button__text">Limits</span>
+            </a>
+        </span>
+        
+        
+        <span class="button next">
+            <a href="http://example.org/pages/integral/">
+                <span class="button__text">The Integral</span>
+                <span class="button__icon">→</span>
+            </a>
+        </span>
+        
+    </div>
+</div>
+
+  
+
+  
+    
+
+  
+</article>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    <span
+      >Calculus Cheat Sheets ::
+      <a href="https://jackcrane.rocks" target="_blank">Jack Crane</a>
+      based on course content in Fr. May and Dr. Oz's classes</span
+    >
+  </div>
+</footer>
+
+  
+
+<script type="text/javascript" src="/bundle.min.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

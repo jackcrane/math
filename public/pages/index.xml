@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pages on Terminal</title>
+    <link>http://example.org/pages/</link>
+    <description>Recent content in Pages on Terminal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="http://example.org/pages/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Limits</title>
+      <link>http://example.org/pages/limit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/pages/limit/</guid>
+      <description>Limits Limits are a fundamental concept in calculus that allow us to understand the behavior of functions as they approach certain values or infinity.
+Introduction Limits are a way to analyze the behavior of functions as they approach certain values. They are used to define derivatives and integrals, and are a crucial tool for solving a wide range of mathematical problems.
+Things to Know Before we dive into the rules for solving limits, there are a few important things to keep in mind:</description>
+      <content>&lt;h1 id=&#34;limits&#34;&gt;Limits&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Limits are a fundamental concept in calculus that allow us to understand the behavior of functions as they approach certain values or infinity.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Limits are a way to analyze the behavior of functions as they approach certain values. They are used to define derivatives and integrals, and are a crucial tool for solving a wide range of mathematical problems.&lt;/p&gt;
+&lt;h2 id=&#34;things-to-know&#34;&gt;Things to Know&lt;/h2&gt;
+&lt;p&gt;Before we dive into the rules for solving limits, there are a few important things to keep in mind:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Limits are typically denoted using the symbol $\lim_{x \to a}$, which means &amp;ldquo;the limit of f(x) as x approaches a&amp;rdquo;.&lt;/li&gt;
+&lt;li&gt;The limit of a function f(x) at a point a is the value that f(x) approaches as x gets arbitrarily close to a.&lt;/li&gt;
+&lt;li&gt;The rules for solving limits depend on the form of the function being evaluated and the technique used to evaluate it.&lt;/li&gt;
+&lt;li&gt;Limits can be evaluated using direct substitution, factoring, rationalization, conjugation, or other techniques.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;example-problem&#34;&gt;Example Problem&lt;/h2&gt;
+&lt;p&gt;Let&amp;rsquo;s start with a simple practice problem to illustrate how limits work.&lt;/p&gt;
+&lt;p&gt;Find the limit of $f(x) = 2x + 1$ as $x$ approaches $3$ (denoted as $\lim_{x \to 3} (2x + 1)$&lt;/p&gt;
+&lt;p&gt;To find the limit, we simply substitute $3$ for $x$ in the expression $2x + 1$:&lt;/p&gt;
+&lt;p&gt;$\lim_{x \to 3} (2x + 1) = 2(3) + 1 = 7$&lt;/p&gt;
+&lt;p&gt;Therefore, the limit of $f(x) = 2x + 1$ as $x$ approaches $3$ is $7$.&lt;/p&gt;
+&lt;h2 id=&#34;common-rules&#34;&gt;Common Rules&lt;/h2&gt;
+&lt;p&gt;There are several common rules for solving limits, including:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Direct Substitution: If the function is defined at the point being evaluated, then simply plug in the value and evaluate the limit.&lt;/li&gt;
+&lt;li&gt;Factoring: If the function is in a fraction form, factor out the common factor and simplify the expression.&lt;/li&gt;
+&lt;li&gt;Rationalization: If the function has a square root or cube root in the numerator or denominator, multiply by the conjugate to simplify the expression.&lt;/li&gt;
+&lt;li&gt;L&amp;rsquo;Hopital&amp;rsquo;s Rule: If the function has the form $\frac{0}{0}$ or $\frac{\infty}{\infty}$, then use L&amp;rsquo;Hopital&amp;rsquo;s Rule to evaluate the limit.&lt;/li&gt;
+&lt;li&gt;Squeeze Theorem: If the function is between two other functions that have the same limit, then the function being evaluated has the same limit.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Remember that these rules are just a starting point and not all limits can be solved using just these techniques. It&amp;rsquo;s important to practice and get familiar with these techniques to develop your intuition for solving limits.&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>The Derivative</title>
+      <link>http://example.org/pages/derivative/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/pages/derivative/</guid>
+      <description>The Derivative The derivative is a fundamental concept in calculus that allows us to analyze the rate of change of a function and find the slope of a curve at any point.
+Introduction The derivative is a mathematical tool that allows us to analyze the rate of change of a function and find the slope of a curve at any point. It is a fundamental concept in calculus and is used in many areas of science, engineering, and economics.</description>
+      <content>&lt;h1 id=&#34;the-derivative&#34;&gt;The Derivative&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The derivative is a fundamental concept in calculus that allows us to analyze the rate of change of a function and find the slope of a curve at any point.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;The derivative is a mathematical tool that allows us to analyze the rate of change of a function and find the slope of a curve at any point. It is a fundamental concept in calculus and is used in many areas of science, engineering, and economics. Understanding derivatives is crucial for solving a wide range of mathematical problems.&lt;/p&gt;
+&lt;h2 id=&#34;things-to-know&#34;&gt;Things to Know&lt;/h2&gt;
+&lt;p&gt;Before we dive into the rules for finding derivatives, there are a few important things to keep in mind:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The derivative is denoted using the symbol $f&amp;rsquo;(x)$, which means &amp;ldquo;the derivative of f(x) with respect to x&amp;rdquo;.&lt;/li&gt;
+&lt;li&gt;The derivative of a function f(x) at a point x is the slope of the tangent line to the curve of f(x) at that point.&lt;/li&gt;
+&lt;li&gt;The rules for finding derivatives depend on the form of the function being differentiated and the technique used to differentiate it.&lt;/li&gt;
+&lt;li&gt;Derivatives can be used to analyze the behavior of functions, find maximum and minimum values, and solve optimization problems.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;example-problem&#34;&gt;Example Problem&lt;/h2&gt;
+&lt;p&gt;Let&amp;rsquo;s start with a simple practice problem to illustrate how to find derivatives.&lt;/p&gt;
+&lt;p&gt;Find the derivative of $f(x) = 3x^2 - 4x + 1$:&lt;/p&gt;
+&lt;p&gt;Therefore, the derivative of $f(x) = 3x^2 - 4x + 1$ is $f&amp;rsquo;(x) = 6x - 4$.&lt;/p&gt;
+&lt;p&gt;To find the derivative, we use the power rule, which states that the derivative of a function of the form $f(x) = x^n$ is $f&amp;rsquo;(x) = nx^{n-1}$. We apply this rule to each term in the expression $f(x) = 3x^2 - 4x + 1$:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The derivative of the first term $3x^2$ is $6x$, since $2 \cdot 3x^{2-1} = 6x$.&lt;/li&gt;
+&lt;li&gt;The derivative of the second term $-4x$ is $-4$, since $1 \cdot -4x^{1-1} = -4$.&lt;/li&gt;
+&lt;li&gt;The derivative of the third term $1$ is $0$, since the derivative of a constant is always $0$.&lt;/li&gt;
+&lt;li&gt;Putting these results together, we get:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;$f&amp;rsquo;(x) = 6x - 4 + 0 = 6x - 4$&lt;/p&gt;
+&lt;p&gt;Therefore, the derivative of $f(x) = 3x^2 - 4x + 1$ is $f&amp;rsquo;(x) = 6x - 4$.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s worth noting that the derivative of a function represents the instantaneous rate of change of the function at any given point. In this case, the derivative $f&amp;rsquo;(x) = 6x - 4$ tells us that the rate of change of the function $f(x) = 3x^2 - 4x + 1$ increases at a rate of $6$ units per unit of $x$. We can also use the derivative to find the slope of the tangent line to the curve of $f(x)$ at any point.&lt;/p&gt;
+&lt;h2 id=&#34;common-rules&#34;&gt;Common Rules&lt;/h2&gt;
+&lt;p&gt;There are several common rules for finding derivatives, including:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Power Rule: $\frac{d}{dx} x^n = nx^{n-1}$&lt;/li&gt;
+&lt;li&gt;Constant Multiple Rule: $\frac{d}{dx} cf(x) = c\frac{d}{dx} f(x)$&lt;/li&gt;
+&lt;li&gt;Sum and Difference Rule: $\frac{d}{dx} [f(x) \pm g(x)] = \frac{d}{dx} f(x) \pm \frac{d}{dx} g(x)$&lt;/li&gt;
+&lt;li&gt;Product Rule: $\frac{d}{dx} [f(x)g(x)] = f(x)\frac{d}{dx} g(x) + g(x)\frac{d}{dx} f(x)$&lt;/li&gt;
+&lt;li&gt;Quotient Rule: $\frac{d}{dx} \frac{f(x)}{g(x)} = \frac{g(x)\frac{d}{dx} f(x) - f(x)\frac{d}{dx} g(x)}{g(x)^2}$&lt;/li&gt;
+&lt;li&gt;Chain Rule: $\frac{d}{dx} f(g(x)) = f&amp;rsquo;(g(x))g&amp;rsquo;(x)$&lt;/li&gt;
+&lt;li&gt;Implicit Differentiation: If a function is defined implicitly, we can still find its derivative by differentiating both sides of the equation with respect to x.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Remember that these rules are just a starting point and not all derivatives can be found using just these techniques. It&amp;rsquo;s important to practice and get familiar with these techniques to develop your intuition for finding derivatives.&lt;/p&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;The derivative is a powerful mathematical tool that allows us to analyze the rate of change of a function and find the slope of a curve at any point. It is a fundamental concept in calculus and is used in many areas of science, engineering, and economics. By understanding the rules for finding derivatives and practicing&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>The Integral</title>
+      <link>http://example.org/pages/integral/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/pages/integral/</guid>
+      <description>The Integral Integrals are a powerful mathematical tool for calculating the area under a curve and determining the volumes and surface areas of complex shapes.
+Introduction Integrals are a fundamental concept in calculus that allow us to calculate the total sum of infinitely small pieces of a curve or shape. They are used in many areas of science, engineering, and economics, and are an essential tool for solving a wide range of mathematical problems.</description>
+      <content>&lt;h1 id=&#34;the-integral&#34;&gt;The Integral&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Integrals are a powerful mathematical tool for calculating the area under a curve and determining the volumes and surface areas of complex shapes.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Integrals are a fundamental concept in calculus that allow us to calculate the total sum of infinitely small pieces of a curve or shape. They are used in many areas of science, engineering, and economics, and are an essential tool for solving a wide range of mathematical problems.&lt;/p&gt;
+&lt;h2 id=&#34;things-to-know&#34;&gt;Things to Know&lt;/h2&gt;
+&lt;p&gt;Before we dive into the rules for solving integrals, there are a few important things to keep in mind:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The integral sign is denoted by the symbol $\int$ and is used to indicate integration.&lt;/li&gt;
+&lt;li&gt;The variable of integration is typically denoted by $dx$ or $dy$, and represents the infinitely small width or height of the curve being integrated.&lt;/li&gt;
+&lt;li&gt;Integrals can be solved either analytically or numerically, depending on the complexity of the function being integrated.&lt;/li&gt;
+&lt;li&gt;The rules for solving integrals depend on the form of the function being integrated and the technique used to solve it.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;example-problem&#34;&gt;Example Problem&lt;/h2&gt;
+&lt;p&gt;Let&amp;rsquo;s start with a simple practice problem to illustrate how integrals work.&lt;/p&gt;
+&lt;p&gt;Find the integral of $f(x) = x^2$ from $x=0$ to $x=1$:&lt;/p&gt;
+&lt;p&gt;The answer is $\int_0^1 x^2 dx = \frac{1}{3}$.&lt;/p&gt;
+&lt;p&gt;Common Rules
+There are several common rules for solving integrals, including:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Power Rule: $\int x^n dx = \frac{x^{n+1}}{n+1} + C$ for all $n \neq -1$&lt;/li&gt;
+&lt;li&gt;Exponential Rule: $\int e^x dx = e^x + C$&lt;/li&gt;
+&lt;li&gt;Trigonometric Rules: $\int \sin(x) dx = -\cos(x) + C, \quad \int \cos(x) dx = \sin(x) + C$&lt;/li&gt;
+&lt;li&gt;Integration by Substitution: $\int f(g(x))g&amp;rsquo;(x) dx = \int f(u) du$, where $u = g(x)$&lt;/li&gt;
+&lt;li&gt;Integration by Parts: $\int u dv = uv - \int v du$&lt;/li&gt;
+&lt;li&gt;Trigonometric Substitution: $\int \sqrt{a^2 - x^2} dx = \frac{1}{a^2} \arcsin(\frac{x}{a}) + C$&lt;/li&gt;
+&lt;li&gt;Partial Fraction Decomposition: $\int \frac{Ax + B}{x^2 + px + q} dx = \frac{A}{2} \ln(x^2 + px + q) + (B - \frac{Ap}{2}) \int \frac{dx}{x^2 + px + q}$&lt;/li&gt;
+&lt;li&gt;Improper Integrals: $\int f(x) dx$ from $a$ to $b$, where either $a$ or $b$ is $\pm \infty$.&lt;/li&gt;
+&lt;li&gt;Definite Integrals: $\int_a^b f(x) dx$ gives the signed area between the curve $f(x)$ and the x-axis, from $x=a$ to $x=b$.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Remember that these rules are just a starting point and not all integrals can be solved using just these techniques. It&amp;rsquo;s important to practice and get familiar with these techniques to develop your intuition for solving integrals.&lt;/p&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>
