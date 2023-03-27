@@ -1,0 +1,42 @@
+{{ partial "helpers/katex.html" . }}
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: "$$", right: "$$", display: true },
+        { left: "$", right: "$", display: false },
+      ],
+    });
+  });
+</script>
+
+<style>
+  .katex {
+    color: #23b0ff;
+    background-color: #23aeff1d;
+    padding: 0.5px 3px;
+    cursor: crosshair;
+    transition: 0.2s;
+    border: 1px solid transparent;
+  }
+  .katex:hover {
+    background-color: #23aeff3d;
+    border: 1px solid #23aeff;
+  }
+  /* highlight color #23b0ff; */
+  ::selection {
+    background: #23b0ff;
+    color: #fff;
+  }
+  @media print {
+    /* Force everything to show */
+    body {
+      visibility: visible !important;
+      padding: 20px;
+    }
+    * {
+      visibility: visible !important;
+    }
+  }
+</style>

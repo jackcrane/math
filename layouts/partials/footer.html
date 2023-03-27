@@ -1,0 +1,18 @@
+<footer class="footer">
+  <div class="footer__inner">
+    <span
+      >Calculus Cheat Sheets ::
+      <a href="https://jackcrane.rocks" target="_blank">Jack Crane</a>
+      based on course content in Fr. May and Dr. Oz's classes</span
+    >
+  </div>
+</footer>
+
+{{ $menu := resources.Get "js/menu.js" | js.Build }} {{ $prism := resources.Get
+"js/prism.js" | js.Build }} {{ $bundle := slice $menu $prism | resources.Concat
+"bundle.js" | resources.Minify }}
+
+<script type="text/javascript" src="{{ $bundle.RelPermalink }}"></script>
+
+<!-- Extended footer section-->
+{{ partial "extended_footer.html" . }}
