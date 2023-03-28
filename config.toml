@@ -75,7 +75,7 @@ paginate = 5
 [languages]
   [languages.en]
     languageName = "English"
-    title = "Terminal"
+    title = "CalcSheets"
     subtitle = "A simple, retro theme for Hugo"
     owner = ""
     keywords = ""
@@ -91,5 +91,5 @@ paginate = 5
     words = "words"
 
     [languages.en.params.logo]
-      logoText = "Jack's Calculus sheets"
+      logoText = "Jack's Calculus Sheets"
       logoHomeLink = "/"
