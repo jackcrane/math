@@ -1,5 +1,5 @@
 ---
-title: "Basic Calculus Integrations with Physics"
+title: "Integrations with Physics"
 description: "This cheat sheet covers basic calculus integrations commonly used in physics applications, including position, velocity, acceleration, force, work, and energy."
 ---
 

@@ -7,64 +7,6 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://math.jackcrane.rocks/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Basic Calculus Integrations with Physics</title>
-      <link>https://math.jackcrane.rocks/pages/physics/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://math.jackcrane.rocks/pages/physics/</guid>
-      <description>Basic Calculus Integrations with Physics This cheat sheet covers basic calculus integrations commonly used in physics applications, including position, velocity, acceleration, force, work, and energy.
-Introduction Calculus plays a crucial role in physics, as it allows us to analyze and understand the behavior of physical systems by describing how they change over time. In particular, calculus integrations are used to calculate important physical quantities, such as position, velocity, acceleration, force, work, and energy.</description>
-      <content>&lt;h1 id=&#34;basic-calculus-integrations-with-physics&#34;&gt;Basic Calculus Integrations with Physics&lt;/h1&gt;
-&lt;blockquote&gt;
-&lt;p&gt;This cheat sheet covers basic calculus integrations commonly used in physics applications, including position, velocity, acceleration, force, work, and energy.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;Calculus plays a crucial role in physics, as it allows us to analyze and understand the behavior of physical systems by describing how they change over time. In particular, calculus integrations are used to calculate important physical quantities, such as position, velocity, acceleration, force, work, and energy.&lt;/p&gt;
-&lt;h2 id=&#34;things-to-know&#34;&gt;Things to Know&lt;/h2&gt;
-&lt;p&gt;Before we dive into the specific calculus integrations used in physics, there are a few important things to keep in mind:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;In physics, calculus is typically used to analyze motion and forces.&lt;/li&gt;
-&lt;li&gt;The most common calculus integrations used in physics are those related to position, velocity, acceleration, force, work, and energy.&lt;/li&gt;
-&lt;li&gt;Calculus integrations can be used to analyze both linear and rotational motion.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;position&#34;&gt;Position&lt;/h2&gt;
-&lt;p&gt;Position is a key concept in physics that describes an object&amp;rsquo;s location in space. Calculus integrations can be used to determine an object&amp;rsquo;s position at any given time, given its initial position and velocity. The calculus integration for position is:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Position: $x(t) = \int v(t) dt + x_0$&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;where $x(t)$ is the position of the object at time $t$, $v(t)$ is its velocity at time $t$, $x_0$ is its initial position.&lt;/p&gt;
-&lt;h2 id=&#34;velocity&#34;&gt;Velocity&lt;/h2&gt;
-&lt;p&gt;Velocity describes an object&amp;rsquo;s speed and direction of motion. Calculus integrations can be used to determine an object&amp;rsquo;s velocity at any given time, given its initial velocity and acceleration. The calculus integration for velocity is:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Velocity: $v(t) = \int a(t) dt + v_0$&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;where $v(t)$ is the velocity of the object at time $t$, $a(t)$ is its acceleration at time $t$, and $v_0$ is its initial velocity.&lt;/p&gt;
-&lt;h2 id=&#34;acceleration&#34;&gt;Acceleration&lt;/h2&gt;
-&lt;p&gt;Acceleration describes the rate of change of an object&amp;rsquo;s velocity. Calculus integrations can be used to determine an object&amp;rsquo;s acceleration at any given time, given its initial acceleration and the net force acting on it. The calculus integration for acceleration is:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Acceleration: $a(t) = \frac{1}{m} \int F(t) dt + a_0$&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;where $a(t)$ is the acceleration of the object at time $t$, $m$ is its mass, $F(t)$ is the net force acting on it at time $t$, and $a_0$ is its initial acceleration.&lt;/p&gt;
-&lt;h2 id=&#34;force&#34;&gt;Force&lt;/h2&gt;
-&lt;p&gt;Force describes the influence that one object has on another, causing it to accelerate. Calculus integrations can be used to determine the work done by a force, as well as the potential energy associated with a force. The calculus integration for force is:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Work: $W = \int F(x) dx$&lt;/li&gt;
-&lt;li&gt;Potential Energy: $U(x) = -\int F(x) dx$&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;where $W$ is the work done by the force, $F(x)$ is the force acting on an object at position $x$, and $U(x)$ is the potential energy associated with the force.&lt;/p&gt;
-&lt;h2 id=&#34;energy&#34;&gt;Energy&lt;/h2&gt;
-&lt;p&gt;Energy is a fundamental concept in physics that describes an object&amp;rsquo;s ability to do work. Calculus integrations can be used to determine an object&amp;rsquo;s kinetic energy, as well as its potential energy. The calculus integration for energy is:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Kinetic Energy: $K = \frac{1}{2} mv^2$&lt;/li&gt;
-&lt;li&gt;Potential Energy: $U(x) = -\int F(x) dx$&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;where $K$ is the kinetic energy of the object, $m$ is its mass, $v$ is its velocity, $F(x)$ is the force acting on an object at position $x$, and $U(x)$ is the potential energy associated with the force.&lt;/p&gt;
-&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;Calculus integrations are essential tools for understanding and analyzing physical systems. By using these integrations, we can determine important physical quantities such as position, velocity, acceleration, force, work, and energy. By mastering these basic calculus integrations, you will be better equipped to solve a wide range of physics problems.&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
       <title>Finding areas by slicing</title>
       <link>https://math.jackcrane.rocks/pages/slice-area/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -126,6 +68,64 @@ This can be a good way to approximate the area under a curve, but it can be time
 &lt;p&gt;$\frac12\pi7^2=\frac{49}{2}\pi$&lt;/p&gt;
 &lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;Using the integral to find the area of any curve is an extremely powerful skill to have because once we are able to determine the area of any 2d shape, we are able to determine the volume of any 3d shape.&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Integrations with Physics</title>
+      <link>https://math.jackcrane.rocks/pages/physics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://math.jackcrane.rocks/pages/physics/</guid>
+      <description>Basic Calculus Integrations with Physics This cheat sheet covers basic calculus integrations commonly used in physics applications, including position, velocity, acceleration, force, work, and energy.
+Introduction Calculus plays a crucial role in physics, as it allows us to analyze and understand the behavior of physical systems by describing how they change over time. In particular, calculus integrations are used to calculate important physical quantities, such as position, velocity, acceleration, force, work, and energy.</description>
+      <content>&lt;h1 id=&#34;basic-calculus-integrations-with-physics&#34;&gt;Basic Calculus Integrations with Physics&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This cheat sheet covers basic calculus integrations commonly used in physics applications, including position, velocity, acceleration, force, work, and energy.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Calculus plays a crucial role in physics, as it allows us to analyze and understand the behavior of physical systems by describing how they change over time. In particular, calculus integrations are used to calculate important physical quantities, such as position, velocity, acceleration, force, work, and energy.&lt;/p&gt;
+&lt;h2 id=&#34;things-to-know&#34;&gt;Things to Know&lt;/h2&gt;
+&lt;p&gt;Before we dive into the specific calculus integrations used in physics, there are a few important things to keep in mind:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;In physics, calculus is typically used to analyze motion and forces.&lt;/li&gt;
+&lt;li&gt;The most common calculus integrations used in physics are those related to position, velocity, acceleration, force, work, and energy.&lt;/li&gt;
+&lt;li&gt;Calculus integrations can be used to analyze both linear and rotational motion.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;position&#34;&gt;Position&lt;/h2&gt;
+&lt;p&gt;Position is a key concept in physics that describes an object&amp;rsquo;s location in space. Calculus integrations can be used to determine an object&amp;rsquo;s position at any given time, given its initial position and velocity. The calculus integration for position is:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Position: $x(t) = \int v(t) dt + x_0$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;where $x(t)$ is the position of the object at time $t$, $v(t)$ is its velocity at time $t$, $x_0$ is its initial position.&lt;/p&gt;
+&lt;h2 id=&#34;velocity&#34;&gt;Velocity&lt;/h2&gt;
+&lt;p&gt;Velocity describes an object&amp;rsquo;s speed and direction of motion. Calculus integrations can be used to determine an object&amp;rsquo;s velocity at any given time, given its initial velocity and acceleration. The calculus integration for velocity is:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Velocity: $v(t) = \int a(t) dt + v_0$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;where $v(t)$ is the velocity of the object at time $t$, $a(t)$ is its acceleration at time $t$, and $v_0$ is its initial velocity.&lt;/p&gt;
+&lt;h2 id=&#34;acceleration&#34;&gt;Acceleration&lt;/h2&gt;
+&lt;p&gt;Acceleration describes the rate of change of an object&amp;rsquo;s velocity. Calculus integrations can be used to determine an object&amp;rsquo;s acceleration at any given time, given its initial acceleration and the net force acting on it. The calculus integration for acceleration is:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Acceleration: $a(t) = \frac{1}{m} \int F(t) dt + a_0$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;where $a(t)$ is the acceleration of the object at time $t$, $m$ is its mass, $F(t)$ is the net force acting on it at time $t$, and $a_0$ is its initial acceleration.&lt;/p&gt;
+&lt;h2 id=&#34;force&#34;&gt;Force&lt;/h2&gt;
+&lt;p&gt;Force describes the influence that one object has on another, causing it to accelerate. Calculus integrations can be used to determine the work done by a force, as well as the potential energy associated with a force. The calculus integration for force is:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Work: $W = \int F(x) dx$&lt;/li&gt;
+&lt;li&gt;Potential Energy: $U(x) = -\int F(x) dx$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;where $W$ is the work done by the force, $F(x)$ is the force acting on an object at position $x$, and $U(x)$ is the potential energy associated with the force.&lt;/p&gt;
+&lt;h2 id=&#34;energy&#34;&gt;Energy&lt;/h2&gt;
+&lt;p&gt;Energy is a fundamental concept in physics that describes an object&amp;rsquo;s ability to do work. Calculus integrations can be used to determine an object&amp;rsquo;s kinetic energy, as well as its potential energy. The calculus integration for energy is:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Kinetic Energy: $K = \frac{1}{2} mv^2$&lt;/li&gt;
+&lt;li&gt;Potential Energy: $U(x) = -\int F(x) dx$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;where $K$ is the kinetic energy of the object, $m$ is its mass, $v$ is its velocity, $F(x)$ is the force acting on an object at position $x$, and $U(x)$ is the potential energy associated with the force.&lt;/p&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Calculus integrations are essential tools for understanding and analyzing physical systems. By using these integrations, we can determine important physical quantities such as position, velocity, acceleration, force, work, and energy. By mastering these basic calculus integrations, you will be better equipped to solve a wide range of physics problems.&lt;/p&gt;
 </content>
     </item>
     
