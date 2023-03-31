@@ -2,18 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://example.org/categories/</loc>
+    <loc>https://math.jackcrane.rocks/pages/physics/</loc>
   </url><url>
-    <loc>http://example.org/pages/limit/</loc>
+    <loc>https://math.jackcrane.rocks/</loc>
   </url><url>
-    <loc>http://example.org/pages/</loc>
+    <loc>https://math.jackcrane.rocks/categories/</loc>
   </url><url>
-    <loc>http://example.org/tags/</loc>
+    <loc>https://math.jackcrane.rocks/pages/slice-area/</loc>
   </url><url>
-    <loc>http://example.org/</loc>
+    <loc>https://math.jackcrane.rocks/pages/limit/</loc>
   </url><url>
-    <loc>http://example.org/pages/derivative/</loc>
+    <loc>https://math.jackcrane.rocks/pages/</loc>
   </url><url>
-    <loc>http://example.org/pages/integral/</loc>
+    <loc>https://math.jackcrane.rocks/tags/</loc>
+  </url><url>
+    <loc>https://math.jackcrane.rocks/pages/derivative/</loc>
+  </url><url>
+    <loc>https://math.jackcrane.rocks/pages/integral/</loc>
   </url>
 </urlset>
