@@ -12,13 +12,25 @@
 </script>
 
 <style>
+  p,
+  span,
+  li {
+    line-height: 2;
+  }
   .katex {
+    line-height: initial;
     color: #23b0ff;
     background-color: #23aeff1d;
     padding: 0.5px 3px;
-    cursor: crosshair;
+    margin: 2px 0;
+    /* cursor: crosshair; */
     transition: 0.2s;
     border: 1px solid transparent;
+    border-radius: 3px;
+    display: inline-block;
+  }
+  .katex * {
+    line-height: initial;
   }
   .katex:hover {
     background-color: #23aeff3d;
@@ -37,6 +49,11 @@
     }
     * {
       visibility: visible !important;
+    }
+  }
+  @media print {
+    .header {
+      display: initial;
     }
   }
 </style>
