@@ -3,7 +3,7 @@ title: "9.1.0: Sequences through numerical and algebraic methods"
 description: "This reference sheet covers infinite sequences of numbers through numerical and algebraic methods"
 ---
 
-# Sequences
+# Sequences through numerical and algebraic methods
 
 > This reference sheet covers using infinite sequences of numbers through numerical and algebraic methods.
 
