@@ -1,11 +1,11 @@
 ---
 title: Formulas
-description: This page contains a list of all the formulas that are used in the cheat sheets.
+description: This page contains a list of all the formulas that are used in the reference sheets.
 ---
 
 # Formulas
 
-This page contains a list of all the formulas that are used in the cheat sheets.
+This page contains a list of all the formulas that are used in the reference sheets.
 
 ## 8.2.3: Arc Length
 

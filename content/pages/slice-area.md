@@ -1,11 +1,11 @@
 ---
 title: "8.1.1: Finding areas by slicing"
-description: "This cheat sheet covers using an integral to find the area of a region under a curve."
+description: "This reference sheet covers using an integral to find the area of a region under a curve."
 ---
 
 # Using integrals to find the area of 2d region defined by a function.
 
-> This cheat sheet covers using an integral to find the area of a region under a curve.
+> This reference sheet covers using an integral to find the area of a region under a curve.
 
 ## Introduction
 

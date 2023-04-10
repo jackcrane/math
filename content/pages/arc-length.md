@@ -1,11 +1,11 @@
 ---
 title: "8.2.3: Arc Length"
-description: "This cheat sheet covers using integrals to find the length of an arc on a curve."
+description: "This reference sheet covers using integrals to find the length of an arc on a curve."
 ---
 
 # Finding the length of an arc
 
-> This cheat sheet covers using integrals to find the length of an arc on a curve.
+> This reference sheet covers using integrals to find the length of an arc on a curve.
 
 ## Introduction
 

@@ -12,13 +12,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://math.jackcrane.rocks/pages/slice-area/</guid>
-      <description>Calculating the area of a region under a curve This cheat sheet covers using an integral to find the area of a region under a curve.
+      <description>Calculating the area of a region under a curve This reference sheet covers using an integral to find the area of a region under a curve.
 Introduction In previous chapters, we found the area under a curve by cutting it up into increasingly tiny rectangles (or other shapes) and adding their areas:
 $\lim_{n \to \infty} \sum\limits_{i=0}^{n} (\frac{b-a}{n})*f(a+\frac{b-a}{n}k)$
 This can be a good way to approximate the area under a curve, but it can be time consuming and is inexact.</description>
       <content>&lt;h1 id=&#34;calculating-the-area-of-a-region-under-a-curve&#34;&gt;Calculating the area of a region under a curve&lt;/h1&gt;
 &lt;blockquote&gt;
-&lt;p&gt;This cheat sheet covers using an integral to find the area of a region under a curve.&lt;/p&gt;
+&lt;p&gt;This reference sheet covers using an integral to find the area of a region under a curve.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;In previous chapters, we found the area under a curve by cutting it up into increasingly tiny rectangles (or other shapes) and adding their areas:&lt;/p&gt;
@@ -77,11 +77,11 @@ This can be a good way to approximate the area under a curve, but it can be time
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://math.jackcrane.rocks/pages/physics/</guid>
-      <description>Basic Calculus Integrations with Physics This cheat sheet covers basic calculus integrations commonly used in physics applications, including position, velocity, acceleration, force, work, and energy.
+      <description>Basic Calculus Integrations with Physics This reference sheet covers basic calculus integrations commonly used in physics applications, including position, velocity, acceleration, force, work, and energy.
 Introduction Calculus plays a crucial role in physics, as it allows us to analyze and understand the behavior of physical systems by describing how they change over time. In particular, calculus integrations are used to calculate important physical quantities, such as position, velocity, acceleration, force, work, and energy.</description>
       <content>&lt;h1 id=&#34;basic-calculus-integrations-with-physics&#34;&gt;Basic Calculus Integrations with Physics&lt;/h1&gt;
 &lt;blockquote&gt;
-&lt;p&gt;This cheat sheet covers basic calculus integrations commonly used in physics applications, including position, velocity, acceleration, force, work, and energy.&lt;/p&gt;
+&lt;p&gt;This reference sheet covers basic calculus integrations commonly used in physics applications, including position, velocity, acceleration, force, work, and energy.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;Calculus plays a crucial role in physics, as it allows us to analyze and understand the behavior of physical systems by describing how they change over time. In particular, calculus integrations are used to calculate important physical quantities, such as position, velocity, acceleration, force, work, and energy.&lt;/p&gt;

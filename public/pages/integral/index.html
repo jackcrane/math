@@ -1,283 +1,309 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  
+  <head>
     <title>The Integral :: CalcSheets</title>
-  
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Integrals are a powerful mathematical tool for calculating the area under a curve and determining the volumes and surface areas of complex shapes." />
-<meta name="keywords" content="" />
-<meta name="robots" content="noodp" />
-<link rel="canonical" href="https://math.jackcrane.rocks/pages/integral/" />
 
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Integrals are a powerful mathematical tool for calculating the area under a curve and determining the volumes and surface areas of complex shapes."
+    />
+    <meta name="keywords" content="" />
+    <meta name="robots" content="noodp" />
+    <link rel="canonical" href="https://math.jackcrane.rocks/pages/integral/" />
 
+    <link rel="stylesheet" href="https://math.jackcrane.rocks/styles.css" />
 
+    <link rel="stylesheet" href="https://math.jackcrane.rocks/style.css" />
 
+    <link
+      rel="shortcut icon"
+      href="https://math.jackcrane.rocks/img/theme-colors/blue.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="https://math.jackcrane.rocks/img/theme-colors/blue.png"
+    />
 
+    <meta name="twitter:card" content="summary" />
 
-  
-  
-  
-  
-  
-  <link rel="stylesheet" href="https://math.jackcrane.rocks/styles.css">
-
-
-
-<link rel="stylesheet" href="https://math.jackcrane.rocks/style.css">
-
-
-
-  <link rel="shortcut icon" href="https://math.jackcrane.rocks/img/theme-colors/blue.png">
-  <link rel="apple-touch-icon" href="https://math.jackcrane.rocks/img/theme-colors/blue.png">
-
-
-
-<meta name="twitter:card" content="summary" />
-
-  
     <meta name="twitter:site" content="" />
-  
+
     <meta name="twitter:creator" content="" />
 
+    <meta property="og:locale" content="en" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="The Integral" />
+    <meta
+      property="og:description"
+      content="Integrals are a powerful mathematical tool for calculating the area under a curve and determining the volumes and surface areas of complex shapes."
+    />
+    <meta
+      property="og:url"
+      content="https://math.jackcrane.rocks/pages/integral/"
+    />
+    <meta property="og:site_name" content="CalcSheets" />
 
+    <meta
+      property="og:image"
+      content="https://math.jackcrane.rocks/img/favicon/blue.png"
+    />
 
-<meta property="og:locale" content="en" />
-<meta property="og:type" content="article" />
-<meta property="og:title" content="The Integral">
-<meta property="og:description" content="Integrals are a powerful mathematical tool for calculating the area under a curve and determining the volumes and surface areas of complex shapes." />
-<meta property="og:url" content="https://math.jackcrane.rocks/pages/integral/" />
-<meta property="og:site_name" content="CalcSheets" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="627" />
 
-  
-    <meta property="og:image" content="https://math.jackcrane.rocks/img/favicon/blue.png">
-  
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css"
+      integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0"
+      crossorigin="anonymous"
+    />
 
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="627">
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js"
+      integrity="sha384-PwRUT/YqbnEjkZO0zZxNqcxACrXe+j766U2amXcgMg5457rve2Y7I6ZJSm2A0mS4"
+      crossorigin="anonymous"
+    ></script>
 
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js"
+      integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+      crossorigin="anonymous"
+      onload="renderMathInElement(document.body);"
+    ></script>
 
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        renderMathInElement(document.body, {
+          delimiters: [
+            { left: "$$", right: "$$", display: true },
+            { left: "$", right: "$", display: false },
+          ],
+        });
+      });
+    </script>
 
+    <style>
+      p,
+      span,
+      li {
+        line-height: 2;
+      }
+      .katex {
+        line-height: initial;
+        color: #23b0ff;
+        background-color: #23aeff1d;
+        padding: 0.5px 3px;
+        margin: 2px 0;
 
+        transition: 0.2s;
+        border: 1px solid transparent;
+        border-radius: 3px;
+        display: inline-block;
+      }
+      .katex * {
+        line-height: initial;
+      }
+      .katex:hover {
+        background-color: #23aeff3d;
+        border: 1px solid #23aeff;
+      }
 
-
-
-
-
-
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css"
-  integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0"
-  crossorigin="anonymous"
-/>
-
-
-<script
-  defer
-  src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js"
-  integrity="sha384-PwRUT/YqbnEjkZO0zZxNqcxACrXe+j766U2amXcgMg5457rve2Y7I6ZJSm2A0mS4"
-  crossorigin="anonymous"
-></script>
-
-
-<script
-  defer
-  src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js"
-  integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
-  crossorigin="anonymous"
-  onload="renderMathInElement(document.body);"
-></script>
-
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    renderMathInElement(document.body, {
-      delimiters: [
-        { left: "$$", right: "$$", display: true },
-        { left: "$", right: "$", display: false },
-      ],
-    });
-  });
-</script>
-
-<style>
-  p,
-  span,
-  li {
-    line-height: 2;
-  }
-  .katex {
-    line-height: initial;
-    color: #23b0ff;
-    background-color: #23aeff1d;
-    padding: 0.5px 3px;
-    margin: 2px 0;
-     
-    transition: 0.2s;
-    border: 1px solid transparent;
-    border-radius: 3px;
-    display: inline-block;
-  }
-  .katex * {
-    line-height: initial;
-  }
-  .katex:hover {
-    background-color: #23aeff3d;
-    border: 1px solid #23aeff;
-  }
-   
-  ::selection {
-    background: #23b0ff;
-    color: #fff;
-  }
-  @media print {
-     
-    body {
-      visibility: visible !important;
-      padding: 20px;
-    }
-    * {
-      visibility: visible !important;
-    }
-  }
-  @media print {
-    .header {
-      display: initial;
-    }
-  }
-</style>
-
-
-</head>
-<body class="blue">
-
-
-<div class="container center headings--one-size">
-
-  <header class="header">
-  <div class="header__inner">
-    <div class="header__logo">
-      <a href="/">
-  <div class="logo">
-    Jack&#39;s Calculus Sheets
-  </div>
-</a>
-
-    </div>
-    
-    
-  </div>
-  
-</header>
-
-
-  <div class="content">
-    
-<article class="post">
-  <h1 class="post-title">
-    <a href="https://math.jackcrane.rocks/pages/integral/">The Integral</a>
-  </h1>
-  <div class="post-meta">
-    
-    
-    
-  </div>
-
-  
-  
-
-
-  
-
-  <div class="post-content"><div>
-        <h1 id="the-integral">The Integral<a href="#the-integral" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
-<blockquote>
-<p>Integrals are a powerful mathematical tool for calculating the area under a curve and determining the volumes and surface areas of complex shapes.</p>
-</blockquote>
-<h2 id="introduction">Introduction<a href="#introduction" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
-<p>Integrals are a fundamental concept in calculus that allow us to calculate the total sum of infinitely small pieces of a curve or shape. They are used in many areas of science, engineering, and economics, and are an essential tool for solving a wide range of mathematical problems.</p>
-<h2 id="things-to-know">Things to Know<a href="#things-to-know" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
-<p>Before we dive into the rules for solving integrals, there are a few important things to keep in mind:</p>
-<ul>
-<li>The integral sign is denoted by the symbol $\int$ and is used to indicate integration.</li>
-<li>The variable of integration is typically denoted by $dx$ or $dy$, and represents the infinitely small width or height of the curve being integrated.</li>
-<li>Integrals can be solved either analytically or numerically, depending on the complexity of the function being integrated.</li>
-<li>The rules for solving integrals depend on the form of the function being integrated and the technique used to solve it.</li>
-</ul>
-<h2 id="example-problem">Example Problem<a href="#example-problem" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
-<p>Let&rsquo;s start with a simple practice problem to illustrate how integrals work.</p>
-<p>Find the integral of $f(x) = x^2$ from $x=0$ to $x=1$:</p>
-<p>The answer is $\int_0^1 x^2 dx = \frac{1}{3}$.</p>
-<p>Common Rules
-There are several common rules for solving integrals, including:</p>
-<ul>
-<li>Power Rule: $\int x^n dx = \frac{x^{n+1}}{n+1} + C$ for all $n \neq -1$</li>
-<li>Exponential Rule: $\int e^x dx = e^x + C$</li>
-<li>Trigonometric Rules: $\int \sin(x) dx = -\cos(x) + C, \quad \int \cos(x) dx = \sin(x) + C$</li>
-<li>Integration by Substitution: $\int f(g(x))g&rsquo;(x) dx = \int f(u) du$, where $u = g(x)$</li>
-<li>Integration by Parts: $\int u dv = uv - \int v du$</li>
-<li>Trigonometric Substitution: $\int \sqrt{a^2 - x^2} dx = \frac{1}{a^2} \arcsin(\frac{x}{a}) + C$</li>
-<li>Partial Fraction Decomposition: $\int \frac{Ax + B}{x^2 + px + q} dx = \frac{A}{2} \ln(x^2 + px + q) + (B - \frac{Ap}{2}) \int \frac{dx}{x^2 + px + q}$</li>
-<li>Improper Integrals: $\int f(x) dx$ from $a$ to $b$, where either $a$ or $b$ is $\pm \infty$.</li>
-<li>Definite Integrals: $\int_a^b f(x) dx$ gives the signed area between the curve $f(x)$ and the x-axis, from $x=a$ to $x=b$.</li>
-</ul>
-<p>Remember that these rules are just a starting point and not all integrals can be solved using just these techniques. It&rsquo;s important to practice and get familiar with these techniques to develop your intuition for solving integrals.</p>
-
-      </div></div>
-
-  
-    
-<div class="pagination">
-    <div class="pagination__title">
-        <span class="pagination__title-h">Read other pages</span>
-        <hr />
-    </div>
-    <div class="pagination__buttons">
-        
-        <span class="button previous">
-            <a href="https://math.jackcrane.rocks/pages/derivative/">
-                <span class="button__icon">←</span>
-                <span class="button__text">The Derivative</span>
+      ::selection {
+        background: #23b0ff;
+        color: #fff;
+      }
+      @media print {
+        body {
+          visibility: visible !important;
+          padding: 20px;
+        }
+        * {
+          visibility: visible !important;
+        }
+      }
+      @media print {
+        .header {
+          display: initial;
+        }
+      }
+    </style>
+  </head>
+  <body class="blue">
+    <div class="container center headings--one-size">
+      <header class="header">
+        <div class="header__inner">
+          <div class="header__logo">
+            <a href="/">
+              <div class="logo">Jack&#39;s Calculus Sheets</div>
             </a>
-        </span>
-        
-        
+          </div>
+        </div>
+      </header>
+
+      <div class="content">
+        <article class="post">
+          <h1 class="post-title">
+            <a href="https://math.jackcrane.rocks/pages/integral/"
+              >The Integral</a
+            >
+          </h1>
+          <div class="post-meta"></div>
+
+          <div class="post-content">
+            <div>
+              <h1 id="the-integral">
+                The Integral<a
+                  href="#the-integral"
+                  class="hanchor"
+                  ariaLabel="Anchor"
+                  >&#8983;</a
+                >
+              </h1>
+              <blockquote>
+                <p>
+                  Integrals are a powerful mathematical tool for calculating the
+                  area under a curve and determining the volumes and surface
+                  areas of complex shapes.
+                </p>
+              </blockquote>
+              <h2 id="introduction">
+                Introduction<a
+                  href="#introduction"
+                  class="hanchor"
+                  ariaLabel="Anchor"
+                  >&#8983;</a
+                >
+              </h2>
+              <p>
+                Integrals are a fundamental concept in calculus that allow us to
+                calculate the total sum of infinitely small pieces of a curve or
+                shape. They are used in many areas of science, engineering, and
+                economics, and are an essential tool for solving a wide range of
+                mathematical problems.
+              </p>
+              <h2 id="things-to-know">
+                Things to Know<a
+                  href="#things-to-know"
+                  class="hanchor"
+                  ariaLabel="Anchor"
+                  >&#8983;</a
+                >
+              </h2>
+              <p>
+                Before we dive into the rules for solving integrals, there are a
+                few important things to keep in mind:
+              </p>
+              <ul>
+                <li>
+                  The integral sign is denoted by the symbol $\int$ and is used
+                  to indicate integration.
+                </li>
+                <li>
+                  The variable of integration is typically denoted by $dx$ or
+                  $dy$, and represents the infinitely small width or height of
+                  the curve being integrated.
+                </li>
+                <li>
+                  Integrals can be solved either analytically or numerically,
+                  depending on the complexity of the function being integrated.
+                </li>
+                <li>
+                  The rules for solving integrals depend on the form of the
+                  function being integrated and the technique used to solve it.
+                </li>
+              </ul>
+              <h2 id="example-problem">
+                Example Problem<a
+                  href="#example-problem"
+                  class="hanchor"
+                  ariaLabel="Anchor"
+                  >&#8983;</a
+                >
+              </h2>
+              <p>
+                Let&rsquo;s start with a simple practice problem to illustrate
+                how integrals work.
+              </p>
+              <p>Find the integral of $f(x) = x^2$ from $x=0$ to $x=1$:</p>
+              <p>The answer is $\int_0^1 x^2 dx = \frac{1}{3}$.</p>
+              <p>
+                Common Rules There are several common rules for solving
+                integrals, including:
+              </p>
+              <ul>
+                <li>
+                  Power Rule: $\int x^n dx = \frac{x^{n+1}}{n+1} + C$ for all $n
+                  \neq -1$
+                </li>
+                <li>Exponential Rule: $\int e^x dx = e^x + C$</li>
+                <li>
+                  Trigonometric Rules: $\int \sin(x) dx = -\cos(x) + C, \quad
+                  \int \cos(x) dx = \sin(x) + C$
+                </li>
+                <li>
+                  Integration by Substitution: $\int f(g(x))g&rsquo;(x) dx =
+                  \int f(u) du$, where $u = g(x)$
+                </li>
+                <li>Integration by Parts: $\int u dv = uv - \int v du$</li>
+                <li>
+                  Trigonometric Substitution: $\int \sqrt{a^2 - x^2} dx =
+                  \frac{1}{a^2} \arcsin(\frac{x}{a}) + C$
+                </li>
+                <li>
+                  Partial Fraction Decomposition: $\int \frac{Ax + B}{x^2 + px +
+                  q} dx = \frac{A}{2} \ln(x^2 + px + q) + (B - \frac{Ap}{2})
+                  \int \frac{dx}{x^2 + px + q}$
+                </li>
+                <li>
+                  Improper Integrals: $\int f(x) dx$ from $a$ to $b$, where
+                  either $a$ or $b$ is $\pm \infty$.
+                </li>
+                <li>
+                  Definite Integrals: $\int_a^b f(x) dx$ gives the signed area
+                  between the curve $f(x)$ and the x-axis, from $x=a$ to $x=b$.
+                </li>
+              </ul>
+              <p>
+                Remember that these rules are just a starting point and not all
+                integrals can be solved using just these techniques. It&rsquo;s
+                important to practice and get familiar with these techniques to
+                develop your intuition for solving integrals.
+              </p>
+            </div>
+          </div>
+
+          <div class="pagination">
+            <div class="pagination__title">
+              <span class="pagination__title-h">Read other pages</span>
+              <hr />
+            </div>
+            <div class="pagination__buttons">
+              <span class="button previous">
+                <a href="https://math.jackcrane.rocks/pages/derivative/">
+                  <span class="button__icon">←</span>
+                  <span class="button__text">The Derivative</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <footer class="footer">
+        <div class="footer__inner">
+          <span
+            >Calculus reference Sheets ::
+            <a href="https://jackcrane.rocks" target="_blank">Jack Crane</a>
+            based on course content in Fr. May and Dr. Oz's classes</span
+          >
+        </div>
+      </footer>
+
+      <script type="text/javascript" src="/bundle.min.js"></script>
     </div>
-</div>
-
-  
-
-  
-    
-
-  
-</article>
-
-  </div>
-
-  
-    <footer class="footer">
-  <div class="footer__inner">
-    <span
-      >Calculus Cheat Sheets ::
-      <a href="https://jackcrane.rocks" target="_blank">Jack Crane</a>
-      based on course content in Fr. May and Dr. Oz's classes</span
-    >
-  </div>
-</footer>
-
-  
-
-<script type="text/javascript" src="/bundle.min.js"></script>
-
-
-
-
-
-  
-</div>
-
-</body>
+  </body>
 </html>

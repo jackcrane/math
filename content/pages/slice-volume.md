@@ -1,11 +1,11 @@
 ---
 title: "8.1.2: Finding volumes by slicing"
-description: "This cheat sheet covers using integrals to find volumes of objects defined by functions."
+description: "This reference sheet covers using integrals to find volumes of objects defined by functions."
 ---
 
 # Calculating the area of a region under a curve
 
-> This cheat sheet covers using integrals to find volumes of objects defined by functions.
+> This reference sheet covers using integrals to find volumes of objects defined by functions.
 
 ## Introduction
 

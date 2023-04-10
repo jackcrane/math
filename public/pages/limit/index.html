@@ -1,288 +1,322 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  
+  <head>
     <title>Limits :: CalcSheets</title>
-  
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Limits are a fundamental concept in calculus that allow us to understand the behavior of functions as they approach certain values or infinity." />
-<meta name="keywords" content="" />
-<meta name="robots" content="noodp" />
-<link rel="canonical" href="https://math.jackcrane.rocks/pages/limit/" />
 
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Limits are a fundamental concept in calculus that allow us to understand the behavior of functions as they approach certain values or infinity."
+    />
+    <meta name="keywords" content="" />
+    <meta name="robots" content="noodp" />
+    <link rel="canonical" href="https://math.jackcrane.rocks/pages/limit/" />
 
+    <link rel="stylesheet" href="https://math.jackcrane.rocks/styles.css" />
 
+    <link rel="stylesheet" href="https://math.jackcrane.rocks/style.css" />
 
+    <link
+      rel="shortcut icon"
+      href="https://math.jackcrane.rocks/img/theme-colors/blue.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="https://math.jackcrane.rocks/img/theme-colors/blue.png"
+    />
 
+    <meta name="twitter:card" content="summary" />
 
-  
-  
-  
-  
-  
-  <link rel="stylesheet" href="https://math.jackcrane.rocks/styles.css">
-
-
-
-<link rel="stylesheet" href="https://math.jackcrane.rocks/style.css">
-
-
-
-  <link rel="shortcut icon" href="https://math.jackcrane.rocks/img/theme-colors/blue.png">
-  <link rel="apple-touch-icon" href="https://math.jackcrane.rocks/img/theme-colors/blue.png">
-
-
-
-<meta name="twitter:card" content="summary" />
-
-  
     <meta name="twitter:site" content="" />
-  
+
     <meta name="twitter:creator" content="" />
 
+    <meta property="og:locale" content="en" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Limits" />
+    <meta
+      property="og:description"
+      content="Limits are a fundamental concept in calculus that allow us to understand the behavior of functions as they approach certain values or infinity."
+    />
+    <meta
+      property="og:url"
+      content="https://math.jackcrane.rocks/pages/limit/"
+    />
+    <meta property="og:site_name" content="CalcSheets" />
 
+    <meta
+      property="og:image"
+      content="https://math.jackcrane.rocks/img/favicon/blue.png"
+    />
 
-<meta property="og:locale" content="en" />
-<meta property="og:type" content="article" />
-<meta property="og:title" content="Limits">
-<meta property="og:description" content="Limits are a fundamental concept in calculus that allow us to understand the behavior of functions as they approach certain values or infinity." />
-<meta property="og:url" content="https://math.jackcrane.rocks/pages/limit/" />
-<meta property="og:site_name" content="CalcSheets" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="627" />
 
-  
-    <meta property="og:image" content="https://math.jackcrane.rocks/img/favicon/blue.png">
-  
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css"
+      integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0"
+      crossorigin="anonymous"
+    />
 
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="627">
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js"
+      integrity="sha384-PwRUT/YqbnEjkZO0zZxNqcxACrXe+j766U2amXcgMg5457rve2Y7I6ZJSm2A0mS4"
+      crossorigin="anonymous"
+    ></script>
 
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js"
+      integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+      crossorigin="anonymous"
+      onload="renderMathInElement(document.body);"
+    ></script>
 
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        renderMathInElement(document.body, {
+          delimiters: [
+            { left: "$$", right: "$$", display: true },
+            { left: "$", right: "$", display: false },
+          ],
+        });
+      });
+    </script>
 
+    <style>
+      p,
+      span,
+      li {
+        line-height: 2;
+      }
+      .katex {
+        line-height: initial;
+        color: #23b0ff;
+        background-color: #23aeff1d;
+        padding: 0.5px 3px;
+        margin: 2px 0;
 
+        transition: 0.2s;
+        border: 1px solid transparent;
+        border-radius: 3px;
+        display: inline-block;
+      }
+      .katex * {
+        line-height: initial;
+      }
+      .katex:hover {
+        background-color: #23aeff3d;
+        border: 1px solid #23aeff;
+      }
 
-
-
-
-
-
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css"
-  integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0"
-  crossorigin="anonymous"
-/>
-
-
-<script
-  defer
-  src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js"
-  integrity="sha384-PwRUT/YqbnEjkZO0zZxNqcxACrXe+j766U2amXcgMg5457rve2Y7I6ZJSm2A0mS4"
-  crossorigin="anonymous"
-></script>
-
-
-<script
-  defer
-  src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js"
-  integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
-  crossorigin="anonymous"
-  onload="renderMathInElement(document.body);"
-></script>
-
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    renderMathInElement(document.body, {
-      delimiters: [
-        { left: "$$", right: "$$", display: true },
-        { left: "$", right: "$", display: false },
-      ],
-    });
-  });
-</script>
-
-<style>
-  p,
-  span,
-  li {
-    line-height: 2;
-  }
-  .katex {
-    line-height: initial;
-    color: #23b0ff;
-    background-color: #23aeff1d;
-    padding: 0.5px 3px;
-    margin: 2px 0;
-     
-    transition: 0.2s;
-    border: 1px solid transparent;
-    border-radius: 3px;
-    display: inline-block;
-  }
-  .katex * {
-    line-height: initial;
-  }
-  .katex:hover {
-    background-color: #23aeff3d;
-    border: 1px solid #23aeff;
-  }
-   
-  ::selection {
-    background: #23b0ff;
-    color: #fff;
-  }
-  @media print {
-     
-    body {
-      visibility: visible !important;
-      padding: 20px;
-    }
-    * {
-      visibility: visible !important;
-    }
-  }
-  @media print {
-    .header {
-      display: initial;
-    }
-  }
-</style>
-
-
-</head>
-<body class="blue">
-
-
-<div class="container center headings--one-size">
-
-  <header class="header">
-  <div class="header__inner">
-    <div class="header__logo">
-      <a href="/">
-  <div class="logo">
-    Jack&#39;s Calculus Sheets
-  </div>
-</a>
-
-    </div>
-    
-    
-  </div>
-  
-</header>
-
-
-  <div class="content">
-    
-<article class="post">
-  <h1 class="post-title">
-    <a href="https://math.jackcrane.rocks/pages/limit/">Limits</a>
-  </h1>
-  <div class="post-meta">
-    
-    
-    
-  </div>
-
-  
-  
-
-
-  
-
-  <div class="post-content"><div>
-        <h1 id="limits">Limits<a href="#limits" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
-<blockquote>
-<p>Limits are a fundamental concept in calculus that allow us to understand the behavior of functions as they approach certain values or infinity.</p>
-</blockquote>
-<h2 id="introduction">Introduction<a href="#introduction" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
-<p>Limits are a way to analyze the behavior of functions as they approach certain values. They are used to define derivatives and integrals, and are a crucial tool for solving a wide range of mathematical problems.</p>
-<h2 id="things-to-know">Things to Know<a href="#things-to-know" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
-<p>Before we dive into the rules for solving limits, there are a few important things to keep in mind:</p>
-<ul>
-<li>Limits are typically denoted using the symbol $\lim_{x \to a}$, which means &ldquo;the limit of f(x) as x approaches a&rdquo;.</li>
-<li>The limit of a function f(x) at a point a is the value that f(x) approaches as x gets arbitrarily close to a.</li>
-<li>The rules for solving limits depend on the form of the function being evaluated and the technique used to evaluate it.</li>
-<li>Limits can be evaluated using direct substitution, factoring, rationalization, conjugation, or other techniques.</li>
-</ul>
-<h2 id="example-problem">Example Problem<a href="#example-problem" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
-<p>Let&rsquo;s start with a simple practice problem to illustrate how limits work.</p>
-<p>Find the limit of $f(x) = 2x + 1$ as $x$ approaches $3$ (denoted as $\lim_{x \to 3} (2x + 1)$</p>
-<p>To find the limit, we simply substitute $3$ for $x$ in the expression $2x + 1$:</p>
-<p>$\lim_{x \to 3} (2x + 1) = 2(3) + 1 = 7$</p>
-<p>Therefore, the limit of $f(x) = 2x + 1$ as $x$ approaches $3$ is $7$.</p>
-<h2 id="common-rules">Common Rules<a href="#common-rules" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
-<p>There are several common rules for solving limits, including:</p>
-<ul>
-<li>Direct Substitution: If the function is defined at the point being evaluated, then simply plug in the value and evaluate the limit.</li>
-<li>Factoring: If the function is in a fraction form, factor out the common factor and simplify the expression.</li>
-<li>Rationalization: If the function has a square root or cube root in the numerator or denominator, multiply by the conjugate to simplify the expression.</li>
-<li>L&rsquo;Hopital&rsquo;s Rule: If the function has the form $\frac{0}{0}$ or $\frac{\infty}{\infty}$, then use L&rsquo;Hopital&rsquo;s Rule to evaluate the limit.</li>
-<li>Squeeze Theorem: If the function is between two other functions that have the same limit, then the function being evaluated has the same limit.</li>
-</ul>
-<p>Remember that these rules are just a starting point and not all limits can be solved using just these techniques. It&rsquo;s important to practice and get familiar with these techniques to develop your intuition for solving limits.</p>
-
-      </div></div>
-
-  
-    
-<div class="pagination">
-    <div class="pagination__title">
-        <span class="pagination__title-h">Read other pages</span>
-        <hr />
-    </div>
-    <div class="pagination__buttons">
-        
-        <span class="button previous">
-            <a href="https://math.jackcrane.rocks/pages/physics/">
-                <span class="button__icon">←</span>
-                <span class="button__text">Integrations with Physics</span>
+      ::selection {
+        background: #23b0ff;
+        color: #fff;
+      }
+      @media print {
+        body {
+          visibility: visible !important;
+          padding: 20px;
+        }
+        * {
+          visibility: visible !important;
+        }
+      }
+      @media print {
+        .header {
+          display: initial;
+        }
+      }
+    </style>
+  </head>
+  <body class="blue">
+    <div class="container center headings--one-size">
+      <header class="header">
+        <div class="header__inner">
+          <div class="header__logo">
+            <a href="/">
+              <div class="logo">Jack&#39;s Calculus Sheets</div>
             </a>
-        </span>
-        
-        
-        <span class="button next">
-            <a href="https://math.jackcrane.rocks/pages/derivative/">
-                <span class="button__text">The Derivative</span>
-                <span class="button__icon">→</span>
-            </a>
-        </span>
-        
+          </div>
+        </div>
+      </header>
+
+      <div class="content">
+        <article class="post">
+          <h1 class="post-title">
+            <a href="https://math.jackcrane.rocks/pages/limit/">Limits</a>
+          </h1>
+          <div class="post-meta"></div>
+
+          <div class="post-content">
+            <div>
+              <h1 id="limits">
+                Limits<a href="#limits" class="hanchor" ariaLabel="Anchor"
+                  >&#8983;</a
+                >
+              </h1>
+              <blockquote>
+                <p>
+                  Limits are a fundamental concept in calculus that allow us to
+                  understand the behavior of functions as they approach certain
+                  values or infinity.
+                </p>
+              </blockquote>
+              <h2 id="introduction">
+                Introduction<a
+                  href="#introduction"
+                  class="hanchor"
+                  ariaLabel="Anchor"
+                  >&#8983;</a
+                >
+              </h2>
+              <p>
+                Limits are a way to analyze the behavior of functions as they
+                approach certain values. They are used to define derivatives and
+                integrals, and are a crucial tool for solving a wide range of
+                mathematical problems.
+              </p>
+              <h2 id="things-to-know">
+                Things to Know<a
+                  href="#things-to-know"
+                  class="hanchor"
+                  ariaLabel="Anchor"
+                  >&#8983;</a
+                >
+              </h2>
+              <p>
+                Before we dive into the rules for solving limits, there are a
+                few important things to keep in mind:
+              </p>
+              <ul>
+                <li>
+                  Limits are typically denoted using the symbol $\lim_{x \to
+                  a}$, which means &ldquo;the limit of f(x) as x approaches
+                  a&rdquo;.
+                </li>
+                <li>
+                  The limit of a function f(x) at a point a is the value that
+                  f(x) approaches as x gets arbitrarily close to a.
+                </li>
+                <li>
+                  The rules for solving limits depend on the form of the
+                  function being evaluated and the technique used to evaluate
+                  it.
+                </li>
+                <li>
+                  Limits can be evaluated using direct substitution, factoring,
+                  rationalization, conjugation, or other techniques.
+                </li>
+              </ul>
+              <h2 id="example-problem">
+                Example Problem<a
+                  href="#example-problem"
+                  class="hanchor"
+                  ariaLabel="Anchor"
+                  >&#8983;</a
+                >
+              </h2>
+              <p>
+                Let&rsquo;s start with a simple practice problem to illustrate
+                how limits work.
+              </p>
+              <p>
+                Find the limit of $f(x) = 2x + 1$ as $x$ approaches $3$ (denoted
+                as $\lim_{x \to 3} (2x + 1)$
+              </p>
+              <p>
+                To find the limit, we simply substitute $3$ for $x$ in the
+                expression $2x + 1$:
+              </p>
+              <p>$\lim_{x \to 3} (2x + 1) = 2(3) + 1 = 7$</p>
+              <p>
+                Therefore, the limit of $f(x) = 2x + 1$ as $x$ approaches $3$ is
+                $7$.
+              </p>
+              <h2 id="common-rules">
+                Common Rules<a
+                  href="#common-rules"
+                  class="hanchor"
+                  ariaLabel="Anchor"
+                  >&#8983;</a
+                >
+              </h2>
+              <p>
+                There are several common rules for solving limits, including:
+              </p>
+              <ul>
+                <li>
+                  Direct Substitution: If the function is defined at the point
+                  being evaluated, then simply plug in the value and evaluate
+                  the limit.
+                </li>
+                <li>
+                  Factoring: If the function is in a fraction form, factor out
+                  the common factor and simplify the expression.
+                </li>
+                <li>
+                  Rationalization: If the function has a square root or cube
+                  root in the numerator or denominator, multiply by the
+                  conjugate to simplify the expression.
+                </li>
+                <li>
+                  L&rsquo;Hopital&rsquo;s Rule: If the function has the form
+                  $\frac{0}{0}$ or $\frac{\infty}{\infty}$, then use
+                  L&rsquo;Hopital&rsquo;s Rule to evaluate the limit.
+                </li>
+                <li>
+                  Squeeze Theorem: If the function is between two other
+                  functions that have the same limit, then the function being
+                  evaluated has the same limit.
+                </li>
+              </ul>
+              <p>
+                Remember that these rules are just a starting point and not all
+                limits can be solved using just these techniques. It&rsquo;s
+                important to practice and get familiar with these techniques to
+                develop your intuition for solving limits.
+              </p>
+            </div>
+          </div>
+
+          <div class="pagination">
+            <div class="pagination__title">
+              <span class="pagination__title-h">Read other pages</span>
+              <hr />
+            </div>
+            <div class="pagination__buttons">
+              <span class="button previous">
+                <a href="https://math.jackcrane.rocks/pages/physics/">
+                  <span class="button__icon">←</span>
+                  <span class="button__text">Integrations with Physics</span>
+                </a>
+              </span>
+
+              <span class="button next">
+                <a href="https://math.jackcrane.rocks/pages/derivative/">
+                  <span class="button__text">The Derivative</span>
+                  <span class="button__icon">→</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <footer class="footer">
+        <div class="footer__inner">
+          <span
+            >Calculus reference Sheets ::
+            <a href="https://jackcrane.rocks" target="_blank">Jack Crane</a>
+            based on course content in Fr. May and Dr. Oz's classes</span
+          >
+        </div>
+      </footer>
+
+      <script type="text/javascript" src="/bundle.min.js"></script>
     </div>
-</div>
-
-  
-
-  
-    
-
-  
-</article>
-
-  </div>
-
-  
-    <footer class="footer">
-  <div class="footer__inner">
-    <span
-      >Calculus Cheat Sheets ::
-      <a href="https://jackcrane.rocks" target="_blank">Jack Crane</a>
-      based on course content in Fr. May and Dr. Oz's classes</span
-    >
-  </div>
-</footer>
-
-  
-
-<script type="text/javascript" src="/bundle.min.js"></script>
-
-
-
-
-
-  
-</div>
-
-</body>
+  </body>
 </html>
