@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>9.3.0: Convergence of series :: CalcSheets</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="This reference sheet covers more methods to predict and compute the convergence of series." />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="https://math.jackcrane.rocks/pages/series-convergence/" />
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="https://math.jackcrane.rocks/styles.css">
+
+
+
+<link rel="stylesheet" href="https://math.jackcrane.rocks/style.css">
+
+
+
+  <link rel="shortcut icon" href="https://math.jackcrane.rocks/img/theme-colors/blue.png">
+  <link rel="apple-touch-icon" href="https://math.jackcrane.rocks/img/theme-colors/blue.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+  
+    <meta name="twitter:site" content="" />
+  
+    <meta name="twitter:creator" content="" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="9.3.0: Convergence of series">
+<meta property="og:description" content="This reference sheet covers more methods to predict and compute the convergence of series." />
+<meta property="og:url" content="https://math.jackcrane.rocks/pages/series-convergence/" />
+<meta property="og:site_name" content="CalcSheets" />
+
+  
+    <meta property="og:image" content="https://math.jackcrane.rocks/img/favicon/blue.png">
+  
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+
+
+
+
+
+
+
+
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css"
+  integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0"
+  crossorigin="anonymous"
+/>
+
+
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js"
+  integrity="sha384-PwRUT/YqbnEjkZO0zZxNqcxACrXe+j766U2amXcgMg5457rve2Y7I6ZJSm2A0mS4"
+  crossorigin="anonymous"
+></script>
+
+
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js"
+  integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+  crossorigin="anonymous"
+  onload="renderMathInElement(document.body);"
+></script>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: "$$", right: "$$", display: true },
+        { left: "$", right: "$", display: false },
+      ],
+    });
+  });
+</script>
+
+<style>
+  p,
+  span,
+  li {
+    line-height: 2;
+  }
+  .katex {
+    line-height: initial;
+    color: #23b0ff;
+    background-color: #23aeff1d;
+    padding: 0.5px 3px;
+    margin: 2px 0;
+     
+    transition: 0.2s;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    display: inline-block;
+  }
+  .katex * {
+    line-height: initial;
+  }
+  .katex:hover {
+    background-color: #23aeff3d;
+    border: 1px solid #23aeff;
+  }
+   
+  ::selection {
+    background: #23b0ff;
+    color: #fff;
+  }
+  @media print {
+     
+    body {
+      visibility: visible !important;
+      padding: 20px;
+    }
+    * {
+      visibility: visible !important;
+    }
+  }
+  @media print {
+    .header {
+      display: initial;
+    }
+  }
+</style>
+
+
+</head>
+<body class="blue">
+
+
+<div class="container center headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Jack&#39;s Calculus Sheets
+  </div>
+</a>
+
+    </div>
+    
+    
+  </div>
+  
+</header>
+
+
+  <div class="content">
+    
+<article class="post">
+  <h1 class="post-title">
+    <a href="https://math.jackcrane.rocks/pages/series-convergence/">9.3.0: Convergence of series</a>
+  </h1>
+  <div class="post-meta">
+    
+    
+    
+  </div>
+
+  
+  
+
+
+  
+
+  <div class="post-content"><div>
+        <h1 id="convergence-of-series">Convergence of series<a href="#convergence-of-series" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<blockquote>
+<p>This reference sheet covers more methods to predict and compute the convergence of series.</p>
+</blockquote>
+<h2 id="introduction">Introduction<a href="#introduction" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>In 9.2.0, we explored geometric series in general. In 9.2.1, we explored using geometric series to analyze savings and investments. In this reference sheet, we will explore more methods to predict and compute the convergence of series.</p>
+<p>If we have a series in which each term is a number defined by $a_n$, the series of sums can be written as</p>
+<p>$a_1+a_2+a_3+\cdots+a_n+\cdots$</p>
+<p>This works great for small sequences but we can use more advanced notation to better understand and depict the behavior of the series same series</p>
+<p>$\sum\limits_{n=1}^\infin a_n$</p>
+<h2 id="partial-sums-and-convergence-of-series">Partial sums and convergence of series<a href="#partial-sums-and-convergence-of-series" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>The partial sum of a sequence is denoted by $S_n$ and is defined as the sum of the first $n$ terms of the sequence</p>
+<p>$\sum\limits_{n=1}^n a_n$</p>
+<p>We can use a sequence of partial sums to determine the convergence of the series. If $S_n$ has a limit as $n\to\infin$, then we can define the sum of the series to be that limit. If the limit does not exist, the series is said to diverge.</p>
+<p>If we are asked to investigate the convergence of a series with $a_n=1/(n(n+1))$, the first step is to write out the summation and and broken sums to help visualize the task at hand.</p>
+<p>$\sum\limits_{n=1}^\infin \frac{1}{n(n+1)}=\frac{1}{2}+\frac{1}{6}+\frac{1}{12}+\frac{1}{20}+\cdots$</p>
+<p>The next step is to build partial sums. We do this by adding the previous terms (or partial sum) to the current:</p>
+<p>$S_1=1/2$</p>
+<p>$S_2=\frac{1}{2}+\frac{1}{6}=\frac{2}{3}$</p>
+<p>$S_3=\frac{1}{2}+\frac{1}{6}+\frac{1}{12}=\frac{3}{4}$</p>
+<p>$S_4=\frac{1}{2}+\frac{1}{6}+\frac{1}{12}+\frac{1}{20}=\frac{4}{5}$</p>
+<p>If we take a step back from the math and just try and recognize patterns, we can tell that the numerators seem to be evaluating to $n$, and the denominators seem to be evaluating to $n+1$. Thus the sequence of partial sums has the formula $S_n=\frac{n}{n+1}$, which we can see converges to 1, meaning that the series also converges to 1.</p>
+<h2 id="series-and-integrals">Series and Integrals<a href="#series-and-integrals" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Just like how in previous units we have been able to convert summations to integrals, we can also use the integral to investigate the convergence of some series. If we use the harmonic series as an example, we can write the series as</p>
+<p>$\sum\limits_{n=1}^\infin \frac{1}{n}=1+\frac{1}{2}+\frac{1}{3}+\frac{1}{4}+\cdots$</p>
+<p>We can convert this to an integral by using the substitution $x=n$ and $dx=1$ to get</p>
+<p>$\int\limits_1^\infin \frac{dx}{x}=1+\frac{1}{2}+\frac{1}{3}+\frac{1}{4}+\cdots$</p>
+<p>Using integrals to evaluate series allows us to use the <em>integral test</em> to determine if a series converges or diverges.</p>
+<h2 id="integral-test">Integral test<a href="#integral-test" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Suppose $a_n=f(x)$, where $f(x)$ is decreasing and positive.</p>
+<ul>
+<li>If $\int\limits_1^\infin f(x)dx$ converges, then the series $\sum\limits_{n=1}^\infin a_n$ converges.</li>
+<li>If $\int\limits_1^\infin f(x)dx$ diverges, then the series $\sum\limits_{n=1}^\infin a_n$ diverges.</li>
+</ul>
+<h2 id="the-p-series-test">The P-series test<a href="#the-p-series-test" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>We are often asked to determine the values of $p$ that will allow a series to converge. We can use the P-series test to determine this.</p>
+<p>The p-series $\sum\limits_{n=1}^\infin \frac{1}{n^p}$ converges if $p&gt;1$ and diverges if $p\leq1$.</p>
+
+      </div></div>
+
+  
+    
+<div class="pagination">
+    <div class="pagination__title">
+        <span class="pagination__title-h">Read other pages</span>
+        <hr />
+    </div>
+    <div class="pagination__buttons">
+        
+        <span class="button previous">
+            <a href="https://math.jackcrane.rocks/pages/geometric-series-savings/">
+                <span class="button__icon">←</span>
+                <span class="button__text">9.2.2: Geometric series: Savings</span>
+            </a>
+        </span>
+        
+        
+        <span class="button next">
+            <a href="https://math.jackcrane.rocks/pages/formulas/">
+                <span class="button__text">Formulas</span>
+                <span class="button__icon">→</span>
+            </a>
+        </span>
+        
+    </div>
+</div>
+
+  
+
+  
+    
+
+  
+</article>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    <span
+      >Calculus reference Sheets :: &copy; 2023 by
+      <a href="https://jackcrane.rocks" target="_blank">Jack Crane</a> based on
+      course content in Fr. May's class</span
+    >
+  </div>
+</footer>
+
+  
+
+<script type="text/javascript" src="/bundle.min.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>
