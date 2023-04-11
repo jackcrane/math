@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>8.2.1: Volumes of revolutions :: CalcSheets</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="This reference sheet covers using integrals to find volumes of objects that revolve around an axis or a line." />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="https://math.jackcrane.rocks/pages/revolution-volume/" />
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="https://math.jackcrane.rocks/styles.css">
+
+
+
+<link rel="stylesheet" href="https://math.jackcrane.rocks/style.css">
+
+
+
+  <link rel="shortcut icon" href="https://math.jackcrane.rocks/img/theme-colors/blue.png">
+  <link rel="apple-touch-icon" href="https://math.jackcrane.rocks/img/theme-colors/blue.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+  
+    <meta name="twitter:site" content="" />
+  
+    <meta name="twitter:creator" content="" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="8.2.1: Volumes of revolutions">
+<meta property="og:description" content="This reference sheet covers using integrals to find volumes of objects that revolve around an axis or a line." />
+<meta property="og:url" content="https://math.jackcrane.rocks/pages/revolution-volume/" />
+<meta property="og:site_name" content="CalcSheets" />
+
+  
+    <meta property="og:image" content="https://math.jackcrane.rocks/img/favicon/blue.png">
+  
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+
+
+
+
+
+
+
+
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css"
+  integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0"
+  crossorigin="anonymous"
+/>
+
+
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js"
+  integrity="sha384-PwRUT/YqbnEjkZO0zZxNqcxACrXe+j766U2amXcgMg5457rve2Y7I6ZJSm2A0mS4"
+  crossorigin="anonymous"
+></script>
+
+
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js"
+  integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+  crossorigin="anonymous"
+  onload="renderMathInElement(document.body);"
+></script>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: "$$", right: "$$", display: true },
+        { left: "$", right: "$", display: false },
+      ],
+    });
+  });
+</script>
+
+<style>
+  p,
+  span,
+  li {
+    line-height: 2;
+  }
+  .katex {
+    line-height: initial;
+    color: #23b0ff;
+    background-color: #23aeff1d;
+    padding: 0.5px 3px;
+    margin: 2px 0;
+     
+    transition: 0.2s;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    display: inline-block;
+  }
+  .katex * {
+    line-height: initial;
+  }
+  .katex:hover {
+    background-color: #23aeff3d;
+    border: 1px solid #23aeff;
+  }
+   
+  ::selection {
+    background: #23b0ff;
+    color: #fff;
+  }
+  @media print {
+     
+    body {
+      visibility: visible !important;
+      padding: 20px;
+    }
+    * {
+      visibility: visible !important;
+    }
+  }
+  @media print {
+    .header {
+      display: initial;
+    }
+  }
+</style>
+
+
+</head>
+<body class="blue">
+
+
+<div class="container center headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Jack&#39;s Calculus Sheets
+  </div>
+</a>
+
+    </div>
+    
+    
+  </div>
+  
+</header>
+
+
+  <div class="content">
+    
+<article class="post">
+  <h1 class="post-title">
+    <a href="https://math.jackcrane.rocks/pages/revolution-volume/">8.2.1: Volumes of revolutions</a>
+  </h1>
+  <div class="post-meta">
+    
+    
+    
+  </div>
+
+  
+  
+
+
+  
+
+  <div class="post-content"><div>
+        <h1 id="finding-the-volume-of-a-region-through-revolution">Finding the volume of a region through revolution<a href="#finding-the-volume-of-a-region-through-revolution" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<blockquote>
+<p>This reference sheet covers using integrals to find volumes of objects that revolve around an axis or a line.</p>
+</blockquote>
+<h2 id="introduction">Introduction<a href="#introduction" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Many shapes do not have names but can be easily defined by specifying a line or curve and an axis that they revolve around. These shapes are called <em>revolutions</em> and can be used to find the volume of many objects with circular cross-sections.</p>
+<h2 id="things-to-know">Things to Know<a href="#things-to-know" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<ul>
+<li>The process of finding the volume of a revolution is almost exactly the same to finding the volume of a defined solid</li>
+</ul>
+<h2 id="finding-the-volume-of-a-weird-shape-1">Finding the volume of a weird shape 1<a href="#finding-the-volume-of-a-weird-shape-1" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>We have a shape bounded by the curve $y=e^{-x}$ and the $x$-axis between $x=0$ and $x=1$ and is revolved around the $x$-axis. We want to find the volume of this shape.</p>
+<p>Just like finding the volume of a defined solid, we want to find the way to slice the shape that will result in the easiest 2d shapes to work with. In this case, we will be using slices that are perpendicular to the $x$-axis, which will result in circular slices.</p>
+<p>By using the function, we can easily deduce the radius of the disk across $\Delta x$:$y=e^{-x}$, from which the disc volume can be found.</p>
+<p>$\pi y^2\Delta x=\pi(e^{-x})^2\Delta x$</p>
+<p>Converting to a summation we can get a representation of the entire shape:</p>
+<p>$\sum\limits_{i=0}^{n-1}\pi(e^{-x})^2\Delta x$</p>
+<p>From the question, we know that the bounds of the shape are $x=0$ and $x=1$, and we can convert the summation to an integral:</p>
+<p>$\int_0^1\pi(e^{-x})^2,dx=\pi(-\frac{1}{2})e^{-2x}\Bigg|_0^1=1.36$</p>
+<h2 id="finding-the-volume-of-a-weird-shape-2">Finding the volume of a weird shape 2<a href="#finding-the-volume-of-a-weird-shape-2" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>We have a shape defined by the curve $r=3+\cos(\frac{\pi y}{25})$, which is revolved around the $y$-axis, and is 100 units tall.</p>
+<p>Just like finding the volume of a defined solid, we want to find the way to slice the shape that will result in the easiest 2d shapes to work with. In this case, we will be using slices that are perpendicular to the $y$-axis, which will result in circular discs.</p>
+<p>We can slice the shape into small circular discs with thickness $dy$. The radius of each disc is given by the function $r=3+\cos(\frac{\pi y}{25})$, and the area of each disc can be found using the formula for the area of a circle:</p>
+<p>$A = \pi r^2$</p>
+<p>$A = \pi (3+\cos(\frac{\pi y}{25}))^2$</p>
+<p>The volume of each disc is then given by:</p>
+<p>$V = A \cdot dy$</p>
+<p>$V = \pi (3+\cos(\frac{\pi y}{25}))^2 \cdot dy$</p>
+<p>We can integrate over the range of $y$ to find the total volume of the shape:</p>
+<p>$\int_{0}^{100} \pi (3+\cos(\frac{\pi y}{25}))^2 \cdot dy = 2984.5\text{ cm}^3$</p>
+<h2 id="conclusion">Conclusion<a href="#conclusion" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>In this sheet, we found the volume of a shape that is revolved around an axis. This is a useful technique that can be used to compute the volume of many objects with circular cross-sections.</p>
+
+      </div></div>
+
+  
+    
+<div class="pagination">
+    <div class="pagination__title">
+        <span class="pagination__title-h">Read other pages</span>
+        <hr />
+    </div>
+    <div class="pagination__buttons">
+        
+        <span class="button previous">
+            <a href="https://math.jackcrane.rocks/pages/slice-volume/">
+                <span class="button__icon">←</span>
+                <span class="button__text">8.1.2: Finding volumes by slicing</span>
+            </a>
+        </span>
+        
+        
+        <span class="button next">
+            <a href="https://math.jackcrane.rocks/pages/revolution-voumes-about-line/">
+                <span class="button__text">8.2.2: Volumes of revolutions around a line</span>
+                <span class="button__icon">→</span>
+            </a>
+        </span>
+        
+    </div>
+</div>
+
+  
+
+  
+    
+
+  
+</article>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    <span
+      >Calculus reference Sheets ::
+      <a href="https://jackcrane.rocks" target="_blank">Jack Crane</a>
+      based on course content in Fr. May's class</span
+    >
+  </div>
+</footer>
+
+  
+
+<script type="text/javascript" src="/bundle.min.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

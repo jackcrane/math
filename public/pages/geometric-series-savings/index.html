@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>9.2.2: Geometric series: Savings :: CalcSheets</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="This reference sheet covers using geometric series to analyze savings and investments." />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="https://math.jackcrane.rocks/pages/geometric-series-savings/" />
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="https://math.jackcrane.rocks/styles.css">
+
+
+
+<link rel="stylesheet" href="https://math.jackcrane.rocks/style.css">
+
+
+
+  <link rel="shortcut icon" href="https://math.jackcrane.rocks/img/theme-colors/blue.png">
+  <link rel="apple-touch-icon" href="https://math.jackcrane.rocks/img/theme-colors/blue.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+  
+    <meta name="twitter:site" content="" />
+  
+    <meta name="twitter:creator" content="" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="9.2.2: Geometric series: Savings">
+<meta property="og:description" content="This reference sheet covers using geometric series to analyze savings and investments." />
+<meta property="og:url" content="https://math.jackcrane.rocks/pages/geometric-series-savings/" />
+<meta property="og:site_name" content="CalcSheets" />
+
+  
+    <meta property="og:image" content="https://math.jackcrane.rocks/img/favicon/blue.png">
+  
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+
+
+
+
+
+
+
+
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css"
+  integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0"
+  crossorigin="anonymous"
+/>
+
+
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js"
+  integrity="sha384-PwRUT/YqbnEjkZO0zZxNqcxACrXe+j766U2amXcgMg5457rve2Y7I6ZJSm2A0mS4"
+  crossorigin="anonymous"
+></script>
+
+
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js"
+  integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+  crossorigin="anonymous"
+  onload="renderMathInElement(document.body);"
+></script>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: "$$", right: "$$", display: true },
+        { left: "$", right: "$", display: false },
+      ],
+    });
+  });
+</script>
+
+<style>
+  p,
+  span,
+  li {
+    line-height: 2;
+  }
+  .katex {
+    line-height: initial;
+    color: #23b0ff;
+    background-color: #23aeff1d;
+    padding: 0.5px 3px;
+    margin: 2px 0;
+     
+    transition: 0.2s;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    display: inline-block;
+  }
+  .katex * {
+    line-height: initial;
+  }
+  .katex:hover {
+    background-color: #23aeff3d;
+    border: 1px solid #23aeff;
+  }
+   
+  ::selection {
+    background: #23b0ff;
+    color: #fff;
+  }
+  @media print {
+     
+    body {
+      visibility: visible !important;
+      padding: 20px;
+    }
+    * {
+      visibility: visible !important;
+    }
+  }
+  @media print {
+    .header {
+      display: initial;
+    }
+  }
+</style>
+
+
+</head>
+<body class="blue">
+
+
+<div class="container center headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Jack&#39;s Calculus Sheets
+  </div>
+</a>
+
+    </div>
+    
+    
+  </div>
+  
+</header>
+
+
+  <div class="content">
+    
+<article class="post">
+  <h1 class="post-title">
+    <a href="https://math.jackcrane.rocks/pages/geometric-series-savings/">9.2.2: Geometric series: Savings</a>
+  </h1>
+  <div class="post-meta">
+    
+    
+    
+  </div>
+
+  
+  
+
+
+  
+
+  <div class="post-content"><div>
+        <h1 id="geometric-series-savings">Geometric series: Savings<a href="#geometric-series-savings" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<blockquote>
+<p>This reference sheet covers using geometric series to analyze savings and investments.</p>
+</blockquote>
+<h2 id="introduction">Introduction<a href="#introduction" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>In 9.2.0, we explored geometric series in general. In this reference sheet, we will explore using geometric series to analyze savings and investments.</p>
+<h2 id="regular-deposits-into-a-savings-account">Regular deposits into a savings account<a href="#regular-deposits-into-a-savings-account" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Typically, savings are accumulated by setting aside small but regular amounts of money to be deposited into an account. For sake of this example, lets assume we are depositing $1000$ dolalrs into a savings account that will yield an interest rate of $5%$ per year, compounding annually. How much money (balance) will be in the account after the $n$th year?</p>
+<p>The first step is to evaluate the first few years by hand to understand the patterns of the function.</p>
+<p>$B_1=1000$</p>
+<p>$B_2=B_1(1.05)+1000=1000(1.05)+1000$</p>
+<p>$B_3=B_2(1.05)+1000=1000(1.05)^2+1000(1.05)+1000$</p>
+<p>Now that we can recognize patterns, it is easier to write a function to evaluate the balance after $n$ years.</p>
+<p>$B_n=1000(1.05)^{n-1}+1000(1.05)^{n-2}+\cdots+1000(1.05)+1000$</p>
+<p>Because we can see that the series is approaching a number and not infinity (practically we can see that this is shrinking, not growing), we can use the sum of a finite geometric series formula to find the balance after $n$ years.</p>
+<p>$B_n=\frac{1000(1-(1.05)^n)}{1-1.05}$</p>
+<p>Obviously the more we save, the more we will have in the account, and the more we will earn from interest, so if we were to take the limit to infinity, it would evaluate to an infinite balance.</p>
+
+      </div></div>
+
+  
+    
+<div class="pagination">
+    <div class="pagination__title">
+        <span class="pagination__title-h">Read other pages</span>
+        <hr />
+    </div>
+    <div class="pagination__buttons">
+        
+        <span class="button previous">
+            <a href="https://math.jackcrane.rocks/pages/geometric-series-medicine/">
+                <span class="button__icon">←</span>
+                <span class="button__text">9.2.1: Geometric series: Medicine</span>
+            </a>
+        </span>
+        
+        
+        <span class="button next">
+            <a href="https://math.jackcrane.rocks/pages/formulas/">
+                <span class="button__text">Formulas</span>
+                <span class="button__icon">→</span>
+            </a>
+        </span>
+        
+    </div>
+</div>
+
+  
+
+  
+    
+
+  
+</article>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    <span
+      >Calculus reference Sheets ::
+      <a href="https://jackcrane.rocks" target="_blank">Jack Crane</a>
+      based on course content in Fr. May's class</span
+    >
+  </div>
+</footer>
+
+  
+
+<script type="text/javascript" src="/bundle.min.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

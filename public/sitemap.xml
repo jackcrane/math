@@ -2,22 +2,36 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://math.jackcrane.rocks/pages/slice-area/</loc>
+  </url><url>
+    <loc>https://math.jackcrane.rocks/pages/slice-volume/</loc>
+  </url><url>
+    <loc>https://math.jackcrane.rocks/pages/revolution-volume/</loc>
+  </url><url>
+    <loc>https://math.jackcrane.rocks/pages/revolution-voumes-about-line/</loc>
+  </url><url>
+    <loc>https://math.jackcrane.rocks/pages/arc-length/</loc>
+  </url><url>
+    <loc>https://math.jackcrane.rocks/pages/sequences-numerical-algebraic/</loc>
+  </url><url>
+    <loc>https://math.jackcrane.rocks/pages/sequences-recursively/</loc>
+  </url><url>
+    <loc>https://math.jackcrane.rocks/pages/convergence/</loc>
+  </url><url>
+    <loc>https://math.jackcrane.rocks/pages/geometric-series-introduction/</loc>
+  </url><url>
+    <loc>https://math.jackcrane.rocks/pages/geometric-series-medicine/</loc>
+  </url><url>
+    <loc>https://math.jackcrane.rocks/pages/geometric-series-savings/</loc>
+  </url><url>
     <loc>https://math.jackcrane.rocks/</loc>
   </url><url>
     <loc>https://math.jackcrane.rocks/categories/</loc>
   </url><url>
-    <loc>https://math.jackcrane.rocks/pages/slice-area/</loc>
-  </url><url>
-    <loc>https://math.jackcrane.rocks/pages/physics/</loc>
-  </url><url>
-    <loc>https://math.jackcrane.rocks/pages/limit/</loc>
+    <loc>https://math.jackcrane.rocks/pages/formulas/</loc>
   </url><url>
     <loc>https://math.jackcrane.rocks/pages/</loc>
   </url><url>
     <loc>https://math.jackcrane.rocks/tags/</loc>
-  </url><url>
-    <loc>https://math.jackcrane.rocks/pages/derivative/</loc>
-  </url><url>
-    <loc>https://math.jackcrane.rocks/pages/integral/</loc>
   </url>
 </urlset>

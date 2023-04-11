@@ -7,16 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://math.jackcrane.rocks/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Finding areas by slicing</title>
+      <title>8.1.1: Finding areas by slicing</title>
       <link>https://math.jackcrane.rocks/pages/slice-area/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://math.jackcrane.rocks/pages/slice-area/</guid>
-      <description>Calculating the area of a region under a curve This reference sheet covers using an integral to find the area of a region under a curve.
+      <description>Using integrals to find the area of 2d region defined by a function. This reference sheet covers using an integral to find the area of a region under a curve.
 Introduction In previous chapters, we found the area under a curve by cutting it up into increasingly tiny rectangles (or other shapes) and adding their areas:
 $\lim_{n \to \infty} \sum\limits_{i=0}^{n} (\frac{b-a}{n})*f(a+\frac{b-a}{n}k)$
 This can be a good way to approximate the area under a curve, but it can be time consuming and is inexact.</description>
-      <content>&lt;h1 id=&#34;calculating-the-area-of-a-region-under-a-curve&#34;&gt;Calculating the area of a region under a curve&lt;/h1&gt;
+      <content>&lt;h1 id=&#34;using-integrals-to-find-the-area-of-2d-region-defined-by-a-function&#34;&gt;Using integrals to find the area of 2d region defined by a function.&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;This reference sheet covers using an integral to find the area of a region under a curve.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -72,198 +72,433 @@ This can be a good way to approximate the area under a curve, but it can be time
     </item>
     
     <item>
-      <title>Integrations with Physics</title>
-      <link>https://math.jackcrane.rocks/pages/physics/</link>
+      <title>8.1.2: Finding volumes by slicing</title>
+      <link>https://math.jackcrane.rocks/pages/slice-volume/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://math.jackcrane.rocks/pages/physics/</guid>
-      <description>Basic Calculus Integrations with Physics This reference sheet covers basic calculus integrations commonly used in physics applications, including position, velocity, acceleration, force, work, and energy.
-Introduction Calculus plays a crucial role in physics, as it allows us to analyze and understand the behavior of physical systems by describing how they change over time. In particular, calculus integrations are used to calculate important physical quantities, such as position, velocity, acceleration, force, work, and energy.</description>
-      <content>&lt;h1 id=&#34;basic-calculus-integrations-with-physics&#34;&gt;Basic Calculus Integrations with Physics&lt;/h1&gt;
+      <guid>https://math.jackcrane.rocks/pages/slice-volume/</guid>
+      <description>Calculating the area of a region under a curve This reference sheet covers using integrals to find volumes of objects defined by functions.
+Introduction In the previous sheet I defined how to find the area of a region bounded by curves. In this sheet, though, I will be focusing on finding the volume of a region bounded by curves. It is a remarkably similar process, just with a few extra steps.</description>
+      <content>&lt;h1 id=&#34;calculating-the-area-of-a-region-under-a-curve&#34;&gt;Calculating the area of a region under a curve&lt;/h1&gt;
 &lt;blockquote&gt;
-&lt;p&gt;This reference sheet covers basic calculus integrations commonly used in physics applications, including position, velocity, acceleration, force, work, and energy.&lt;/p&gt;
+&lt;p&gt;This reference sheet covers using integrals to find volumes of objects defined by functions.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;Calculus plays a crucial role in physics, as it allows us to analyze and understand the behavior of physical systems by describing how they change over time. In particular, calculus integrations are used to calculate important physical quantities, such as position, velocity, acceleration, force, work, and energy.&lt;/p&gt;
+&lt;p&gt;In the previous sheet I defined how to find the area of a region bounded by curves. In this sheet, though, I will be focusing on finding the &lt;em&gt;volume&lt;/em&gt; of a region bounded by curves. It is a remarkably similar process, just with a few extra steps.&lt;/p&gt;
 &lt;h2 id=&#34;things-to-know&#34;&gt;Things to Know&lt;/h2&gt;
-&lt;p&gt;Before we dive into the specific calculus integrations used in physics, there are a few important things to keep in mind:&lt;/p&gt;
+&lt;p&gt;Before diving into using the integral to find the area under a curve, there are a few important things to keep in mind:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;In physics, calculus is typically used to analyze motion and forces.&lt;/li&gt;
-&lt;li&gt;The most common calculus integrations used in physics are those related to position, velocity, acceleration, force, work, and energy.&lt;/li&gt;
-&lt;li&gt;Calculus integrations can be used to analyze both linear and rotational motion.&lt;/li&gt;
+&lt;li&gt;This sheet focuses on &lt;em&gt;regular&lt;/em&gt; 3d shapes, or shapes that can be defined by a function, either via extrusion or revolution.&lt;/li&gt;
+&lt;li&gt;When evaluating these volumes, they will need to be sliced. There are multiple ways to slice objects, but you should pick the method that results in the easiest 2d shapes to work with.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;position&#34;&gt;Position&lt;/h2&gt;
-&lt;p&gt;Position is a key concept in physics that describes an object&amp;rsquo;s location in space. Calculus integrations can be used to determine an object&amp;rsquo;s position at any given time, given its initial position and velocity. The calculus integration for position is:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Position: $x(t) = \int v(t) dt + x_0$&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;where $x(t)$ is the position of the object at time $t$, $v(t)$ is its velocity at time $t$, $x_0$ is its initial position.&lt;/p&gt;
-&lt;h2 id=&#34;velocity&#34;&gt;Velocity&lt;/h2&gt;
-&lt;p&gt;Velocity describes an object&amp;rsquo;s speed and direction of motion. Calculus integrations can be used to determine an object&amp;rsquo;s velocity at any given time, given its initial velocity and acceleration. The calculus integration for velocity is:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Velocity: $v(t) = \int a(t) dt + v_0$&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;where $v(t)$ is the velocity of the object at time $t$, $a(t)$ is its acceleration at time $t$, and $v_0$ is its initial velocity.&lt;/p&gt;
-&lt;h2 id=&#34;acceleration&#34;&gt;Acceleration&lt;/h2&gt;
-&lt;p&gt;Acceleration describes the rate of change of an object&amp;rsquo;s velocity. Calculus integrations can be used to determine an object&amp;rsquo;s acceleration at any given time, given its initial acceleration and the net force acting on it. The calculus integration for acceleration is:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Acceleration: $a(t) = \frac{1}{m} \int F(t) dt + a_0$&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;where $a(t)$ is the acceleration of the object at time $t$, $m$ is its mass, $F(t)$ is the net force acting on it at time $t$, and $a_0$ is its initial acceleration.&lt;/p&gt;
-&lt;h2 id=&#34;force&#34;&gt;Force&lt;/h2&gt;
-&lt;p&gt;Force describes the influence that one object has on another, causing it to accelerate. Calculus integrations can be used to determine the work done by a force, as well as the potential energy associated with a force. The calculus integration for force is:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Work: $W = \int F(x) dx$&lt;/li&gt;
-&lt;li&gt;Potential Energy: $U(x) = -\int F(x) dx$&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;where $W$ is the work done by the force, $F(x)$ is the force acting on an object at position $x$, and $U(x)$ is the potential energy associated with the force.&lt;/p&gt;
-&lt;h2 id=&#34;energy&#34;&gt;Energy&lt;/h2&gt;
-&lt;p&gt;Energy is a fundamental concept in physics that describes an object&amp;rsquo;s ability to do work. Calculus integrations can be used to determine an object&amp;rsquo;s kinetic energy, as well as its potential energy. The calculus integration for energy is:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Kinetic Energy: $K = \frac{1}{2} mv^2$&lt;/li&gt;
-&lt;li&gt;Potential Energy: $U(x) = -\int F(x) dx$&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;where $K$ is the kinetic energy of the object, $m$ is its mass, $v$ is its velocity, $F(x)$ is the force acting on an object at position $x$, and $U(x)$ is the potential energy associated with the force.&lt;/p&gt;
+&lt;h2 id=&#34;finding-the-volume-of-a-cone&#34;&gt;Finding the volume of a cone&lt;/h2&gt;
+&lt;p&gt;Just like finding the area of a 2d shape, we will need to break the problem into small slices so we can assemble a riemann sum. This problem will focus on the volume of a cone with the point facing up. There are multiple ways we can slice this cone, one method (vertical slices) will leave us with arch-shaped slices, and the other (horizontal slices) will leave us with circular slices. Because circles are much easier to work with than arches, we will be using horizontal slices.&lt;/p&gt;
+&lt;p&gt;Like in the previous sheet, some problems have defined functions that can be used to find the volume, like cones:&lt;/p&gt;
+&lt;p&gt;$V = \frac{1}{3} \pi r^2 h$&lt;/p&gt;
+&lt;p&gt;But again, like on the last page, we will not always have or know the function that defines the volume for the specific shape we are working with.&lt;/p&gt;
+&lt;p&gt;If we define our cone to be 10 units wide and 5 units tall, we can find the volume by slicing it into infinitely small slices and adding up the areas of each slice.&lt;/p&gt;
+&lt;p&gt;We will always need to define the height and width of each slice given an elevation of the slice. This can be done 2d line, allowing us to define a slope and a y-intercept. We can then use this line to find the width of the slice at a given height. We know that the width of the slice at the top of the cone ($5$) is $0$, and the width of the slice at the bottom of the cone ($0$) is $10$. We can then use the slope of the line to find the width of the slice at any height in between.&lt;/p&gt;
+&lt;p&gt;$[w_i=10-2h]=[r_i=5-h_i]$&lt;/p&gt;
+&lt;p&gt;Now that we know the width of a slice at any height, we are ready to construct our sum&lt;/p&gt;
+&lt;p&gt;$\sum\limits_{i=0}^{n}\pi(5-h_i)^2\Delta h$&lt;/p&gt;
+&lt;p&gt;And then we can convert the sum to an integral:&lt;/p&gt;
+&lt;p&gt;$\int_0^5\pi(5-h)^2,dh$&lt;/p&gt;
+&lt;p&gt;Which can finally be solved to find the volume of the cone:&lt;/p&gt;
+&lt;p&gt;$\int_0^5\pi(5-h)^2,dh = \frac{-\pi}{3}(5-h)^3\Bigg|_0^5=\frac{125}{3}\pi\text{ cm}^3$&lt;/p&gt;
+&lt;p&gt;Now that we have found the volume of the cone, we can use the known cone volume function to check our work:&lt;/p&gt;
+&lt;p&gt;$\frac{1}{3}\pi(5)^2(10)=\frac{125}{3}\pi\text{ cm}^3$&lt;/p&gt;
+&lt;h2 id=&#34;finding-the-volume-of-a-hemisphere&#34;&gt;Finding the volume of a hemisphere&lt;/h2&gt;
+&lt;p&gt;The process for finding the volume of a hemisphere is very similar to finding the volume of a cone. The only difference is that we will have to use a different function to determine the width of the slice at a given height. Just like the cone, slicing in the horizontal direction will make the problem much easier to solve, so we will be using coin-shaped horizontal slices to find the volume of the hemisphere. Just like the cone, we have a recognized function that can be used to find the volume of a hemisphere:&lt;/p&gt;
+&lt;p&gt;$V = \frac{4}{3} \pi r^3$&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s define our hemisphere to have a radius of $7$ units.&lt;/p&gt;
+&lt;p&gt;Again, by multiplying the area of a slice at given height by the height of the slice, we can find the volume of the slice. Although still simple, this task is more complicated than the cone because it is not a linear relationship. Instead, we can use the pythagorean theorem to find the width of a slice at a given height:&lt;/p&gt;
+&lt;p&gt;$r=\sqrt{7^2-h^2}=\sqrt{49=h^2}$&lt;/p&gt;
+&lt;p&gt;And thus we can find the volume of the slice by multiplying the area of the slice by the height of the slice:&lt;/p&gt;
+&lt;p&gt;$\pi r^2\Delta h=\pi(7^2-h^2)\Delta h$&lt;/p&gt;
+&lt;p&gt;Then the slices can be combined to a summation:&lt;/p&gt;
+&lt;p&gt;$\sum\limits_{i=0}^{n}\pi(7^2-h_i^2)\Delta h$&lt;/p&gt;
+&lt;p&gt;And then converted to an integral from $0$ to $7$ (bottom to top of the hemisphere):&lt;/p&gt;
+&lt;p&gt;$\int_0^7\pi(7^2-h^2),dh$&lt;/p&gt;
 &lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;Calculus integrations are essential tools for understanding and analyzing physical systems. By using these integrations, we can determine important physical quantities such as position, velocity, acceleration, force, work, and energy. By mastering these basic calculus integrations, you will be better equipped to solve a wide range of physics problems.&lt;/p&gt;
+&lt;p&gt;This sheet covers how to find the volume of any regular 3d shape that can be defined by a function. The process is very similar to finding the area of a region bounded by curves, but with a few extra steps. The most important thing to remember is that the slices need to be as simple as possible, so that the area of the slice can be easily calculated.&lt;/p&gt;
 </content>
     </item>
     
     <item>
-      <title>Limits</title>
-      <link>https://math.jackcrane.rocks/pages/limit/</link>
+      <title>8.2.1: Volumes of revolutions</title>
+      <link>https://math.jackcrane.rocks/pages/revolution-volume/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://math.jackcrane.rocks/pages/limit/</guid>
-      <description>Limits Limits are a fundamental concept in calculus that allow us to understand the behavior of functions as they approach certain values or infinity.
-Introduction Limits are a way to analyze the behavior of functions as they approach certain values. They are used to define derivatives and integrals, and are a crucial tool for solving a wide range of mathematical problems.
-Things to Know Before we dive into the rules for solving limits, there are a few important things to keep in mind:</description>
-      <content>&lt;h1 id=&#34;limits&#34;&gt;Limits&lt;/h1&gt;
+      <guid>https://math.jackcrane.rocks/pages/revolution-volume/</guid>
+      <description>Finding the volume of a region through revolution This reference sheet covers using integrals to find volumes of objects that revolve around an axis or a line.
+Introduction Many shapes do not have names but can be easily defined by specifying a line or curve and an axis that they revolve around. These shapes are called revolutions and can be used to find the volume of many objects with circular cross-sections.</description>
+      <content>&lt;h1 id=&#34;finding-the-volume-of-a-region-through-revolution&#34;&gt;Finding the volume of a region through revolution&lt;/h1&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Limits are a fundamental concept in calculus that allow us to understand the behavior of functions as they approach certain values or infinity.&lt;/p&gt;
+&lt;p&gt;This reference sheet covers using integrals to find volumes of objects that revolve around an axis or a line.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;Limits are a way to analyze the behavior of functions as they approach certain values. They are used to define derivatives and integrals, and are a crucial tool for solving a wide range of mathematical problems.&lt;/p&gt;
+&lt;p&gt;Many shapes do not have names but can be easily defined by specifying a line or curve and an axis that they revolve around. These shapes are called &lt;em&gt;revolutions&lt;/em&gt; and can be used to find the volume of many objects with circular cross-sections.&lt;/p&gt;
 &lt;h2 id=&#34;things-to-know&#34;&gt;Things to Know&lt;/h2&gt;
-&lt;p&gt;Before we dive into the rules for solving limits, there are a few important things to keep in mind:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Limits are typically denoted using the symbol $\lim_{x \to a}$, which means &amp;ldquo;the limit of f(x) as x approaches a&amp;rdquo;.&lt;/li&gt;
-&lt;li&gt;The limit of a function f(x) at a point a is the value that f(x) approaches as x gets arbitrarily close to a.&lt;/li&gt;
-&lt;li&gt;The rules for solving limits depend on the form of the function being evaluated and the technique used to evaluate it.&lt;/li&gt;
-&lt;li&gt;Limits can be evaluated using direct substitution, factoring, rationalization, conjugation, or other techniques.&lt;/li&gt;
+&lt;li&gt;The process of finding the volume of a revolution is almost exactly the same to finding the volume of a defined solid&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;example-problem&#34;&gt;Example Problem&lt;/h2&gt;
-&lt;p&gt;Let&amp;rsquo;s start with a simple practice problem to illustrate how limits work.&lt;/p&gt;
-&lt;p&gt;Find the limit of $f(x) = 2x + 1$ as $x$ approaches $3$ (denoted as $\lim_{x \to 3} (2x + 1)$&lt;/p&gt;
-&lt;p&gt;To find the limit, we simply substitute $3$ for $x$ in the expression $2x + 1$:&lt;/p&gt;
-&lt;p&gt;$\lim_{x \to 3} (2x + 1) = 2(3) + 1 = 7$&lt;/p&gt;
-&lt;p&gt;Therefore, the limit of $f(x) = 2x + 1$ as $x$ approaches $3$ is $7$.&lt;/p&gt;
-&lt;h2 id=&#34;common-rules&#34;&gt;Common Rules&lt;/h2&gt;
-&lt;p&gt;There are several common rules for solving limits, including:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Direct Substitution: If the function is defined at the point being evaluated, then simply plug in the value and evaluate the limit.&lt;/li&gt;
-&lt;li&gt;Factoring: If the function is in a fraction form, factor out the common factor and simplify the expression.&lt;/li&gt;
-&lt;li&gt;Rationalization: If the function has a square root or cube root in the numerator or denominator, multiply by the conjugate to simplify the expression.&lt;/li&gt;
-&lt;li&gt;L&amp;rsquo;Hopital&amp;rsquo;s Rule: If the function has the form $\frac{0}{0}$ or $\frac{\infty}{\infty}$, then use L&amp;rsquo;Hopital&amp;rsquo;s Rule to evaluate the limit.&lt;/li&gt;
-&lt;li&gt;Squeeze Theorem: If the function is between two other functions that have the same limit, then the function being evaluated has the same limit.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Remember that these rules are just a starting point and not all limits can be solved using just these techniques. It&amp;rsquo;s important to practice and get familiar with these techniques to develop your intuition for solving limits.&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
-      <title>The Derivative</title>
-      <link>https://math.jackcrane.rocks/pages/derivative/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://math.jackcrane.rocks/pages/derivative/</guid>
-      <description>The Derivative The derivative is a fundamental concept in calculus that allows us to analyze the rate of change of a function and find the slope of a curve at any point.
-Introduction The derivative is a mathematical tool that allows us to analyze the rate of change of a function and find the slope of a curve at any point. It is a fundamental concept in calculus and is used in many areas of science, engineering, and economics.</description>
-      <content>&lt;h1 id=&#34;the-derivative&#34;&gt;The Derivative&lt;/h1&gt;
-&lt;blockquote&gt;
-&lt;p&gt;The derivative is a fundamental concept in calculus that allows us to analyze the rate of change of a function and find the slope of a curve at any point.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;The derivative is a mathematical tool that allows us to analyze the rate of change of a function and find the slope of a curve at any point. It is a fundamental concept in calculus and is used in many areas of science, engineering, and economics. Understanding derivatives is crucial for solving a wide range of mathematical problems.&lt;/p&gt;
-&lt;h2 id=&#34;things-to-know&#34;&gt;Things to Know&lt;/h2&gt;
-&lt;p&gt;Before we dive into the rules for finding derivatives, there are a few important things to keep in mind:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;The derivative is denoted using the symbol $f&amp;rsquo;(x)$, which means &amp;ldquo;the derivative of f(x) with respect to x&amp;rdquo;.&lt;/li&gt;
-&lt;li&gt;The derivative of a function f(x) at a point x is the slope of the tangent line to the curve of f(x) at that point.&lt;/li&gt;
-&lt;li&gt;The rules for finding derivatives depend on the form of the function being differentiated and the technique used to differentiate it.&lt;/li&gt;
-&lt;li&gt;Derivatives can be used to analyze the behavior of functions, find maximum and minimum values, and solve optimization problems.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;example-problem&#34;&gt;Example Problem&lt;/h2&gt;
-&lt;p&gt;Let&amp;rsquo;s start with a simple practice problem to illustrate how to find derivatives.&lt;/p&gt;
-&lt;p&gt;Find the derivative of $f(x) = 3x^2 - 4x + 1$:&lt;/p&gt;
-&lt;p&gt;Therefore, the derivative of $f(x) = 3x^2 - 4x + 1$ is $f&amp;rsquo;(x) = 6x - 4$.&lt;/p&gt;
-&lt;p&gt;To find the derivative, we use the power rule, which states that the derivative of a function of the form $f(x) = x^n$ is $f&amp;rsquo;(x) = nx^{n-1}$. We apply this rule to each term in the expression $f(x) = 3x^2 - 4x + 1$:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;The derivative of the first term $3x^2$ is $6x$, since $2 \cdot 3x^{2-1} = 6x$.&lt;/li&gt;
-&lt;li&gt;The derivative of the second term $-4x$ is $-4$, since $1 \cdot -4x^{1-1} = -4$.&lt;/li&gt;
-&lt;li&gt;The derivative of the third term $1$ is $0$, since the derivative of a constant is always $0$.&lt;/li&gt;
-&lt;li&gt;Putting these results together, we get:&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;$f&amp;rsquo;(x) = 6x - 4 + 0 = 6x - 4$&lt;/p&gt;
-&lt;p&gt;Therefore, the derivative of $f(x) = 3x^2 - 4x + 1$ is $f&amp;rsquo;(x) = 6x - 4$.&lt;/p&gt;
-&lt;p&gt;It&amp;rsquo;s worth noting that the derivative of a function represents the instantaneous rate of change of the function at any given point. In this case, the derivative $f&amp;rsquo;(x) = 6x - 4$ tells us that the rate of change of the function $f(x) = 3x^2 - 4x + 1$ increases at a rate of $6$ units per unit of $x$. We can also use the derivative to find the slope of the tangent line to the curve of $f(x)$ at any point.&lt;/p&gt;
-&lt;h2 id=&#34;common-rules&#34;&gt;Common Rules&lt;/h2&gt;
-&lt;p&gt;There are several common rules for finding derivatives, including:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Power Rule: $\frac{d}{dx} x^n = nx^{n-1}$&lt;/li&gt;
-&lt;li&gt;Constant Multiple Rule: $\frac{d}{dx} cf(x) = c\frac{d}{dx} f(x)$&lt;/li&gt;
-&lt;li&gt;Sum and Difference Rule: $\frac{d}{dx} [f(x) \pm g(x)] = \frac{d}{dx} f(x) \pm \frac{d}{dx} g(x)$&lt;/li&gt;
-&lt;li&gt;Product Rule: $\frac{d}{dx} [f(x)g(x)] = f(x)\frac{d}{dx} g(x) + g(x)\frac{d}{dx} f(x)$&lt;/li&gt;
-&lt;li&gt;Quotient Rule: $\frac{d}{dx} \frac{f(x)}{g(x)} = \frac{g(x)\frac{d}{dx} f(x) - f(x)\frac{d}{dx} g(x)}{g(x)^2}$&lt;/li&gt;
-&lt;li&gt;Chain Rule: $\frac{d}{dx} f(g(x)) = f&amp;rsquo;(g(x))g&amp;rsquo;(x)$&lt;/li&gt;
-&lt;li&gt;Implicit Differentiation: If a function is defined implicitly, we can still find its derivative by differentiating both sides of the equation with respect to x.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Remember that these rules are just a starting point and not all derivatives can be found using just these techniques. It&amp;rsquo;s important to practice and get familiar with these techniques to develop your intuition for finding derivatives.&lt;/p&gt;
+&lt;h2 id=&#34;finding-the-volume-of-a-weird-shape-1&#34;&gt;Finding the volume of a weird shape 1&lt;/h2&gt;
+&lt;p&gt;We have a shape bounded by the curve $y=e^{-x}$ and the $x$-axis between $x=0$ and $x=1$ and is revolved around the $x$-axis. We want to find the volume of this shape.&lt;/p&gt;
+&lt;p&gt;Just like finding the volume of a defined solid, we want to find the way to slice the shape that will result in the easiest 2d shapes to work with. In this case, we will be using slices that are perpendicular to the $x$-axis, which will result in circular slices.&lt;/p&gt;
+&lt;p&gt;By using the function, we can easily deduce the radius of the disk across $\Delta x$:$y=e^{-x}$, from which the disc volume can be found.&lt;/p&gt;
+&lt;p&gt;$\pi y^2\Delta x=\pi(e^{-x})^2\Delta x$&lt;/p&gt;
+&lt;p&gt;Converting to a summation we can get a representation of the entire shape:&lt;/p&gt;
+&lt;p&gt;$\sum\limits_{i=0}^{n-1}\pi(e^{-x})^2\Delta x$&lt;/p&gt;
+&lt;p&gt;From the question, we know that the bounds of the shape are $x=0$ and $x=1$, and we can convert the summation to an integral:&lt;/p&gt;
+&lt;p&gt;$\int_0^1\pi(e^{-x})^2,dx=\pi(-\frac{1}{2})e^{-2x}\Bigg|_0^1=1.36$&lt;/p&gt;
+&lt;h2 id=&#34;finding-the-volume-of-a-weird-shape-2&#34;&gt;Finding the volume of a weird shape 2&lt;/h2&gt;
+&lt;p&gt;We have a shape defined by the curve $r=3+\cos(\frac{\pi y}{25})$, which is revolved around the $y$-axis, and is 100 units tall.&lt;/p&gt;
+&lt;p&gt;Just like finding the volume of a defined solid, we want to find the way to slice the shape that will result in the easiest 2d shapes to work with. In this case, we will be using slices that are perpendicular to the $y$-axis, which will result in circular discs.&lt;/p&gt;
+&lt;p&gt;We can slice the shape into small circular discs with thickness $dy$. The radius of each disc is given by the function $r=3+\cos(\frac{\pi y}{25})$, and the area of each disc can be found using the formula for the area of a circle:&lt;/p&gt;
+&lt;p&gt;$A = \pi r^2$&lt;/p&gt;
+&lt;p&gt;$A = \pi (3+\cos(\frac{\pi y}{25}))^2$&lt;/p&gt;
+&lt;p&gt;The volume of each disc is then given by:&lt;/p&gt;
+&lt;p&gt;$V = A \cdot dy$&lt;/p&gt;
+&lt;p&gt;$V = \pi (3+\cos(\frac{\pi y}{25}))^2 \cdot dy$&lt;/p&gt;
+&lt;p&gt;We can integrate over the range of $y$ to find the total volume of the shape:&lt;/p&gt;
+&lt;p&gt;$\int_{0}^{100} \pi (3+\cos(\frac{\pi y}{25}))^2 \cdot dy = 2984.5\text{ cm}^3$&lt;/p&gt;
 &lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;The derivative is a powerful mathematical tool that allows us to analyze the rate of change of a function and find the slope of a curve at any point. It is a fundamental concept in calculus and is used in many areas of science, engineering, and economics. By understanding the rules for finding derivatives and practicing&lt;/p&gt;
+&lt;p&gt;In this sheet, we found the volume of a shape that is revolved around an axis. This is a useful technique that can be used to compute the volume of many objects with circular cross-sections.&lt;/p&gt;
 </content>
     </item>
     
     <item>
-      <title>The Integral</title>
-      <link>https://math.jackcrane.rocks/pages/integral/</link>
+      <title>8.2.2: Volumes of revolutions around a line</title>
+      <link>https://math.jackcrane.rocks/pages/revolution-voumes-about-line/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://math.jackcrane.rocks/pages/integral/</guid>
-      <description>The Integral Integrals are a powerful mathematical tool for calculating the area under a curve and determining the volumes and surface areas of complex shapes.
-Introduction Integrals are a fundamental concept in calculus that allow us to calculate the total sum of infinitely small pieces of a curve or shape. They are used in many areas of science, engineering, and economics, and are an essential tool for solving a wide range of mathematical problems.</description>
-      <content>&lt;h1 id=&#34;the-integral&#34;&gt;The Integral&lt;/h1&gt;
+      <guid>https://math.jackcrane.rocks/pages/revolution-voumes-about-line/</guid>
+      <description>Finding the volume of a region through revolution around a defined line This reference sheet elaborates on 8.2.1 and covers using integrals to find volumes of objects defined by multiple lines that revolve around a line that is not an axis.
+Introduction This sheet covers the exact same process as 8.2.1, but instead of revolving around an axis, we will be revolving around a line that is not an axis. This adds an extra step to the process, but the process and understanding is still the same.</description>
+      <content>&lt;h1 id=&#34;finding-the-volume-of-a-region-through-revolution-around-a-defined-line&#34;&gt;Finding the volume of a region through revolution around a defined line&lt;/h1&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Integrals are a powerful mathematical tool for calculating the area under a curve and determining the volumes and surface areas of complex shapes.&lt;/p&gt;
+&lt;p&gt;This reference sheet elaborates on 8.2.1 and covers using integrals to find volumes of objects defined by multiple lines that revolve around a line that is not an axis.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;Integrals are a fundamental concept in calculus that allow us to calculate the total sum of infinitely small pieces of a curve or shape. They are used in many areas of science, engineering, and economics, and are an essential tool for solving a wide range of mathematical problems.&lt;/p&gt;
+&lt;p&gt;This sheet covers the exact same process as 8.2.1, but instead of revolving around an axis, we will be revolving around a line that is not an axis. This adds an extra step to the process, but the process and understanding is still the same.&lt;/p&gt;
 &lt;h2 id=&#34;things-to-know&#34;&gt;Things to Know&lt;/h2&gt;
-&lt;p&gt;Before we dive into the rules for solving integrals, there are a few important things to keep in mind:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;The integral sign is denoted by the symbol $\int$ and is used to indicate integration.&lt;/li&gt;
-&lt;li&gt;The variable of integration is typically denoted by $dx$ or $dy$, and represents the infinitely small width or height of the curve being integrated.&lt;/li&gt;
-&lt;li&gt;Integrals can be solved either analytically or numerically, depending on the complexity of the function being integrated.&lt;/li&gt;
-&lt;li&gt;The rules for solving integrals depend on the form of the function being integrated and the technique used to solve it.&lt;/li&gt;
+&lt;li&gt;The process of finding the volume of a revolution is almost exactly the same to finding the volume of a defined solid revolved around an axis&lt;/li&gt;
+&lt;li&gt;The decision of what direction to slice the shape is a more difficult decision to make&lt;/li&gt;
+&lt;li&gt;Bounds are rarely given in this type of question and must be found&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;example-problem&#34;&gt;Example Problem&lt;/h2&gt;
-&lt;p&gt;Let&amp;rsquo;s start with a simple practice problem to illustrate how integrals work.&lt;/p&gt;
-&lt;p&gt;Find the integral of $f(x) = x^2$ from $x=0$ to $x=1$:&lt;/p&gt;
-&lt;p&gt;The answer is $\int_0^1 x^2 dx = \frac{1}{3}$.&lt;/p&gt;
-&lt;p&gt;Common Rules
-There are several common rules for solving integrals, including:&lt;/p&gt;
+&lt;h2 id=&#34;finding-the-volume-of-a-weird-shape&#34;&gt;Finding the volume of a weird shape&lt;/h2&gt;
+&lt;p&gt;We have a shape bounded by the curves $y=x$ and $y=x^2$ is rotated about the line $y=3$, and we want to find the volume of this shape.&lt;/p&gt;
+&lt;p&gt;Just like finding the volume of a defined solid, we want to find the way to slice the shape that will result in the easiest 2d shapes to work with. In this type of a shape, there are two possible ways to slice the shape, and they are named &amp;ldquo;washers&amp;rdquo; and &amp;ldquo;shells&amp;rdquo;. Washers are discs with an outer and inner radius (the space between called $\delta r$) and are evaluated as their thickness reduces to 0. Shells are discs with defined thicknesses, but are evaluated as their $\delta r$ approaches 0.&lt;/p&gt;
+&lt;p&gt;For this problem, we will be using the washer method, finding vertical slices that are perpendicular to the line $y=3$. This will result in circular discs with an outer and inner radius that can be found using the equations of the curves.&lt;/p&gt;
+&lt;p&gt;The first step is to find the inner and outer radiuses of the discs, based on the equations of the curves.&lt;/p&gt;
+&lt;p&gt;Inner radius: $r_{in}=3-x$&lt;/p&gt;
+&lt;p&gt;Outer radius: $r_{out}=3-x^2$&lt;/p&gt;
+&lt;p&gt;The next step is to find the area of each disc, which is simply found by $\pi(r_{out}^2-r_{in}^2)$ and then multiplying by the thickness of the disc, $\Delta x$, in this case. This gives us the volume of each slice, which we can then add together to find the total volume:&lt;/p&gt;
+&lt;p&gt;$\pi(3-x^2)^2\Delta x-\pi(3-x)^2\Delta x$&lt;/p&gt;
+&lt;p&gt;Then we can use a summation to find the total volume:&lt;/p&gt;
+&lt;p&gt;$\sum(\pi(3-x^2)^2-\pi(3-x)^2)\Delta x$&lt;/p&gt;
+&lt;p&gt;Then we can integrate to find the volume:&lt;/p&gt;
+&lt;p&gt;$\int(\pi(3-x^2)^2-\pi(3-x)^2)dx = \int((9-6x^2+x^4)-(9-6x+x^2))dx = \pi\int(6x-7x^2+x^4)dx$&lt;/p&gt;
+&lt;p&gt;$\pi(3x^2-\frac{7x^3}{3}+\frac{x^5}{5})\Bigg|_a^b$&lt;/p&gt;
+&lt;p&gt;The next question is what the bounds of the integral are. Computing the bounds is more difficult than in previous problems, but is still simple: we need to find the points where the curves that define the shape intersect themselves. This is done by setting the two equations equal to each other and solving for $x$, which gives us $x=0$ and $x=1$. This means that the bounds of the integral are $0$ and $1$.&lt;/p&gt;
+&lt;p&gt;$\pi(3x^2-\frac{7x^3}{3}+\frac{x^5}{5})\Bigg|_0^1=2.72$&lt;/p&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;This sheet refines the previous sheet in how to find the volume of a solid defined by two curves that revolve around a line and not an axis. The process is the same, but the bounds are more difficult to find.&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>8.2.3: Arc Length</title>
+      <link>https://math.jackcrane.rocks/pages/arc-length/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://math.jackcrane.rocks/pages/arc-length/</guid>
+      <description>Finding the length of an arc This reference sheet covers using integrals to find the length of an arc on a curve.
+Introduction Integrals can also be used to find the length of an arc on a curve.
+Arc length on a standard curve We have a curve $f(x)=x^3$ and want to find the length of the arc between $x=0$ and $x=5$.
+The first step is to find the derivative of the curve.</description>
+      <content>&lt;h1 id=&#34;finding-the-length-of-an-arc&#34;&gt;Finding the length of an arc&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This reference sheet covers using integrals to find the length of an arc on a curve.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Integrals can also be used to find the length of an arc on a curve.&lt;/p&gt;
+&lt;h2 id=&#34;arc-length-on-a-standard-curve&#34;&gt;Arc length on a standard curve&lt;/h2&gt;
+&lt;p&gt;We have a curve $f(x)=x^3$ and want to find the length of the arc between $x=0$ and $x=5$.&lt;/p&gt;
+&lt;p&gt;The first step is to find the derivative of the curve. The derivative of $f(x)=x^3$ is $f&amp;rsquo;(x)=3x^2$. We will be using the non-parametric formula for arc length:&lt;/p&gt;
+&lt;p&gt;$\int_a^b\sqrt{1+(f&amp;rsquo;(x))^2}dx$&lt;/p&gt;
+&lt;p&gt;After substituting in the values for $a$, $b$, and $f&amp;rsquo;(x)$, we get:&lt;/p&gt;
+&lt;p&gt;$\int_0^5\sqrt{1+(3x^2)^2}dx=125.68$&lt;/p&gt;
+&lt;h2 id=&#34;arc-length-on-a-parametric-curve&#34;&gt;Arc length on a parametric curve&lt;/h2&gt;
+&lt;p&gt;If a particle is described as moving in a path defined by parametric equations with respect to a time value, we can use the parametric formula for arc length:&lt;/p&gt;
+&lt;p&gt;$\int_a^b\sqrt{(\frac{dx}{dt})^2+(\frac{dy}{dt})^2}dx$&lt;/p&gt;
+&lt;p&gt;We have an ellipse given by a parametric equations $x=2cos(t)$, $y=sin(t)$, and we want to find the length of the arc between $t=0$ and $t=2\pi$.&lt;/p&gt;
+&lt;p&gt;The first step is to find the derivatives of the parametric equations. The derivative of $x=2cos(t)$ is $x&amp;rsquo;=-2sin(t)$, and the derivative of $y=sin(t)$ is $y&amp;rsquo;=cos(t)$ Plugging those values into the parametric formula for arc length:&lt;/p&gt;
+&lt;p&gt;$\int_{0}^{2\pi}\sqrt{(-2sin(t))^2+(cos(t))^2}dt$&lt;/p&gt;
+&lt;p&gt;After simplifying, we get:&lt;/p&gt;
+&lt;p&gt;$\int_{0}^{2\pi}\sqrt{4sin^2(t)+cos^2(t)}dt=9.69$&lt;/p&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Integrals can be used to find the length of an arc on a curve. The formula for arc length depends on whether the curve is parametric or non-parametric.&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>9.1.0: Sequences through numerical and algebraic methods</title>
+      <link>https://math.jackcrane.rocks/pages/sequences-numerical-algebraic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://math.jackcrane.rocks/pages/sequences-numerical-algebraic/</guid>
+      <description>Sequences through numerical and algebraic methods This reference sheet covers using infinite sequences of numbers through numerical and algebraic methods.
+Introduction Sequences are infinite lists of numbers that are defined by functions or numerical sets. The first term of a sequence is the first number in the sequence, the second term is the second number in the sequence, and so on. The first term of a sequence is always $a_1$ the second term is always $a_2$ and the general term is always $a_n$.</description>
+      <content>&lt;h1 id=&#34;sequences-through-numerical-and-algebraic-methods&#34;&gt;Sequences through numerical and algebraic methods&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This reference sheet covers using infinite sequences of numbers through numerical and algebraic methods.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Sequences are infinite lists of numbers that are defined by functions or numerical sets. The first term of a sequence is the first number in the sequence, the second term is the second number in the sequence, and so on. The first term of a sequence is always $a_1$ the second term is always $a_2$ and the general term is always $a_n$.&lt;/p&gt;
+&lt;p&gt;There are multiple ways to express a sequence of numbers. The sequence could be expressed as a list of numbers, a function, or a graph.&lt;/p&gt;
+&lt;h2 id=&#34;the-functional-method&#34;&gt;The Functional Method&lt;/h2&gt;
+&lt;p&gt;This method is the most common way to express a sequence of numbers, and is used whenever a sequence is defined by a function.&lt;/p&gt;
+&lt;h3 id=&#34;functional-example&#34;&gt;Functional example&lt;/h3&gt;
+&lt;p&gt;If we are given a function&lt;/p&gt;
+&lt;p&gt;$s_n=\frac{n(n+1)}{2}$&lt;/p&gt;
+&lt;p&gt;We can find the first 6 terms of the sequence by simply plugging in the values of $n$ from 1 to 6.&lt;/p&gt;
+&lt;p&gt;$s_1=\frac{1(1+1)}{2}=1$&lt;/p&gt;
+&lt;p&gt;$s_2=\frac{2(2+1)}{2}=3$&lt;/p&gt;
+&lt;p&gt;$s_{[3,4,5]}=[6, 10, 15]$&lt;/p&gt;
+&lt;p&gt;$s_6=\frac{6(6+1)}{2}=21$&lt;/p&gt;
+&lt;h2 id=&#34;another-functional-example&#34;&gt;Another functional example&lt;/h2&gt;
+&lt;p&gt;If we are given a function&lt;/p&gt;
+&lt;p&gt;$s_n=\frac{n+(-1)^n}{n}$&lt;/p&gt;
+&lt;p&gt;Even though the function is different, the process of finding the first 6 terms is exactly the same.&lt;/p&gt;
+&lt;p&gt;$s_1=\frac{1+(-1)^1}{1}=0$&lt;/p&gt;
+&lt;p&gt;$s_2=\frac{2+(-1)^2}{2}=3/2$&lt;/p&gt;
+&lt;p&gt;$s_{[3,4,5]}=[\frac{2}{3}, \frac{5}{4}, \frac{4}{5}]$&lt;/p&gt;
+&lt;p&gt;$s_6=\frac{6+(-1)^6}{6}=7/6$&lt;/p&gt;
+&lt;p&gt;Finding terms in a sequence is an extremely simple task that was originally introduced in early algebra classes, just applied with different terminology.&lt;/p&gt;
+&lt;h2 id=&#34;the-numerical-method&#34;&gt;The Numerical Method&lt;/h2&gt;
+&lt;p&gt;This method is used when a sequence is defined by a list of numbers.&lt;/p&gt;
+&lt;h3 id=&#34;sequential-example&#34;&gt;Sequential example&lt;/h3&gt;
+&lt;p&gt;Finding sequential examples is something of an inverse of the functional example, where instead of plugging in values of $n$ into a function, we are given a list of numbers and are asked to find additional terms in the sequence.&lt;/p&gt;
+&lt;p&gt;The first step is to find a function that represents the pattern of the sequence.&lt;/p&gt;
+&lt;p&gt;If we have a sequence&lt;/p&gt;
+&lt;p&gt;$1,2,4,8,16,32,\dots$&lt;/p&gt;
+&lt;p&gt;The first 6 terms of a sequence may not perfectly help define the function, but we are able to make a good guess as to the general formula.&lt;/p&gt;
+&lt;p&gt;$s_n=2^{n-1}$&lt;/p&gt;
+&lt;p&gt;We can verify the formula by plugging in the first 6 values of $n$ and comparing the results to the first 6 terms of the sequence.&lt;/p&gt;
+&lt;h3 id=&#34;another-sequential-example&#34;&gt;Another sequential example&lt;/h3&gt;
+&lt;p&gt;If we have a sequence&lt;/p&gt;
+&lt;p&gt;$\frac{7}{2},\frac{7}{5},\frac{7}{8},\frac{7}{11},\frac{1}{2},\frac{7}{17},\dots$&lt;/p&gt;
+&lt;p&gt;In this sequence, each numerator is 7 and each denominator is the previous term plus 3. The denominators can be defined by a function&lt;/p&gt;
+&lt;p&gt;$y=3n+k$&lt;/p&gt;
+&lt;p&gt;for some $k$. By entering one of the terms into the function, we can find the value of $k$.&lt;/p&gt;
+&lt;p&gt;$2=3(1)+k=-1$&lt;/p&gt;
+&lt;p&gt;Now that we know the function defined by the denominators, we can elaborate to the function defining the entire sequence.&lt;/p&gt;
+&lt;p&gt;$s_n=\frac{7}{3n-1}$&lt;/p&gt;
+&lt;p&gt;Finally, we can check the formula by plugging in the first 6 values of $n$ and comparing the results to the first 6 terms of the sequence.&lt;/p&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Calculating sequences is a very simple task that can be done with a simple formula or a list of numbers. The functional method is the most common way to calculate sequences, but the numerical method is also very useful.&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>9.1.1: Sequences through recursion</title>
+      <link>https://math.jackcrane.rocks/pages/sequences-recursively/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://math.jackcrane.rocks/pages/sequences-recursively/</guid>
+      <description>Sequences through recursion This reference sheet covers using infinite sequences of numbers through recursion.
+Introduction In 9.1.0, we explored finding values of sequences through functions and lists of numbers. In this reference sheet, we will explore finding values of sequences through recursion, where the value of a term is defined by the value of the previous term.
+The Recursive Method If we are given a sequence defined by
+$s_n=s_{n-1}+3$ for $n&amp;gt;1$ and $s_1=4$</description>
+      <content>&lt;h1 id=&#34;sequences-through-recursion&#34;&gt;Sequences through recursion&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This reference sheet covers using infinite sequences of numbers through recursion.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;In 9.1.0, we explored finding values of sequences through functions and lists of numbers. In this reference sheet, we will explore finding values of sequences through recursion, where the value of a term is defined by the value of the previous term.&lt;/p&gt;
+&lt;h2 id=&#34;the-recursive-method&#34;&gt;The Recursive Method&lt;/h2&gt;
+&lt;p&gt;If we are given a sequence defined by&lt;/p&gt;
+&lt;p&gt;$s_n=s_{n-1}+3$ for $n&amp;gt;1$ and $s_1=4$&lt;/p&gt;
+&lt;p&gt;When $n=2$, we can find the value of $s_2$ by plugging in the value of $s_1$ into the function.&lt;/p&gt;
+&lt;p&gt;$s_2=s_{2-1}+3=4+3=7$&lt;/p&gt;
+&lt;p&gt;When $n=3$, we can find the value of $s_3$ by plugging in the value of $s_2$ into the function.&lt;/p&gt;
+&lt;p&gt;$s_3=s_{3-1}+3=7+3=10$&lt;/p&gt;
+&lt;p&gt;Now that we have 2 terms of the sequence, we can find further terms by using the previous values of the sequence.&lt;/p&gt;
+&lt;p&gt;$4, 7, 10, 13, 16, 19$&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>9.1.2: Convergence of sequences</title>
+      <link>https://math.jackcrane.rocks/pages/convergence/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://math.jackcrane.rocks/pages/convergence/</guid>
+      <description>Convergence of sequences This reference sheet covers finding the convergence of sequences of numbers.
+Introduction In 9.1.0, we explored finding values of sequences through functions and lists of numbers. In 9.1.1, we explored finding values of sequences through recursion, where the value of a term is defined by the value of the previous term. In this reference sheet, we will explore finding the convergence of sequences, or the value that a sequence approaches as the number of terms increases.</description>
+      <content>&lt;h1 id=&#34;convergence-of-sequences&#34;&gt;Convergence of sequences&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This reference sheet covers finding the convergence of sequences of numbers.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;In 9.1.0, we explored finding values of sequences through functions and lists of numbers. In 9.1.1, we explored finding values of sequences through recursion, where the value of a term is defined by the value of the previous term. In this reference sheet, we will explore finding the convergence of sequences, or the value that a sequence approaches as the number of terms increases.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The sequence $s_1,s_2,s_3,\dots,s_n$ has a limit $L$, written $\lim\limits_{n\to\infin}s_n=L$ if $s_n$ is as close to $L$ as we please whenever $n$ is sufficiently large. If a limit, $L$, exists, we say the sequence converges to its limit $L$. If no limit exists, we say the sequence diverges.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;To calculate the limit of sequences, we will use the following rules:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Power Rule: $\int x^n dx = \frac{x^{n+1}}{n+1} + C$ for all $n \neq -1$&lt;/li&gt;
-&lt;li&gt;Exponential Rule: $\int e^x dx = e^x + C$&lt;/li&gt;
-&lt;li&gt;Trigonometric Rules: $\int \sin(x) dx = -\cos(x) + C, \quad \int \cos(x) dx = \sin(x) + C$&lt;/li&gt;
-&lt;li&gt;Integration by Substitution: $\int f(g(x))g&amp;rsquo;(x) dx = \int f(u) du$, where $u = g(x)$&lt;/li&gt;
-&lt;li&gt;Integration by Parts: $\int u dv = uv - \int v du$&lt;/li&gt;
-&lt;li&gt;Trigonometric Substitution: $\int \sqrt{a^2 - x^2} dx = \frac{1}{a^2} \arcsin(\frac{x}{a}) + C$&lt;/li&gt;
-&lt;li&gt;Partial Fraction Decomposition: $\int \frac{Ax + B}{x^2 + px + q} dx = \frac{A}{2} \ln(x^2 + px + q) + (B - \frac{Ap}{2}) \int \frac{dx}{x^2 + px + q}$&lt;/li&gt;
-&lt;li&gt;Improper Integrals: $\int f(x) dx$ from $a$ to $b$, where either $a$ or $b$ is $\pm \infty$.&lt;/li&gt;
-&lt;li&gt;Definite Integrals: $\int_a^b f(x) dx$ gives the signed area between the curve $f(x)$ and the x-axis, from $x=a$ to $x=b$.&lt;/li&gt;
+&lt;li&gt;The sequence $s_n=x^n$ converges to $0$ if $|x|&amp;lt;1$ and diverges if $|x|&amp;gt;1$.&lt;/li&gt;
+&lt;li&gt;The sequence $s_n=\frac{1}{n^p}$ converges to $0$ if $p&amp;gt;10$.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Remember that these rules are just a starting point and not all integrals can be solved using just these techniques. It&amp;rsquo;s important to practice and get familiar with these techniques to develop your intuition for solving integrals.&lt;/p&gt;
+&lt;h2 id=&#34;examples&#34;&gt;Examples&lt;/h2&gt;
+&lt;h3 id=&#34;example-1&#34;&gt;Example 1&lt;/h3&gt;
+&lt;p&gt;Does the following sequence converge or diverge?&lt;/p&gt;
+&lt;p&gt;$s_n=0.8^n$&lt;/p&gt;
+&lt;p&gt;Since $|0.8|&amp;lt;1$, the sequence converges to $0$.&lt;/p&gt;
+&lt;h3 id=&#34;example-2&#34;&gt;Example 2&lt;/h3&gt;
+&lt;p&gt;Does the following sequence converge or diverge?&lt;/p&gt;
+&lt;p&gt;$s_n=\frac{1-e^{-n}}{1+e^{-1}}$&lt;/p&gt;
+&lt;p&gt;Since $e^{-1}&amp;lt;1$, we have $\lim\limits_{n\to\infin}e^{-n}=\lim\limits_{n\to\infin}(e^{-1})^n=0$ by the first fact. Thus, the sequence converges to $1$.&lt;/p&gt;
+&lt;h3 id=&#34;example-3&#34;&gt;Example 3&lt;/h3&gt;
+&lt;p&gt;Does the following sequence converge or diverge?&lt;/p&gt;
+&lt;p&gt;$s_n=\frac{n^2+1}{n}$&lt;/p&gt;
+&lt;p&gt;Since $(n^2+1)/n$ grows without bound, the sequence diverges.&lt;/p&gt;
+&lt;h3 id=&#34;example-4&#34;&gt;Example 4&lt;/h3&gt;
+&lt;p&gt;Does the following sequence converge or diverge?&lt;/p&gt;
+&lt;p&gt;$s_n=1+(-1)^n$&lt;/p&gt;
+&lt;p&gt;Since $(-1)^n$ alternates in sign, the function will never approach a limit, and thus diverges.&lt;/p&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;In this reference sheet, we explored finding the convergence of sequences, or the value that a sequence approaches as the number of terms increases. We found that sequences can converge to a limit, or diverge to infinity. We also found that sequences can converge to $0$ if $|x|&amp;lt;1$ and diverge if $|x|&amp;gt;1$.&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>9.2.0: Geometric series Introduction</title>
+      <link>https://math.jackcrane.rocks/pages/geometric-series-introduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://math.jackcrane.rocks/pages/geometric-series-introduction/</guid>
+      <description>Geometric series This reference sheet covers introductions to geometric series.
+Introduction In 9.1.0, we explored finding values of sequences through functions and lists of numbers. In this reference sheet, we will explore finding values of sequences through recursion, where the value of a term is defined by the value of the previous term.
+Adding the terms of any sequence produces a series. Previously we explored finite series, and this sheet features infinite series.</description>
+      <content>&lt;h1 id=&#34;geometric-series&#34;&gt;Geometric series&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This reference sheet covers introductions to geometric series.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;In 9.1.0, we explored finding values of sequences through functions and lists of numbers. In this reference sheet, we will explore finding values of sequences through recursion, where the value of a term is defined by the value of the previous term.&lt;/p&gt;
+&lt;p&gt;Adding the terms of any sequence produces a series. Previously we explored finite series, and this sheet features infinite series.&lt;/p&gt;
+&lt;h2 id=&#34;geometric-series-in-general&#34;&gt;Geometric series in general&lt;/h2&gt;
+&lt;p&gt;Geometric series can be both finite and infinite. An infinite geometric series will not approach a finite value, whereas a finite geometric series will approach a finite value.&lt;/p&gt;
+&lt;p&gt;Series are a sum of terms, where each term is a function of the previous term. These series will always follow a pattern:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;For a finite geometric series:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;$a+ax+ax^2+\cdots+ax^{n-1}$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;For an infinite geometric series:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;$a+ax+ax^2+\cdots+ax^{n-1}+ax^{n}+\cdots$&lt;/p&gt;
+&lt;h2 id=&#34;the-sum-of-a-finite-geometric-series&#34;&gt;The sum of a finite geometric series&lt;/h2&gt;
+&lt;p&gt;The sum of a finite geometric series can be found by iterating over a series and computing the sum of each term. This works well and is easy to understand, but is not efficient, and is often not feasible for large series.&lt;/p&gt;
+&lt;p&gt;The sum of a finite geometric series can be found by using the formula:&lt;/p&gt;
+&lt;p&gt;$S_n=a+ax+ax^2+\cdots+ax^{n-1}=\frac{a(1-x^n)}{1-x}$&lt;/p&gt;
+&lt;p&gt;So long that $x\neq1$.&lt;/p&gt;
+&lt;h2 id=&#34;the-sum-of-an-infinite-geometric-series&#34;&gt;The sum of an infinite geometric series&lt;/h2&gt;
+&lt;p&gt;The sum of an infinite geometric series is simply found by taking the limit of the sum of a finite geometric series as $n\to\infin$:&lt;/p&gt;
+&lt;p&gt;$\lim\limits_{n\to\infin}S_n=a+ax+ax^2+\cdots+ax^{n-1}+ax^{n}+\cdots=\frac{a}{1-x}$&lt;/p&gt;
+&lt;p&gt;This formula only works if $|x|&amp;lt;1$. If $|x|\geq1$, then the series will diverge to $\infin$ if $a&amp;gt;1$, or $-\infin$ if $a&amp;lt;1$.&lt;/p&gt;
+&lt;p&gt;If $x=1$, then the series will not develop and each term will remain at $a$.&lt;/p&gt;
+&lt;p&gt;$a+a+a+a+\cdots$&lt;/p&gt;
+&lt;p&gt;If $x=-1$, the series will oscillate between $a$ and $-a$, and thus will never converge.&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>9.2.1: Geometric series: Medicine</title>
+      <link>https://math.jackcrane.rocks/pages/geometric-series-medicine/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://math.jackcrane.rocks/pages/geometric-series-medicine/</guid>
+      <description>Geometric series: Medicine This reference sheet covers introductions to geometric series through computing the amount of medicine in a patient after n doses.
+Introduction In the introduction sheet, we defined how series may behave when summed to infinity or to some fininte solution. Here we will be computing the amount of medicine in a patient&amp;rsquo;s bloodstream after a certain number of doses using a finite geometric series.
+Repeated drug dosage By nature of how drugs release medicine into the body, the amount of medicine in the body is not constant, but rather a function of time.</description>
+      <content>&lt;h1 id=&#34;geometric-series-medicine&#34;&gt;Geometric series: Medicine&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This reference sheet covers introductions to geometric series through computing the amount of medicine in a patient after n doses.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;In the introduction sheet, we defined how series may behave when summed to infinity or to some fininte solution. Here we will be computing the amount of medicine in a patient&amp;rsquo;s bloodstream after a certain number of doses using a finite geometric series.&lt;/p&gt;
+&lt;h2 id=&#34;repeated-drug-dosage&#34;&gt;Repeated drug dosage&lt;/h2&gt;
+&lt;p&gt;By nature of how drugs release medicine into the body, the amount of medicine in the body is not constant, but rather a function of time. For this example, a patient takes $250\text{ mg}$ doses 4 times a day (every 6 hours). It is known that after the end of 6 hours, 4% of the medicine is still in the body. We want to find the amount of medicine in the body when the patient takes more doses.&lt;/p&gt;
+&lt;p&gt;The first step is to define the quantity of medicine in the blood after the patient takes their $n^{th}$ dose. Using recursion as covered in 9.1.1, we can study the amount of medicine based on the previous dosage:&lt;/p&gt;
+&lt;p&gt;$Q_1 = 250\text{ mg}$&lt;/p&gt;
+&lt;p&gt;$Q_2 = \textcolor{#ff6600}{250}(0.04)+250 = 260\text{ mg}$&lt;/p&gt;
+&lt;p&gt;Where $Q_1$ is the amount of medicine in the body after the first dose, and $Q_2$ is the amount of medicine in the body immediately after the second dose added to the amount of medicine in the body after the first dose. It is important to understand that the first $\textcolor{#ff6600}{250}$ is the result of $Q_1$ and thus the entire function could be rewritten as:&lt;/p&gt;
+&lt;p&gt;$Q_2 = Q_1(0.04)+250$&lt;/p&gt;
+&lt;p&gt;If we further define the function, we get to&lt;/p&gt;
+&lt;p&gt;$Q_3 = Q_2(0.04)+250$&lt;/p&gt;
+&lt;p&gt;$= (250(0.04)+250)(0.04)+250$&lt;/p&gt;
+&lt;p&gt;$= 250(0.04)^2+250(0.04)^1+250$&lt;/p&gt;
+&lt;p&gt;$= 260.4\text{ mg}$&lt;/p&gt;
+&lt;p&gt;If we were asked to find the amount of medicine in the body after the $10\text{nth}$ dose, we could surmise:&lt;/p&gt;
+&lt;p&gt;$Q_{10} = 250(0.04)^9+250(0.04)^8+250(0.04)^7+\cdots+250(0.04)^3+250(0.04)+250(0.04)^0$&lt;/p&gt;
+&lt;p&gt;If we subtract $(0.04)Q_{10}$ from both sides and factoring, we can simplify from a string of 10 additions to a concise function:&lt;/p&gt;
+&lt;p&gt;$Q_{10} = \frac{250(1-(0.04)^{10})}{1-0.04}$&lt;/p&gt;
+&lt;p&gt;And by replacing $10$ with $n$, we get the general formula for the amount of medicine in the body after the $n^{th}$ dose:&lt;/p&gt;
+&lt;p&gt;$Q_n = \frac{250(1-(0.04)^n)}{1-0.04}$&lt;/p&gt;
+&lt;p&gt;As the patient takes more medicine, we can find out the amount of the medicine in their bloodstream by plugging in values, or if we wanted to see where the medicine level would plateau, we could compute the limit of the function as $n\to\infin$&lt;/p&gt;
+&lt;p&gt;$\lim\limits_{n\to\infin}\frac{250(1-(0.04)^n)}{1-0.04}=\frac{250(1-0)}{1-0.04}$&lt;/p&gt;
+&lt;p&gt;Which evaluates to $260.42\text{ mg}$, which is the highest possible amount of medicine in the patient&amp;rsquo;s body assuming they are taking the medicine as suggested.&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>9.2.2: Geometric series: Savings</title>
+      <link>https://math.jackcrane.rocks/pages/geometric-series-savings/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://math.jackcrane.rocks/pages/geometric-series-savings/</guid>
+      <description>Geometric series: Savings This reference sheet covers using geometric series to analyze savings and investments.
+Introduction In 9.2.0, we explored geometric series in general. In this reference sheet, we will explore using geometric series to analyze savings and investments.
+Regular deposits into a savings account Typically, savings are accumulated by setting aside small but regular amounts of money to be deposited into an account. For sake of this example, lets assume we are depositing $1000$ dolalrs into a savings account that will yield an interest rate of $5%$ per year, compounding annually.</description>
+      <content>&lt;h1 id=&#34;geometric-series-savings&#34;&gt;Geometric series: Savings&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This reference sheet covers using geometric series to analyze savings and investments.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;In 9.2.0, we explored geometric series in general. In this reference sheet, we will explore using geometric series to analyze savings and investments.&lt;/p&gt;
+&lt;h2 id=&#34;regular-deposits-into-a-savings-account&#34;&gt;Regular deposits into a savings account&lt;/h2&gt;
+&lt;p&gt;Typically, savings are accumulated by setting aside small but regular amounts of money to be deposited into an account. For sake of this example, lets assume we are depositing $1000$ dolalrs into a savings account that will yield an interest rate of $5%$ per year, compounding annually. How much money (balance) will be in the account after the $n$th year?&lt;/p&gt;
+&lt;p&gt;The first step is to evaluate the first few years by hand to understand the patterns of the function.&lt;/p&gt;
+&lt;p&gt;$B_1=1000$&lt;/p&gt;
+&lt;p&gt;$B_2=B_1(1.05)+1000=1000(1.05)+1000$&lt;/p&gt;
+&lt;p&gt;$B_3=B_2(1.05)+1000=1000(1.05)^2+1000(1.05)+1000$&lt;/p&gt;
+&lt;p&gt;Now that we can recognize patterns, it is easier to write a function to evaluate the balance after $n$ years.&lt;/p&gt;
+&lt;p&gt;$B_n=1000(1.05)^{n-1}+1000(1.05)^{n-2}+\cdots+1000(1.05)+1000$&lt;/p&gt;
+&lt;p&gt;Because we can see that the series is approaching a number and not infinity (practically we can see that this is shrinking, not growing), we can use the sum of a finite geometric series formula to find the balance after $n$ years.&lt;/p&gt;
+&lt;p&gt;$B_n=\frac{1000(1-(1.05)^n)}{1-1.05}$&lt;/p&gt;
+&lt;p&gt;Obviously the more we save, the more we will have in the account, and the more we will earn from interest, so if we were to take the limit to infinity, it would evaluate to an infinite balance.&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Formulas</title>
+      <link>https://math.jackcrane.rocks/pages/formulas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://math.jackcrane.rocks/pages/formulas/</guid>
+      <description>Formulas This page contains a list of all the formulas that are used in the reference sheets.
+8.2.3: Arc Length Arc length of a non-parametric curve $\int_a^b\sqrt{1+(f&amp;rsquo;(x))^2}dx$
+Arc length of a parametric curve $\int_a^b\sqrt{(\frac{dx}{dt})^2+(\frac{dy}{dt})^2}dx$
+9.2.0 Sum of a finite geometric series $S_n=a+ax+ax^2+\cdots+ax^{n-1}=\frac{a(1-x^n)}{1-x}$ where $x\neq1$
+Sum of an infinite geometric series $\lim\limits_{n\to\infin}S_n=a+ax+ax^2+\cdots+ax^{n-1}+ax^{n}+\cdots=\frac{a}{1-x}$ where $|x|&amp;lt;1$</description>
+      <content>&lt;h1 id=&#34;formulas&#34;&gt;Formulas&lt;/h1&gt;
+&lt;p&gt;This page contains a list of all the formulas that are used in the reference sheets.&lt;/p&gt;
+&lt;h2 id=&#34;823-arc-length&#34;&gt;8.2.3: Arc Length&lt;/h2&gt;
+&lt;p&gt;Arc length of a non-parametric curve $\int_a^b\sqrt{1+(f&amp;rsquo;(x))^2}dx$&lt;/p&gt;
+&lt;p&gt;Arc length of a parametric curve $\int_a^b\sqrt{(\frac{dx}{dt})^2+(\frac{dy}{dt})^2}dx$&lt;/p&gt;
+&lt;h2 id=&#34;920&#34;&gt;9.2.0&lt;/h2&gt;
+&lt;p&gt;Sum of a finite geometric series $S_n=a+ax+ax^2+\cdots+ax^{n-1}=\frac{a(1-x^n)}{1-x}$ where $x\neq1$&lt;/p&gt;
+&lt;p&gt;Sum of an infinite geometric series $\lim\limits_{n\to\infin}S_n=a+ax+ax^2+\cdots+ax^{n-1}+ax^{n}+\cdots=\frac{a}{1-x}$ where $|x|&amp;lt;1$&lt;/p&gt;
 </content>
     </item>
     

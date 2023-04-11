@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>8.1.2: Finding volumes by slicing :: CalcSheets</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="This reference sheet covers using integrals to find volumes of objects defined by functions." />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="https://math.jackcrane.rocks/pages/slice-volume/" />
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="https://math.jackcrane.rocks/styles.css">
+
+
+
+<link rel="stylesheet" href="https://math.jackcrane.rocks/style.css">
+
+
+
+  <link rel="shortcut icon" href="https://math.jackcrane.rocks/img/theme-colors/blue.png">
+  <link rel="apple-touch-icon" href="https://math.jackcrane.rocks/img/theme-colors/blue.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+  
+    <meta name="twitter:site" content="" />
+  
+    <meta name="twitter:creator" content="" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="8.1.2: Finding volumes by slicing">
+<meta property="og:description" content="This reference sheet covers using integrals to find volumes of objects defined by functions." />
+<meta property="og:url" content="https://math.jackcrane.rocks/pages/slice-volume/" />
+<meta property="og:site_name" content="CalcSheets" />
+
+  
+    <meta property="og:image" content="https://math.jackcrane.rocks/img/favicon/blue.png">
+  
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+
+
+
+
+
+
+
+
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css"
+  integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0"
+  crossorigin="anonymous"
+/>
+
+
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js"
+  integrity="sha384-PwRUT/YqbnEjkZO0zZxNqcxACrXe+j766U2amXcgMg5457rve2Y7I6ZJSm2A0mS4"
+  crossorigin="anonymous"
+></script>
+
+
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js"
+  integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+  crossorigin="anonymous"
+  onload="renderMathInElement(document.body);"
+></script>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: "$$", right: "$$", display: true },
+        { left: "$", right: "$", display: false },
+      ],
+    });
+  });
+</script>
+
+<style>
+  p,
+  span,
+  li {
+    line-height: 2;
+  }
+  .katex {
+    line-height: initial;
+    color: #23b0ff;
+    background-color: #23aeff1d;
+    padding: 0.5px 3px;
+    margin: 2px 0;
+     
+    transition: 0.2s;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    display: inline-block;
+  }
+  .katex * {
+    line-height: initial;
+  }
+  .katex:hover {
+    background-color: #23aeff3d;
+    border: 1px solid #23aeff;
+  }
+   
+  ::selection {
+    background: #23b0ff;
+    color: #fff;
+  }
+  @media print {
+     
+    body {
+      visibility: visible !important;
+      padding: 20px;
+    }
+    * {
+      visibility: visible !important;
+    }
+  }
+  @media print {
+    .header {
+      display: initial;
+    }
+  }
+</style>
+
+
+</head>
+<body class="blue">
+
+
+<div class="container center headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Jack&#39;s Calculus Sheets
+  </div>
+</a>
+
+    </div>
+    
+    
+  </div>
+  
+</header>
+
+
+  <div class="content">
+    
+<article class="post">
+  <h1 class="post-title">
+    <a href="https://math.jackcrane.rocks/pages/slice-volume/">8.1.2: Finding volumes by slicing</a>
+  </h1>
+  <div class="post-meta">
+    
+    
+    
+  </div>
+
+  
+  
+
+
+  
+
+  <div class="post-content"><div>
+        <h1 id="calculating-the-area-of-a-region-under-a-curve">Calculating the area of a region under a curve<a href="#calculating-the-area-of-a-region-under-a-curve" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<blockquote>
+<p>This reference sheet covers using integrals to find volumes of objects defined by functions.</p>
+</blockquote>
+<h2 id="introduction">Introduction<a href="#introduction" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>In the previous sheet I defined how to find the area of a region bounded by curves. In this sheet, though, I will be focusing on finding the <em>volume</em> of a region bounded by curves. It is a remarkably similar process, just with a few extra steps.</p>
+<h2 id="things-to-know">Things to Know<a href="#things-to-know" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Before diving into using the integral to find the area under a curve, there are a few important things to keep in mind:</p>
+<ul>
+<li>This sheet focuses on <em>regular</em> 3d shapes, or shapes that can be defined by a function, either via extrusion or revolution.</li>
+<li>When evaluating these volumes, they will need to be sliced. There are multiple ways to slice objects, but you should pick the method that results in the easiest 2d shapes to work with.</li>
+</ul>
+<h2 id="finding-the-volume-of-a-cone">Finding the volume of a cone<a href="#finding-the-volume-of-a-cone" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Just like finding the area of a 2d shape, we will need to break the problem into small slices so we can assemble a riemann sum. This problem will focus on the volume of a cone with the point facing up. There are multiple ways we can slice this cone, one method (vertical slices) will leave us with arch-shaped slices, and the other (horizontal slices) will leave us with circular slices. Because circles are much easier to work with than arches, we will be using horizontal slices.</p>
+<p>Like in the previous sheet, some problems have defined functions that can be used to find the volume, like cones:</p>
+<p>$V = \frac{1}{3} \pi r^2 h$</p>
+<p>But again, like on the last page, we will not always have or know the function that defines the volume for the specific shape we are working with.</p>
+<p>If we define our cone to be 10 units wide and 5 units tall, we can find the volume by slicing it into infinitely small slices and adding up the areas of each slice.</p>
+<p>We will always need to define the height and width of each slice given an elevation of the slice. This can be done 2d line, allowing us to define a slope and a y-intercept. We can then use this line to find the width of the slice at a given height. We know that the width of the slice at the top of the cone ($5$) is $0$, and the width of the slice at the bottom of the cone ($0$) is $10$. We can then use the slope of the line to find the width of the slice at any height in between.</p>
+<p>$[w_i=10-2h]=[r_i=5-h_i]$</p>
+<p>Now that we know the width of a slice at any height, we are ready to construct our sum</p>
+<p>$\sum\limits_{i=0}^{n}\pi(5-h_i)^2\Delta h$</p>
+<p>And then we can convert the sum to an integral:</p>
+<p>$\int_0^5\pi(5-h)^2,dh$</p>
+<p>Which can finally be solved to find the volume of the cone:</p>
+<p>$\int_0^5\pi(5-h)^2,dh = \frac{-\pi}{3}(5-h)^3\Bigg|_0^5=\frac{125}{3}\pi\text{ cm}^3$</p>
+<p>Now that we have found the volume of the cone, we can use the known cone volume function to check our work:</p>
+<p>$\frac{1}{3}\pi(5)^2(10)=\frac{125}{3}\pi\text{ cm}^3$</p>
+<h2 id="finding-the-volume-of-a-hemisphere">Finding the volume of a hemisphere<a href="#finding-the-volume-of-a-hemisphere" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>The process for finding the volume of a hemisphere is very similar to finding the volume of a cone. The only difference is that we will have to use a different function to determine the width of the slice at a given height. Just like the cone, slicing in the horizontal direction will make the problem much easier to solve, so we will be using coin-shaped horizontal slices to find the volume of the hemisphere. Just like the cone, we have a recognized function that can be used to find the volume of a hemisphere:</p>
+<p>$V = \frac{4}{3} \pi r^3$</p>
+<p>Let&rsquo;s define our hemisphere to have a radius of $7$ units.</p>
+<p>Again, by multiplying the area of a slice at given height by the height of the slice, we can find the volume of the slice. Although still simple, this task is more complicated than the cone because it is not a linear relationship. Instead, we can use the pythagorean theorem to find the width of a slice at a given height:</p>
+<p>$r=\sqrt{7^2-h^2}=\sqrt{49=h^2}$</p>
+<p>And thus we can find the volume of the slice by multiplying the area of the slice by the height of the slice:</p>
+<p>$\pi r^2\Delta h=\pi(7^2-h^2)\Delta h$</p>
+<p>Then the slices can be combined to a summation:</p>
+<p>$\sum\limits_{i=0}^{n}\pi(7^2-h_i^2)\Delta h$</p>
+<p>And then converted to an integral from $0$ to $7$ (bottom to top of the hemisphere):</p>
+<p>$\int_0^7\pi(7^2-h^2),dh$</p>
+<h2 id="conclusion">Conclusion<a href="#conclusion" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>This sheet covers how to find the volume of any regular 3d shape that can be defined by a function. The process is very similar to finding the area of a region bounded by curves, but with a few extra steps. The most important thing to remember is that the slices need to be as simple as possible, so that the area of the slice can be easily calculated.</p>
+
+      </div></div>
+
+  
+    
+<div class="pagination">
+    <div class="pagination__title">
+        <span class="pagination__title-h">Read other pages</span>
+        <hr />
+    </div>
+    <div class="pagination__buttons">
+        
+        <span class="button previous">
+            <a href="https://math.jackcrane.rocks/pages/slice-area/">
+                <span class="button__icon">←</span>
+                <span class="button__text">8.1.1: Finding areas by slicing</span>
+            </a>
+        </span>
+        
+        
+        <span class="button next">
+            <a href="https://math.jackcrane.rocks/pages/revolution-volume/">
+                <span class="button__text">8.2.1: Volumes of revolutions</span>
+                <span class="button__icon">→</span>
+            </a>
+        </span>
+        
+    </div>
+</div>
+
+  
+
+  
+    
+
+  
+</article>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    <span
+      >Calculus reference Sheets ::
+      <a href="https://jackcrane.rocks" target="_blank">Jack Crane</a>
+      based on course content in Fr. May's class</span
+    >
+  </div>
+</footer>
+
+  
+
+<script type="text/javascript" src="/bundle.min.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

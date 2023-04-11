@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>9.2.0: Geometric series Introduction :: CalcSheets</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="This reference sheet covers introductions to geometric series." />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="https://math.jackcrane.rocks/pages/geometric-series-introduction/" />
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="https://math.jackcrane.rocks/styles.css">
+
+
+
+<link rel="stylesheet" href="https://math.jackcrane.rocks/style.css">
+
+
+
+  <link rel="shortcut icon" href="https://math.jackcrane.rocks/img/theme-colors/blue.png">
+  <link rel="apple-touch-icon" href="https://math.jackcrane.rocks/img/theme-colors/blue.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+  
+    <meta name="twitter:site" content="" />
+  
+    <meta name="twitter:creator" content="" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="9.2.0: Geometric series Introduction">
+<meta property="og:description" content="This reference sheet covers introductions to geometric series." />
+<meta property="og:url" content="https://math.jackcrane.rocks/pages/geometric-series-introduction/" />
+<meta property="og:site_name" content="CalcSheets" />
+
+  
+    <meta property="og:image" content="https://math.jackcrane.rocks/img/favicon/blue.png">
+  
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+
+
+
+
+
+
+
+
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css"
+  integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0"
+  crossorigin="anonymous"
+/>
+
+
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js"
+  integrity="sha384-PwRUT/YqbnEjkZO0zZxNqcxACrXe+j766U2amXcgMg5457rve2Y7I6ZJSm2A0mS4"
+  crossorigin="anonymous"
+></script>
+
+
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js"
+  integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+  crossorigin="anonymous"
+  onload="renderMathInElement(document.body);"
+></script>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: "$$", right: "$$", display: true },
+        { left: "$", right: "$", display: false },
+      ],
+    });
+  });
+</script>
+
+<style>
+  p,
+  span,
+  li {
+    line-height: 2;
+  }
+  .katex {
+    line-height: initial;
+    color: #23b0ff;
+    background-color: #23aeff1d;
+    padding: 0.5px 3px;
+    margin: 2px 0;
+     
+    transition: 0.2s;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    display: inline-block;
+  }
+  .katex * {
+    line-height: initial;
+  }
+  .katex:hover {
+    background-color: #23aeff3d;
+    border: 1px solid #23aeff;
+  }
+   
+  ::selection {
+    background: #23b0ff;
+    color: #fff;
+  }
+  @media print {
+     
+    body {
+      visibility: visible !important;
+      padding: 20px;
+    }
+    * {
+      visibility: visible !important;
+    }
+  }
+  @media print {
+    .header {
+      display: initial;
+    }
+  }
+</style>
+
+
+</head>
+<body class="blue">
+
+
+<div class="container center headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Jack&#39;s Calculus Sheets
+  </div>
+</a>
+
+    </div>
+    
+    
+  </div>
+  
+</header>
+
+
+  <div class="content">
+    
+<article class="post">
+  <h1 class="post-title">
+    <a href="https://math.jackcrane.rocks/pages/geometric-series-introduction/">9.2.0: Geometric series Introduction</a>
+  </h1>
+  <div class="post-meta">
+    
+    
+    
+  </div>
+
+  
+  
+
+
+  
+
+  <div class="post-content"><div>
+        <h1 id="geometric-series">Geometric series<a href="#geometric-series" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<blockquote>
+<p>This reference sheet covers introductions to geometric series.</p>
+</blockquote>
+<h2 id="introduction">Introduction<a href="#introduction" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>In 9.1.0, we explored finding values of sequences through functions and lists of numbers. In this reference sheet, we will explore finding values of sequences through recursion, where the value of a term is defined by the value of the previous term.</p>
+<p>Adding the terms of any sequence produces a series. Previously we explored finite series, and this sheet features infinite series.</p>
+<h2 id="geometric-series-in-general">Geometric series in general<a href="#geometric-series-in-general" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Geometric series can be both finite and infinite. An infinite geometric series will not approach a finite value, whereas a finite geometric series will approach a finite value.</p>
+<p>Series are a sum of terms, where each term is a function of the previous term. These series will always follow a pattern:</p>
+<p><strong>For a finite geometric series:</strong></p>
+<p>$a+ax+ax^2+\cdots+ax^{n-1}$</p>
+<p><strong>For an infinite geometric series:</strong></p>
+<p>$a+ax+ax^2+\cdots+ax^{n-1}+ax^{n}+\cdots$</p>
+<h2 id="the-sum-of-a-finite-geometric-series">The sum of a finite geometric series<a href="#the-sum-of-a-finite-geometric-series" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>The sum of a finite geometric series can be found by iterating over a series and computing the sum of each term. This works well and is easy to understand, but is not efficient, and is often not feasible for large series.</p>
+<p>The sum of a finite geometric series can be found by using the formula:</p>
+<p>$S_n=a+ax+ax^2+\cdots+ax^{n-1}=\frac{a(1-x^n)}{1-x}$</p>
+<p>So long that $x\neq1$.</p>
+<h2 id="the-sum-of-an-infinite-geometric-series">The sum of an infinite geometric series<a href="#the-sum-of-an-infinite-geometric-series" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>The sum of an infinite geometric series is simply found by taking the limit of the sum of a finite geometric series as $n\to\infin$:</p>
+<p>$\lim\limits_{n\to\infin}S_n=a+ax+ax^2+\cdots+ax^{n-1}+ax^{n}+\cdots=\frac{a}{1-x}$</p>
+<p>This formula only works if $|x|&lt;1$. If $|x|\geq1$, then the series will diverge to $\infin$ if $a&gt;1$, or $-\infin$ if $a&lt;1$.</p>
+<p>If $x=1$, then the series will not develop and each term will remain at $a$.</p>
+<p>$a+a+a+a+\cdots$</p>
+<p>If $x=-1$, the series will oscillate between $a$ and $-a$, and thus will never converge.</p>
+
+      </div></div>
+
+  
+    
+<div class="pagination">
+    <div class="pagination__title">
+        <span class="pagination__title-h">Read other pages</span>
+        <hr />
+    </div>
+    <div class="pagination__buttons">
+        
+        <span class="button previous">
+            <a href="https://math.jackcrane.rocks/pages/convergence/">
+                <span class="button__icon">←</span>
+                <span class="button__text">9.1.2: Convergence of sequences</span>
+            </a>
+        </span>
+        
+        
+        <span class="button next">
+            <a href="https://math.jackcrane.rocks/pages/geometric-series-medicine/">
+                <span class="button__text">9.2.1: Geometric series: Medicine</span>
+                <span class="button__icon">→</span>
+            </a>
+        </span>
+        
+    </div>
+</div>
+
+  
+
+  
+    
+
+  
+</article>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    <span
+      >Calculus reference Sheets ::
+      <a href="https://jackcrane.rocks" target="_blank">Jack Crane</a>
+      based on course content in Fr. May's class</span
+    >
+  </div>
+</footer>
+
+  
+
+<script type="text/javascript" src="/bundle.min.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

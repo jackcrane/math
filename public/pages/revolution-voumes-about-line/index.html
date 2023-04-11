@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>8.2.2: Volumes of revolutions around a line :: CalcSheets</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="This reference sheet covers using integrals to find volumes of objects defined by multiple lines that revolve around an axis or a line." />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="https://math.jackcrane.rocks/pages/revolution-voumes-about-line/" />
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="https://math.jackcrane.rocks/styles.css">
+
+
+
+<link rel="stylesheet" href="https://math.jackcrane.rocks/style.css">
+
+
+
+  <link rel="shortcut icon" href="https://math.jackcrane.rocks/img/theme-colors/blue.png">
+  <link rel="apple-touch-icon" href="https://math.jackcrane.rocks/img/theme-colors/blue.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+  
+    <meta name="twitter:site" content="" />
+  
+    <meta name="twitter:creator" content="" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="8.2.2: Volumes of revolutions around a line">
+<meta property="og:description" content="This reference sheet covers using integrals to find volumes of objects defined by multiple lines that revolve around an axis or a line." />
+<meta property="og:url" content="https://math.jackcrane.rocks/pages/revolution-voumes-about-line/" />
+<meta property="og:site_name" content="CalcSheets" />
+
+  
+    <meta property="og:image" content="https://math.jackcrane.rocks/img/favicon/blue.png">
+  
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+
+
+
+
+
+
+
+
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css"
+  integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0"
+  crossorigin="anonymous"
+/>
+
+
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js"
+  integrity="sha384-PwRUT/YqbnEjkZO0zZxNqcxACrXe+j766U2amXcgMg5457rve2Y7I6ZJSm2A0mS4"
+  crossorigin="anonymous"
+></script>
+
+
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js"
+  integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+  crossorigin="anonymous"
+  onload="renderMathInElement(document.body);"
+></script>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: "$$", right: "$$", display: true },
+        { left: "$", right: "$", display: false },
+      ],
+    });
+  });
+</script>
+
+<style>
+  p,
+  span,
+  li {
+    line-height: 2;
+  }
+  .katex {
+    line-height: initial;
+    color: #23b0ff;
+    background-color: #23aeff1d;
+    padding: 0.5px 3px;
+    margin: 2px 0;
+     
+    transition: 0.2s;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    display: inline-block;
+  }
+  .katex * {
+    line-height: initial;
+  }
+  .katex:hover {
+    background-color: #23aeff3d;
+    border: 1px solid #23aeff;
+  }
+   
+  ::selection {
+    background: #23b0ff;
+    color: #fff;
+  }
+  @media print {
+     
+    body {
+      visibility: visible !important;
+      padding: 20px;
+    }
+    * {
+      visibility: visible !important;
+    }
+  }
+  @media print {
+    .header {
+      display: initial;
+    }
+  }
+</style>
+
+
+</head>
+<body class="blue">
+
+
+<div class="container center headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Jack&#39;s Calculus Sheets
+  </div>
+</a>
+
+    </div>
+    
+    
+  </div>
+  
+</header>
+
+
+  <div class="content">
+    
+<article class="post">
+  <h1 class="post-title">
+    <a href="https://math.jackcrane.rocks/pages/revolution-voumes-about-line/">8.2.2: Volumes of revolutions around a line</a>
+  </h1>
+  <div class="post-meta">
+    
+    
+    
+  </div>
+
+  
+  
+
+
+  
+
+  <div class="post-content"><div>
+        <h1 id="finding-the-volume-of-a-region-through-revolution-around-a-defined-line">Finding the volume of a region through revolution around a defined line<a href="#finding-the-volume-of-a-region-through-revolution-around-a-defined-line" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<blockquote>
+<p>This reference sheet elaborates on 8.2.1 and covers using integrals to find volumes of objects defined by multiple lines that revolve around a line that is not an axis.</p>
+</blockquote>
+<h2 id="introduction">Introduction<a href="#introduction" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>This sheet covers the exact same process as 8.2.1, but instead of revolving around an axis, we will be revolving around a line that is not an axis. This adds an extra step to the process, but the process and understanding is still the same.</p>
+<h2 id="things-to-know">Things to Know<a href="#things-to-know" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<ul>
+<li>The process of finding the volume of a revolution is almost exactly the same to finding the volume of a defined solid revolved around an axis</li>
+<li>The decision of what direction to slice the shape is a more difficult decision to make</li>
+<li>Bounds are rarely given in this type of question and must be found</li>
+</ul>
+<h2 id="finding-the-volume-of-a-weird-shape">Finding the volume of a weird shape<a href="#finding-the-volume-of-a-weird-shape" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>We have a shape bounded by the curves $y=x$ and $y=x^2$ is rotated about the line $y=3$, and we want to find the volume of this shape.</p>
+<p>Just like finding the volume of a defined solid, we want to find the way to slice the shape that will result in the easiest 2d shapes to work with. In this type of a shape, there are two possible ways to slice the shape, and they are named &ldquo;washers&rdquo; and &ldquo;shells&rdquo;. Washers are discs with an outer and inner radius (the space between called $\delta r$) and are evaluated as their thickness reduces to 0. Shells are discs with defined thicknesses, but are evaluated as their $\delta r$ approaches 0.</p>
+<p>For this problem, we will be using the washer method, finding vertical slices that are perpendicular to the line $y=3$. This will result in circular discs with an outer and inner radius that can be found using the equations of the curves.</p>
+<p>The first step is to find the inner and outer radiuses of the discs, based on the equations of the curves.</p>
+<p>Inner radius: $r_{in}=3-x$</p>
+<p>Outer radius: $r_{out}=3-x^2$</p>
+<p>The next step is to find the area of each disc, which is simply found by $\pi(r_{out}^2-r_{in}^2)$ and then multiplying by the thickness of the disc, $\Delta x$, in this case. This gives us the volume of each slice, which we can then add together to find the total volume:</p>
+<p>$\pi(3-x^2)^2\Delta x-\pi(3-x)^2\Delta x$</p>
+<p>Then we can use a summation to find the total volume:</p>
+<p>$\sum(\pi(3-x^2)^2-\pi(3-x)^2)\Delta x$</p>
+<p>Then we can integrate to find the volume:</p>
+<p>$\int(\pi(3-x^2)^2-\pi(3-x)^2)dx = \int((9-6x^2+x^4)-(9-6x+x^2))dx = \pi\int(6x-7x^2+x^4)dx$</p>
+<p>$\pi(3x^2-\frac{7x^3}{3}+\frac{x^5}{5})\Bigg|_a^b$</p>
+<p>The next question is what the bounds of the integral are. Computing the bounds is more difficult than in previous problems, but is still simple: we need to find the points where the curves that define the shape intersect themselves. This is done by setting the two equations equal to each other and solving for $x$, which gives us $x=0$ and $x=1$. This means that the bounds of the integral are $0$ and $1$.</p>
+<p>$\pi(3x^2-\frac{7x^3}{3}+\frac{x^5}{5})\Bigg|_0^1=2.72$</p>
+<h2 id="conclusion">Conclusion<a href="#conclusion" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>This sheet refines the previous sheet in how to find the volume of a solid defined by two curves that revolve around a line and not an axis. The process is the same, but the bounds are more difficult to find.</p>
+
+      </div></div>
+
+  
+    
+<div class="pagination">
+    <div class="pagination__title">
+        <span class="pagination__title-h">Read other pages</span>
+        <hr />
+    </div>
+    <div class="pagination__buttons">
+        
+        <span class="button previous">
+            <a href="https://math.jackcrane.rocks/pages/revolution-volume/">
+                <span class="button__icon">←</span>
+                <span class="button__text">8.2.1: Volumes of revolutions</span>
+            </a>
+        </span>
+        
+        
+        <span class="button next">
+            <a href="https://math.jackcrane.rocks/pages/arc-length/">
+                <span class="button__text">8.2.3: Arc Length</span>
+                <span class="button__icon">→</span>
+            </a>
+        </span>
+        
+    </div>
+</div>
+
+  
+
+  
+    
+
+  
+</article>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    <span
+      >Calculus reference Sheets ::
+      <a href="https://jackcrane.rocks" target="_blank">Jack Crane</a>
+      based on course content in Fr. May's class</span
+    >
+  </div>
+</footer>
+
+  
+
+<script type="text/javascript" src="/bundle.min.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>
