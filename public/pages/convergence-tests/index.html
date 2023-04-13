@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
   
-    <title>Formulas :: CalcSheets</title>
+    <title>9.4.0: Convergence Tests :: CalcSheets</title>
   
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="This page contains a list of all the formulas that are used in the reference sheets." />
+<meta name="description" content="This reference sheet covers comparing two series to predict convergence." />
 <meta name="keywords" content="" />
 <meta name="robots" content="noodp" />
-<link rel="canonical" href="https://math.jackcrane.rocks/pages/formulas/" />
+<link rel="canonical" href="https://math.jackcrane.rocks/pages/convergence-tests/" />
 
 
 
@@ -45,9 +45,9 @@
 
 <meta property="og:locale" content="en" />
 <meta property="og:type" content="article" />
-<meta property="og:title" content="Formulas">
-<meta property="og:description" content="This page contains a list of all the formulas that are used in the reference sheets." />
-<meta property="og:url" content="https://math.jackcrane.rocks/pages/formulas/" />
+<meta property="og:title" content="9.4.0: Convergence Tests">
+<meta property="og:description" content="This reference sheet covers comparing two series to predict convergence." />
+<meta property="og:url" content="https://math.jackcrane.rocks/pages/convergence-tests/" />
 <meta property="og:site_name" content="CalcSheets" />
 
   
@@ -182,7 +182,7 @@
     
 <article class="post">
   <h1 class="post-title">
-    <a href="https://math.jackcrane.rocks/pages/formulas/">Formulas</a>
+    <a href="https://math.jackcrane.rocks/pages/convergence-tests/">9.4.0: Convergence Tests</a>
   </h1>
   <div class="post-meta">
     
@@ -197,35 +197,43 @@
   
 
   <div class="post-content"><div>
-        <h1 id="formulas">Formulas<a href="#formulas" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
-<p>This page contains a list of all the formulas that are used in the reference sheets.</p>
-<h2 id="823-arc-length">8.2.3: Arc Length<a href="#823-arc-length" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
-<p>Arc length of a non-parametric curve $\int_a^b\sqrt{1+(f&rsquo;(x))^2}dx$</p>
-<p>Arc length of a parametric curve $\int_a^b\sqrt{(\frac{dx}{dt})^2+(\frac{dy}{dt})^2}dx$</p>
-<h2 id="920">9.2.0<a href="#920" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
-<p>Sum of a finite geometric series $S_n=a+ax+ax^2+\cdots+ax^{n-1}=\frac{a(1-x^n)}{1-x}$ where $x\neq1$</p>
-<p>Sum of an infinite geometric series $\lim\limits_{n\to\infin}S_n=a+ax+ax^2+\cdots+ax^{n-1}+ax^{n}+\cdots=\frac{a}{1-x}$ where $|x|&lt;1$</p>
-<h2 id="930">9.3.0<a href="#930" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
-<p><strong>Convergence tests</strong></p>
-<p>If $\lim\limits_{n\to\infin}a_n\neq 0$ or $\lim\limits_{n\to\infin}a_n\neq\infin$, does not exist, the series diverges</p>
-<p><strong>Integral test</strong></p>
-<p>If $\lim\limits_{n\to\infin}\int\limits_1^nf(x)dx$, converges, then $\sum{a_n}$ converges</p>
-<p>If $\lim\limits_{n\to\infin}\int\limits_1^nf(x)dx$, diverges, then $\sum{a_n}$ diverges</p>
-<p><strong>P-series test</strong></p>
-<p>$\sum\limits_{n=1}^\infin \frac{1}{n^p}$ converges if $p&gt;1$ and diverges if $p\leq1$.</p>
-<h2 id="940">9.4.0<a href="#940" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
-<p><strong>Comparison test</strong></p>
+        <h1 id="comparison-of-series">Comparison of series<a href="#comparison-of-series" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<blockquote>
+<p>This reference sheet covers comparing two series to predict convergence.</p>
+</blockquote>
+<p>We can use comparison tests to compare two series and predict convergence.</p>
+<h2 id="comparison-test-theorem-94">Comparison test <code>Theorem 9.4</code><a href="#comparison-test-theorem-94" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
 <p>Suppose $0\leq a_n\leq b_n$ for all $n$ beyond a certain value.</p>
 <ul>
 <li>If $\sum{b_n}$ converges, then $\sum{a_n}$ converges</li>
 <li>If $\sum{b_n}$ diverges, then $\sum{a_n}$ diverges</li>
 </ul>
+<p>We are asked to compute if the series converges</p>
+<p>$\sum\limits_{n=1}^\infin \frac{1}{n^3+1}$</p>
+<p>When $n\geq 1$, we know that $n^3+1\geq 1$ and $n^3+1\geq n^3$. Thus, we can use the comparison test to determine if the series converges.</p>
+<p>$0\leq \frac{1}{n^3+1}\leq \frac{1}{n^3}$</p>
+<p>By that statement, we know that every term in the series of $\sum{\frac{1}{n^3+1}}$ is less than or equal to every term in the series of $\sum{\frac{1}{n^3}}$. Since we know that $\sum{\frac{1}{n^3}}$ converges by the p-series test, we can conclude that $\sum{\frac{1}{n^3+1}}$ also converges.</p>
+<h2 id="limit-comparison-test-theorem-95">Limit comparison test <code>Theorem 9.5</code><a href="#limit-comparison-test-theorem-95" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>The comparison test uses the relationship between the terms of two series, $a_n$ and $b_n$, to determine if the series converges. The limit comparison test uses the relationship between the terms of a series and the limit of the series as they approach infinity to determine if the series converges.</p>
+<p>If we are asked to predict the convergence of</p>
+<p>$\sum{\frac{n^2-5}{n^3+n+2}}$</p>
+<p>The first step is to observe how as $n\to\infin$, the highest-power terms in the numerator $n^2$ and denominator $n^3$ dominate the function, and thus the entire function can be rewritten as</p>
+<p>$\frac{n^2}{n^3}=\frac{1}{n}$</p>
+<p>And since we already know that the harmonic series diverges, we can make a reasonable guess that the series $\sum{\frac{n^2-5}{n^3+n+2}}$ also diverges. However, we are not able to know for 100% certainty because the inequality is not in the right direction</p>
+<p>$\frac{n^2-5}{n^3+n+2}\leq \frac{1}{n}$</p>
+<p>Thus, we can use the limit comparison test to determine if the series converges.</p>
 <p><strong>Limit comparison test</strong></p>
 <p>Suppose $a_n&gt;0$ and $b_n&gt;0$ for all $n$. If</p>
 <p>$\lim\limits_{n\to\infin} \frac{a_n}{b_n} = c$</p>
 <p>where $c&gt;0$, then the two series $\sum{a_n}$ and $\sum{b_n}$ either both converge or diverge.</p>
-<p><strong>Absolute convergence test</strong></p>
+<h2 id="series-of-both-positive-and-negative-terms-theorem-96">Series of both positive and negative terms <code>Theorem 9.6</code><a href="#series-of-both-positive-and-negative-terms-theorem-96" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>If we are asked to predict the convergence of a series with both positive and negative terms, the total area of the rectangles is no longer simply equal to $\sum{a_n}$. That said, it is still true that if the total area of the rectangles is finite, the series converges. Thus, we get</p>
+<p><strong>Convergence of Absolute Values Implies Convergence</strong></p>
 <p>If $\sum{|a_n|}$ converges, then so does $\sum{a_n}$.</p>
+<h2 id="the-ratio-test-theorem-97">The ratio test <code>Theorem 9.7</code><a href="#the-ratio-test-theorem-97" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>The idea of a geometric series is the ratio of a term to its next term:</p>
+<p>$\frac{a_{n+1}}{a_n}$</p>
+<p>Where the ratio is a constant for all $n$. The ratio test uses this idea to determine if a series converges.</p>
 <p><strong>Ratio test</strong></p>
 <p>For a series $\sum{a_n}$, suppose the sequence of ratios $|a_{n+1}/a_n|$ has a limit:</p>
 <p>$\lim\limits_{n\to\infin} |a_{n+1}|/|a_n| = L$</p>
@@ -234,40 +242,22 @@
 <li>If $L&gt;1$ or $L=\infin$, then $\sum{a_n}$ diverges</li>
 <li>If $L=1$, the test does not tell us anything about the convergence of the series</li>
 </ul>
+<h2 id="alternating-series-test-theorem-98">Alternating series test <code>Theorem 9.8</code><a href="#alternating-series-test-theorem-98" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>A series is called an alternating series if the terms alternate in sign</p>
+<p>$\sum\limits_{n=1}^\infin \frac{(-1)^{n-1}}{n}$</p>
+<p>$=1-\frac{1}{2}+\frac{1}{3}-\frac{1}{4}+\frac{1}{5}-\frac{1}{6}+\cdots$</p>
+<p>We can use the alternating series test to determine if the series converges.</p>
 <p><strong>Alternating series test</strong></p>
 <p>An alternating series of the form</p>
 <p>$\sum\limits_{n=1}^\infin (-1)^{n-1}a_n=a_1-a_2+a_3-a_4+\cdots$</p>
 <p>converges if</p>
 <p>$0 \lt a_{n+1} \lt a_n$ for all $n$. and $\lim\limits_{n\to\infin} a_n = 0$</p>
-<p><strong>Error bounds for alternating series</strong></p>
-<p>Let $S_n=\sum\limits_{i=1}^n (-1)^{i-1}a_i$ be the $n^{th}$ partial sum of an alternating series and let $S=\lim\limits_{n\to\infin}S_n$. Suppose that $0 \lt a_{n+1} \lt a_n$ for all $n$ and $\lim\limits_{n\to\infin} a_n = 0$. Then $|S-S_n|\leq a_{n+1}$.</p>
-<p><strong>Absolute or conditional convergence test</strong></p>
+<h2 id="absolute-and-conditional-convergence">Absolute and conditional convergence<a href="#absolute-and-conditional-convergence" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
 <p>We say that a series $\sum{a_n}$ is</p>
 <ul>
 <li>Absolutely convergent if $\sum{a_n}$ and $\sum{|a_n|}$ both converge</li>
 <li>Conditionally convergent if $\sum{a_n}$ converges but $\sum{|a_n|}$ diverges</li>
 </ul>
-<h2 id="950">9.5.0<a href="#950" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
-<p><strong>Power series</strong></p>
-<p>A power series about $x=a$ is a sum of constants times powers of $x-a$:</p>
-<p>$C_0+C_1(x-a)+C_2(x-a)^2+\cdots+C_n(x-a)^n+\cdots=\sum\limits_{n=0}^\infin C_n(x-a)^n$</p>
-<p><strong>Radius of convergence</strong></p>
-<p>The radius of convergence $R$ of a power series has 3 possible states</p>
-<ul>
-<li>$R=0$: The series converges for only $x=a$</li>
-<li>$R=\infin$: The series converges for all $x$</li>
-<li>$R&gt;0$: The series converges for $|x-a|&lt;R$ and diverges for $|x-a|\gt R$</li>
-</ul>
-<p>Calculate with a ratio test</p>
-<p>$\sum\limits_{n=0}^\infin C_n(x-a)^n$</p>
-<p>we can use the ratio test by setting $a_n=C_n(x-a)^n$ the applying the following rules</p>
-<ul>
-<li>If $\lim\limits_{n\to\infin}|a_{n+1}|/|a_n|$ is infinite, then the radius is $0$.</li>
-<li>If $\lim\limits_{n\to\infin}|a_{n+1}|/|a_n|$ is $0$, then the radius is $\infin$.</li>
-<li>If $\lim\limits_{n\to\infin}|a_{n+1}|/|a_n| = K|x-a|$, where K is finite and not $0$, then the radius is $1/K$.</li>
-</ul>
-<p><strong>Interval of convergence</strong></p>
-<p>The interval of convergence of a power series is the interval between the two points $a-R$ and $a+R$, including endpoints where the series converges.</p>
 
       </div></div>
 
@@ -281,12 +271,19 @@
     <div class="pagination__buttons">
         
         <span class="button previous">
-            <a href="https://math.jackcrane.rocks/pages/interval-of-convergence/">
+            <a href="https://math.jackcrane.rocks/pages/series-convergence/">
                 <span class="button__icon">←</span>
-                <span class="button__text">9.5.1: Interval of convergence</span>
+                <span class="button__text">9.3.0: Convergence of series</span>
             </a>
         </span>
         
+        
+        <span class="button next">
+            <a href="https://math.jackcrane.rocks/pages/power-series/">
+                <span class="button__text">9.5.0: Power series</span>
+                <span class="button__icon">→</span>
+            </a>
+        </span>
         
     </div>
 </div>

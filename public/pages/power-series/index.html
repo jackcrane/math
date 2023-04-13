@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
   
-    <title>9.1.2: Convergence of sequences :: CalcSheets</title>
+    <title>9.5.0: Power series :: CalcSheets</title>
   
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="This reference sheet covers finding the convergence of sequences of numbers" />
+<meta name="description" content="This reference sheet covers using the power series to calculate the interval of convergence." />
 <meta name="keywords" content="" />
 <meta name="robots" content="noodp" />
-<link rel="canonical" href="https://math.jackcrane.rocks/pages/convergence/" />
+<link rel="canonical" href="https://math.jackcrane.rocks/pages/power-series/" />
 
 
 
@@ -45,9 +45,9 @@
 
 <meta property="og:locale" content="en" />
 <meta property="og:type" content="article" />
-<meta property="og:title" content="9.1.2: Convergence of sequences">
-<meta property="og:description" content="This reference sheet covers finding the convergence of sequences of numbers" />
-<meta property="og:url" content="https://math.jackcrane.rocks/pages/convergence/" />
+<meta property="og:title" content="9.5.0: Power series">
+<meta property="og:description" content="This reference sheet covers using the power series to calculate the interval of convergence." />
+<meta property="og:url" content="https://math.jackcrane.rocks/pages/power-series/" />
 <meta property="og:site_name" content="CalcSheets" />
 
   
@@ -182,7 +182,7 @@
     
 <article class="post">
   <h1 class="post-title">
-    <a href="https://math.jackcrane.rocks/pages/convergence/">9.1.2: Convergence of sequences</a>
+    <a href="https://math.jackcrane.rocks/pages/power-series/">9.5.0: Power series</a>
   </h1>
   <div class="post-meta">
     
@@ -197,39 +197,37 @@
   
 
   <div class="post-content"><div>
-        <h1 id="convergence-of-sequences">Convergence of sequences<a href="#convergence-of-sequences" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+        <h1 id="comparison-of-series">Comparison of series<a href="#comparison-of-series" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
 <blockquote>
-<p>This reference sheet covers finding the convergence of sequences of numbers.</p>
+<p>This reference sheet covers using the power series to calculate the interval of convergence.</p>
 </blockquote>
 <h2 id="introduction">Introduction<a href="#introduction" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
-<p>In 9.1.0, we explored finding values of sequences through functions and lists of numbers. In 9.1.1, we explored finding values of sequences through recursion, where the value of a term is defined by the value of the previous term. In this reference sheet, we will explore finding the convergence of sequences, or the value that a sequence approaches as the number of terms increases.</p>
-<blockquote>
-<p>The sequence $s_1,s_2,s_3,\dots,s_n$ has a limit $L$, written $\lim\limits_{n\to\infin}s_n=L$ if $s_n$ is as close to $L$ as we please whenever $n$ is sufficiently large. If a limit, $L$, exists, we say the sequence converges to its limit $L$. If no limit exists, we say the sequence diverges.</p>
-</blockquote>
-<p>To calculate the limit of sequences, we will use the following rules:</p>
-<ul>
-<li>The sequence $s_n=x^n$ converges to $0$ if $|x|&lt;1$ and diverges if $|x|&gt;1$.</li>
-<li>The sequence $s_n=\frac{1}{n^p}$ converges to $0$ if $p&gt;10$.</li>
-</ul>
-<h2 id="examples">Examples<a href="#examples" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
-<h3 id="example-1">Example 1<a href="#example-1" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
-<p>Does the following sequence converge or diverge?</p>
-<p>$s_n=0.8^n$</p>
-<p>Since $|0.8|&lt;1$, the sequence converges to $0$.</p>
-<h3 id="example-2">Example 2<a href="#example-2" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
-<p>Does the following sequence converge or diverge?</p>
-<p>$s_n=\frac{1-e^{-n}}{1+e^{-1}}$</p>
-<p>Since $e^{-1}&lt;1$, we have $\lim\limits_{n\to\infin}e^{-n}=\lim\limits_{n\to\infin}(e^{-1})^n=0$ by the first fact. Thus, the sequence converges to $1$.</p>
-<h3 id="example-3">Example 3<a href="#example-3" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
-<p>Does the following sequence converge or diverge?</p>
-<p>$s_n=\frac{n^2+1}{n}$</p>
-<p>Since $(n^2+1)/n$ grows without bound, the sequence diverges.</p>
-<h3 id="example-4">Example 4<a href="#example-4" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
-<p>Does the following sequence converge or diverge?</p>
-<p>$s_n=1+(-1)^n$</p>
-<p>Since $(-1)^n$ alternates in sign, the function will never approach a limit, and thus diverges.</p>
-<h2 id="conclusion">Conclusion<a href="#conclusion" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
-<p>In this reference sheet, we explored finding the convergence of sequences, or the value that a sequence approaches as the number of terms increases. We found that sequences can converge to a limit, or diverge to infinity. We also found that sequences can converge to $0$ if $|x|&lt;1$ and diverge if $|x|&gt;1$.</p>
+<p>A power series about $x=a$ is a sum of constants times powers of $x-a$.</p>
+<p>$C_0+C_1(x-a)+C_2(x-a)^2+\cdots+C_n(x-a)^n+\cdots$</p>
+<p>This can all be rewritten as a summation</p>
+<p>$\sum\limits_{n=0}^\infin C_n(x-a)^n$</p>
+<p>To investigate the convergence of a power series, we start with partial sums</p>
+<p>$S_n(x), S_1(x), S_2(x), \cdots$</p>
+<p>Recall that for a fixed value of $x$, if the partial sums converges to a limit S, then the power series converges to $S$ for this value of $x$.</p>
+<p>It is important to note that power series may converge for some values of $x$ and diverge for other values of $x$.</p>
+<h2 id="example-finding-general-terms">Example: Finding general terms<a href="#example-finding-general-terms" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>If we are asked to find an expression for the general term in summation notation of the power series</p>
+<p>$\frac{(x-2)^4}{4}-\frac{(x-2)^6}{9}+\frac{(x-2)^8}{16}-\frac{(x-2)^10}{25}+\cdots$</p>
+<p>By the general form introduced in the introduction, we can find out that the series is about $x=2$. We can also recognize that the exponent is increasing by 2 each time and is thus $2n$, and the denominator is doubling each time and is thus $2^n$, allowing us to write the series as a summation:</p>
+<p>$\sum\limits_{n=2}^\infin \frac{(x-2)^{2n}}{2^n}$</p>
+<p>This is close, but the series we are given alternates between positive and negative terms. We can fix this by multiplying each term by $(-1)^n$.</p>
+<p>$\sum\limits_{n=2}^\infin \frac{(-1)^n(x-2)^{2n}}{2^n}$</p>
+<h2 id="example-finding-convergence-or-divergence-at-a-point">Example: Finding convergence or divergence at a point<a href="#example-finding-convergence-or-divergence-at-a-point" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>If we are given a power series defined by the following expression</p>
+<p>$\sum\limits_{n=0}^\infin \frac{x^n}{2^n}$</p>
+<p>We are asked to determine whether the series converges or diverges at $x=-1$ and $x=3$.</p>
+<p>We will start with $x=-1$. The first step is to substitute $x=-1$ into the series. We get</p>
+<p>$\sum\limits_{n=0}^\infin \frac{(-1)^n}{2^n}=\sum\limits_{n=0}^\infin (-\frac{1}{2})^n$</p>
+<p>By the definition of a geometric series and the formula for the <code>Sum of an infinite geometric series</code>, we know the ratio of the series ($-1/2$), and thus it converges to</p>
+<p>$\frac{1}{1-(-\frac{1}{2})}=\frac{2}{3}$</p>
+<p>The next step is to substitute $x=3$ into the series. We get</p>
+<p>$\sum\limits_{n=0}^\infin \frac{3^n}{2^n}=\sum\limits_{n=0}^\infin (\frac{3}{2})^n$</p>
+<p>We can see the ratio of the series is $\frac{3}{2}$, and thus it diverges because the absolute value of the ratio is greater than 1.</p>
 
       </div></div>
 
@@ -243,16 +241,16 @@
     <div class="pagination__buttons">
         
         <span class="button previous">
-            <a href="https://math.jackcrane.rocks/pages/sequences-recursively/">
+            <a href="https://math.jackcrane.rocks/pages/convergence-tests/">
                 <span class="button__icon">←</span>
-                <span class="button__text">9.1.1: Sequences through recursion</span>
+                <span class="button__text">9.4.0: Convergence Tests</span>
             </a>
         </span>
         
         
         <span class="button next">
-            <a href="https://math.jackcrane.rocks/pages/geometric-series-introduction/">
-                <span class="button__text">9.2.0: Geometric series Introduction</span>
+            <a href="https://math.jackcrane.rocks/pages/interval-of-convergence/">
+                <span class="button__text">9.5.1: Interval of convergence</span>
                 <span class="button__icon">→</span>
             </a>
         </span>

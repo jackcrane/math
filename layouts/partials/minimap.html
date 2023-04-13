@@ -1,0 +1,106 @@
+<div class="minimap">
+  <iframe class="minimap-iframe" src="about:blank"></iframe>
+  <div class="minimap-scrollbar"></div>
+</div>
+
+<style>
+  body {
+    position: relative;
+  }
+
+  .minimap {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100%;
+    overflow: hidden;
+    opacity: 0.8;
+    pointer-events: none;
+    background: rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+
+  .minimap-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    pointer-events: none;
+  }
+
+  .minimap-scrollbar {
+    position: absolute;
+    width: 100%;
+    background: rgba(0, 0, 255, 0.5);
+    pointer-events: all;
+    cursor: grab;
+    z-index: 10;
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const content = document.querySelector(".content");
+    const minimap = document.querySelector(".minimap");
+    const minimapIframe = document.querySelector(".minimap-iframe");
+    const minimapScrollbar = document.querySelector(".minimap-scrollbar");
+
+    function updateMinimap() {
+      const contentHeight = content.scrollHeight;
+      const viewportHeight = window.innerHeight;
+      const scrollPosition = window.scrollY;
+      const minimapScale = minimap.offsetHeight / contentHeight;
+
+      // Load and scale the content for the minimap
+      minimapIframe.srcdoc = `
+      <style>
+        html, body {
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          transform-origin: 0 0;
+          transform: scale(${minimapScale});
+        }
+      </style>
+      ${content.innerHTML}
+    `;
+
+      // Update scrollbar position and size
+      minimapScrollbar.style.height = `${viewportHeight * minimapScale}px`;
+      minimapScrollbar.style.transform = `translateY(${
+        scrollPosition * minimapScale
+      }px)`;
+    }
+
+    updateMinimap();
+    window.addEventListener("scroll", updateMinimap);
+    window.addEventListener("resize", updateMinimap);
+
+    // Dragging functionality
+    let isDragging = false;
+    let startY;
+
+    minimapScrollbar.addEventListener("mousedown", (e) => {
+      isDragging = true;
+      startY = e.clientY;
+      minimapScrollbar.style.cursor = "grabbing";
+    });
+
+    window.addEventListener("mousemove", (e) => {
+      if (!isDragging) return;
+      const deltaY = e.clientY - startY;
+      const contentHeight = content.scrollHeight;
+      const viewportHeight = window.innerHeight;
+      const scrollPercent = deltaY / minimap.offsetHeight;
+      window.scrollTo(0, window.scrollY + scrollPercent * contentHeight);
+    });
+
+    window.addEventListener("mouseup", () => {
+      isDragging = false;
+      minimapScrollbar.style.cursor = "grab";
+    });
+  });
+</script>

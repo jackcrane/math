@@ -530,6 +530,276 @@ If we have a series in which each term is a number defined by $a_n$, the series 
     </item>
     
     <item>
+      <title>9.4.0: Convergence Tests</title>
+      <link>https://math.jackcrane.rocks/pages/convergence-tests/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://math.jackcrane.rocks/pages/convergence-tests/</guid>
+      <description>Comparison of series This reference sheet covers comparing two series to predict convergence.
+We can use comparison tests to compare two series and predict convergence.
+Comparison test Theorem 9.4 Suppose $0\leq a_n\leq b_n$ for all $n$ beyond a certain value.
+If $\sum{b_n}$ converges, then $\sum{a_n}$ converges If $\sum{b_n}$ diverges, then $\sum{a_n}$ diverges We are asked to compute if the series converges
+$\sum\limits_{n=1}^\infin \frac{1}{n^3+1}$
+When $n\geq 1$, we know that $n^3+1\geq 1$ and $n^3+1\geq n^3$.</description>
+      <content>&lt;h1 id=&#34;comparison-of-series&#34;&gt;Comparison of series&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This reference sheet covers comparing two series to predict convergence.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;We can use comparison tests to compare two series and predict convergence.&lt;/p&gt;
+&lt;h2 id=&#34;comparison-test-theorem-94&#34;&gt;Comparison test &lt;code&gt;Theorem 9.4&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;Suppose $0\leq a_n\leq b_n$ for all $n$ beyond a certain value.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If $\sum{b_n}$ converges, then $\sum{a_n}$ converges&lt;/li&gt;
+&lt;li&gt;If $\sum{b_n}$ diverges, then $\sum{a_n}$ diverges&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We are asked to compute if the series converges&lt;/p&gt;
+&lt;p&gt;$\sum\limits_{n=1}^\infin \frac{1}{n^3+1}$&lt;/p&gt;
+&lt;p&gt;When $n\geq 1$, we know that $n^3+1\geq 1$ and $n^3+1\geq n^3$. Thus, we can use the comparison test to determine if the series converges.&lt;/p&gt;
+&lt;p&gt;$0\leq \frac{1}{n^3+1}\leq \frac{1}{n^3}$&lt;/p&gt;
+&lt;p&gt;By that statement, we know that every term in the series of $\sum{\frac{1}{n^3+1}}$ is less than or equal to every term in the series of $\sum{\frac{1}{n^3}}$. Since we know that $\sum{\frac{1}{n^3}}$ converges by the p-series test, we can conclude that $\sum{\frac{1}{n^3+1}}$ also converges.&lt;/p&gt;
+&lt;h2 id=&#34;limit-comparison-test-theorem-95&#34;&gt;Limit comparison test &lt;code&gt;Theorem 9.5&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;The comparison test uses the relationship between the terms of two series, $a_n$ and $b_n$, to determine if the series converges. The limit comparison test uses the relationship between the terms of a series and the limit of the series as they approach infinity to determine if the series converges.&lt;/p&gt;
+&lt;p&gt;If we are asked to predict the convergence of&lt;/p&gt;
+&lt;p&gt;$\sum{\frac{n^2-5}{n^3+n+2}}$&lt;/p&gt;
+&lt;p&gt;The first step is to observe how as $n\to\infin$, the highest-power terms in the numerator $n^2$ and denominator $n^3$ dominate the function, and thus the entire function can be rewritten as&lt;/p&gt;
+&lt;p&gt;$\frac{n^2}{n^3}=\frac{1}{n}$&lt;/p&gt;
+&lt;p&gt;And since we already know that the harmonic series diverges, we can make a reasonable guess that the series $\sum{\frac{n^2-5}{n^3+n+2}}$ also diverges. However, we are not able to know for 100% certainty because the inequality is not in the right direction&lt;/p&gt;
+&lt;p&gt;$\frac{n^2-5}{n^3+n+2}\leq \frac{1}{n}$&lt;/p&gt;
+&lt;p&gt;Thus, we can use the limit comparison test to determine if the series converges.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limit comparison test&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Suppose $a_n&amp;gt;0$ and $b_n&amp;gt;0$ for all $n$. If&lt;/p&gt;
+&lt;p&gt;$\lim\limits_{n\to\infin} \frac{a_n}{b_n} = c$&lt;/p&gt;
+&lt;p&gt;where $c&amp;gt;0$, then the two series $\sum{a_n}$ and $\sum{b_n}$ either both converge or diverge.&lt;/p&gt;
+&lt;h2 id=&#34;series-of-both-positive-and-negative-terms-theorem-96&#34;&gt;Series of both positive and negative terms &lt;code&gt;Theorem 9.6&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;If we are asked to predict the convergence of a series with both positive and negative terms, the total area of the rectangles is no longer simply equal to $\sum{a_n}$. That said, it is still true that if the total area of the rectangles is finite, the series converges. Thus, we get&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Convergence of Absolute Values Implies Convergence&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;If $\sum{|a_n|}$ converges, then so does $\sum{a_n}$.&lt;/p&gt;
+&lt;h2 id=&#34;the-ratio-test-theorem-97&#34;&gt;The ratio test &lt;code&gt;Theorem 9.7&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;The idea of a geometric series is the ratio of a term to its next term:&lt;/p&gt;
+&lt;p&gt;$\frac{a_{n+1}}{a_n}$&lt;/p&gt;
+&lt;p&gt;Where the ratio is a constant for all $n$. The ratio test uses this idea to determine if a series converges.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ratio test&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;For a series $\sum{a_n}$, suppose the sequence of ratios $|a_{n+1}/a_n|$ has a limit:&lt;/p&gt;
+&lt;p&gt;$\lim\limits_{n\to\infin} |a_{n+1}|/|a_n| = L$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If $L&amp;lt;1$, then $\sum{a_n}$ converges&lt;/li&gt;
+&lt;li&gt;If $L&amp;gt;1$ or $L=\infin$, then $\sum{a_n}$ diverges&lt;/li&gt;
+&lt;li&gt;If $L=1$, the test does not tell us anything about the convergence of the series&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;alternating-series-test-theorem-98&#34;&gt;Alternating series test &lt;code&gt;Theorem 9.8&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;A series is called an alternating series if the terms alternate in sign&lt;/p&gt;
+&lt;p&gt;$\sum\limits_{n=1}^\infin \frac{(-1)^{n-1}}{n}$&lt;/p&gt;
+&lt;p&gt;$=1-\frac{1}{2}+\frac{1}{3}-\frac{1}{4}+\frac{1}{5}-\frac{1}{6}+\cdots$&lt;/p&gt;
+&lt;p&gt;We can use the alternating series test to determine if the series converges.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Alternating series test&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;An alternating series of the form&lt;/p&gt;
+&lt;p&gt;$\sum\limits_{n=1}^\infin (-1)^{n-1}a_n=a_1-a_2+a_3-a_4+\cdots$&lt;/p&gt;
+&lt;p&gt;converges if&lt;/p&gt;
+&lt;p&gt;$0 \lt a_{n+1} \lt a_n$ for all $n$. and $\lim\limits_{n\to\infin} a_n = 0$&lt;/p&gt;
+&lt;h2 id=&#34;absolute-and-conditional-convergence&#34;&gt;Absolute and conditional convergence&lt;/h2&gt;
+&lt;p&gt;We say that a series $\sum{a_n}$ is&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Absolutely convergent if $\sum{a_n}$ and $\sum{|a_n|}$ both converge&lt;/li&gt;
+&lt;li&gt;Conditionally convergent if $\sum{a_n}$ converges but $\sum{|a_n|}$ diverges&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>9.5.0: Power series</title>
+      <link>https://math.jackcrane.rocks/pages/power-series/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://math.jackcrane.rocks/pages/power-series/</guid>
+      <description>Comparison of series This reference sheet covers using the power series to calculate the interval of convergence.
+Introduction A power series about $x=a$ is a sum of constants times powers of $x-a$.
+$C_0+C_1(x-a)+C_2(x-a)^2+\cdots+C_n(x-a)^n+\cdots$
+This can all be rewritten as a summation
+$\sum\limits_{n=0}^\infin C_n(x-a)^n$
+To investigate the convergence of a power series, we start with partial sums
+$S_n(x), S_1(x), S_2(x), \cdots$
+Recall that for a fixed value of $x$, if the partial sums converges to a limit S, then the power series converges to $S$ for this value of $x$.</description>
+      <content>&lt;h1 id=&#34;comparison-of-series&#34;&gt;Comparison of series&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This reference sheet covers using the power series to calculate the interval of convergence.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;A power series about $x=a$ is a sum of constants times powers of $x-a$.&lt;/p&gt;
+&lt;p&gt;$C_0+C_1(x-a)+C_2(x-a)^2+\cdots+C_n(x-a)^n+\cdots$&lt;/p&gt;
+&lt;p&gt;This can all be rewritten as a summation&lt;/p&gt;
+&lt;p&gt;$\sum\limits_{n=0}^\infin C_n(x-a)^n$&lt;/p&gt;
+&lt;p&gt;To investigate the convergence of a power series, we start with partial sums&lt;/p&gt;
+&lt;p&gt;$S_n(x), S_1(x), S_2(x), \cdots$&lt;/p&gt;
+&lt;p&gt;Recall that for a fixed value of $x$, if the partial sums converges to a limit S, then the power series converges to $S$ for this value of $x$.&lt;/p&gt;
+&lt;p&gt;It is important to note that power series may converge for some values of $x$ and diverge for other values of $x$.&lt;/p&gt;
+&lt;h2 id=&#34;example-finding-general-terms&#34;&gt;Example: Finding general terms&lt;/h2&gt;
+&lt;p&gt;If we are asked to find an expression for the general term in summation notation of the power series&lt;/p&gt;
+&lt;p&gt;$\frac{(x-2)^4}{4}-\frac{(x-2)^6}{9}+\frac{(x-2)^8}{16}-\frac{(x-2)^10}{25}+\cdots$&lt;/p&gt;
+&lt;p&gt;By the general form introduced in the introduction, we can find out that the series is about $x=2$. We can also recognize that the exponent is increasing by 2 each time and is thus $2n$, and the denominator is doubling each time and is thus $2^n$, allowing us to write the series as a summation:&lt;/p&gt;
+&lt;p&gt;$\sum\limits_{n=2}^\infin \frac{(x-2)^{2n}}{2^n}$&lt;/p&gt;
+&lt;p&gt;This is close, but the series we are given alternates between positive and negative terms. We can fix this by multiplying each term by $(-1)^n$.&lt;/p&gt;
+&lt;p&gt;$\sum\limits_{n=2}^\infin \frac{(-1)^n(x-2)^{2n}}{2^n}$&lt;/p&gt;
+&lt;h2 id=&#34;example-finding-convergence-or-divergence-at-a-point&#34;&gt;Example: Finding convergence or divergence at a point&lt;/h2&gt;
+&lt;p&gt;If we are given a power series defined by the following expression&lt;/p&gt;
+&lt;p&gt;$\sum\limits_{n=0}^\infin \frac{x^n}{2^n}$&lt;/p&gt;
+&lt;p&gt;We are asked to determine whether the series converges or diverges at $x=-1$ and $x=3$.&lt;/p&gt;
+&lt;p&gt;We will start with $x=-1$. The first step is to substitute $x=-1$ into the series. We get&lt;/p&gt;
+&lt;p&gt;$\sum\limits_{n=0}^\infin \frac{(-1)^n}{2^n}=\sum\limits_{n=0}^\infin (-\frac{1}{2})^n$&lt;/p&gt;
+&lt;p&gt;By the definition of a geometric series and the formula for the &lt;code&gt;Sum of an infinite geometric series&lt;/code&gt;, we know the ratio of the series ($-1/2$), and thus it converges to&lt;/p&gt;
+&lt;p&gt;$\frac{1}{1-(-\frac{1}{2})}=\frac{2}{3}$&lt;/p&gt;
+&lt;p&gt;The next step is to substitute $x=3$ into the series. We get&lt;/p&gt;
+&lt;p&gt;$\sum\limits_{n=0}^\infin \frac{3^n}{2^n}=\sum\limits_{n=0}^\infin (\frac{3}{2})^n$&lt;/p&gt;
+&lt;p&gt;We can see the ratio of the series is $\frac{3}{2}$, and thus it diverges because the absolute value of the ratio is greater than 1.&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>9.5.1: Interval of convergence</title>
+      <link>https://math.jackcrane.rocks/pages/interval-of-convergence/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://math.jackcrane.rocks/pages/interval-of-convergence/</guid>
+      <description>Finding the interval of convergence All power series have a radius of convergence, denoted by $R$. This radius helps us determine the intervals of convergence.
+$R$ Conditions of convergence $R=0$ The series converges only for $x=a$ $R=\infty$ The series converges for all $x$ There is a positive radius of convergence such that the series converges for $|x-a|&amp;lt;R$ and diverges for $|x-a|&amp;gt;R$
+This leads us to the definition of the interval of convergence:</description>
+      <content>&lt;h1 id=&#34;finding-the-interval-of-convergence&#34;&gt;Finding the interval of convergence&lt;/h1&gt;
+&lt;p&gt;All power series have a radius of convergence, denoted by $R$. This radius helps us determine the intervals of convergence.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;$R$&lt;/th&gt;
+&lt;th&gt;Conditions of convergence&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;$R=0$&lt;/td&gt;
+&lt;td&gt;The series converges only for $x=a$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$R=\infty$&lt;/td&gt;
+&lt;td&gt;The series converges for all $x$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;There is a positive radius of convergence such that the series converges for $|x-a|&amp;lt;R$ and diverges for $|x-a|&amp;gt;R$&lt;/p&gt;
+&lt;p&gt;This leads us to the definition of the interval of convergence:&lt;/p&gt;
+&lt;p&gt;The interval of convergence is the interval between $a-R$ and $a+R$ and it includes any endpoint where the series converges.&lt;/p&gt;
+&lt;p&gt;There are certain series whose radii of convergence are known:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Series&lt;/th&gt;
+&lt;th&gt;Converges for&lt;/th&gt;
+&lt;th&gt;Diverges for&lt;/th&gt;
+&lt;th&gt;Radius of convergence&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;$1+x+x^2+\cdots$&lt;/td&gt;
+&lt;td&gt;$|x|&amp;lt;1$&lt;/td&gt;
+&lt;td&gt;$|x|&amp;gt;1$&lt;/td&gt;
+&lt;td&gt;$1$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$1+\frac{x}{3}+(\frac{x}{3})^2+\cdots$&lt;/td&gt;
+&lt;td&gt;$|x/3|&amp;lt;1$&lt;/td&gt;
+&lt;td&gt;$|x/3|&amp;gt;1$&lt;/td&gt;
+&lt;td&gt;$3$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;We can use &lt;code&gt;theorem 9.10&lt;/code&gt; to calculate the radius of convergence for a power series. We can use the ratio test to find the values of $x$ for which a power series converges. If we use the series&lt;/p&gt;
+&lt;p&gt;$\sum\limits_{n=0}^\infin C_n(x-a)^n$&lt;/p&gt;
+&lt;p&gt;which can be re-written as&lt;/p&gt;
+&lt;p&gt;$a_n=C_n(x-a)^n$&lt;/p&gt;
+&lt;p&gt;If we assume $C_n\neq0$ and $x\neq a$, we can use limits:&lt;/p&gt;
+&lt;p&gt;$\lim\limits_{n\to\infin}\frac{|a_{n+1}|}{|a_n|} = \lim\limits_{n\to\infin}\frac{|C_{n+1}(x-a)^{n+1}|}{|C_n(x-a)^n|}=\lim\limits_{n\to\infin}\frac{|C_{n+1}||x-a|}{|C_n|}=|x-a|\lim\limits_{n\to\infin}\frac{|C_{n+1}|}{C_n}$&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Case&lt;/th&gt;
+&lt;th&gt;Limit&lt;/th&gt;
+&lt;th&gt;Meaning&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;$\lim\limits_{n\to\infin}\frac{|a_{n+1}|}{|a_n|}=\infin$&lt;/td&gt;
+&lt;td&gt;The power series converges for only $x=a$, with a radius of $0$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;$\lim\limits_{n\to\infin}\frac{|a_{n+1}|}{|a_n|}=0$&lt;/td&gt;
+&lt;td&gt;The power series converges for all $x$, with a radius of $\infin$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;method-for-computing-the-radius-of-convergence-theorem-910&#34;&gt;Method for computing the radius of convergence &lt;code&gt;Theorem 9.10&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;To calculate the radius of convergence, $R$, for a power series&lt;/p&gt;
+&lt;p&gt;$\sum\limits_{n=0}^\infin C_n(x-a)^n$&lt;/p&gt;
+&lt;p&gt;we can use the ratio test by setting $a_n=C_n(x-a)^n$ the applying the following rules&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If $\lim\limits_{n\to\infin}|a_{n+1}|/|a_n|$ is infinite, then the radius is $0$.&lt;/li&gt;
+&lt;li&gt;If $\lim\limits_{n\to\infin}|a_{n+1}|/|a_n|$ is $0$, then the radius is $\infin$.&lt;/li&gt;
+&lt;li&gt;If $\lim\limits_{n\to\infin}|a_{n+1}|/|a_n| = K|x-a|$, where K is finite and not $0$, then the radius is $1/K$.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;If $\lim\limits_{n\to\infin}|a_{n+1}|/|a_n|$ fails to exist, the ratio test is inconclusive and does not tell us anything about the convergence of the series. This can occur when some of the $C_n$ terms are $0$.&lt;/p&gt;
+&lt;p&gt;If we are asked to prove that the power series converges for all $x$&lt;/p&gt;
+&lt;p&gt;$1+x+\frac{x^2}{2!}+\frac{x^3}{3!}+\cdots+\frac{x^n}{n!}$&lt;/p&gt;
+&lt;p&gt;Our first step is to verify that the ratio test will actually work by verifying none of our terms will evaluate to $0$, or in this case $C_n=1/n!$. Because none of our terms are in this form, we can use the ratio test.&lt;/p&gt;
+&lt;p&gt;$\lim\limits_{n\to\infin}\frac{|a_{n+1}|}{|a_n|}=|x|\lim\limits_{n\to\infin}\frac{|C_{n+1}|}{|C_n|}=|x|\lim\limits_{n\to\infin}\frac{1/(n+1)!}{1/n!}=|x|\lim\limits_{n\to\infin}\frac{n!}{(n+1)!}=|x|\lim\limits_{n\to\infin}\frac{1}{n+1}=0$&lt;/p&gt;
+&lt;p&gt;This will result in $R=\infin$, meaning that the series will converge for all x.&lt;/p&gt;
+&lt;p&gt;And if we are asked to determine the radius of convergence for a series&lt;/p&gt;
+&lt;p&gt;$\frac{x-1}{3}-\frac{(x-1)^2}{2\times3^2}+\frac{(x-1)^3}{3\times3^3}-\frac{(x-1)^4}{4\times3^4}+\cdots+(-1)^{n-1}\frac{(x-1)^n}{n\times3^n}+\cdots$&lt;/p&gt;
+&lt;p&gt;Because $C_n=(-1)^{n-1}/(n\times3^n)$ can never be $0$, we can use the ratio test&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;$
+\lim\limits_{n\to\infin}\frac{|a_{n+1}|}{|a_n|}=
+|x-1|\lim\limits_{n\to\infin}\frac{|C_{n+1}|}{|C_n|}=
+|x-1|\lim\limits_{n\to\infin}\frac{|\frac{(-1)^n}{(n+1)3^{n+1}}|}{|\frac{(-1)^{n-1}}{n3^n}|}=
+|x-1|\lim\limits_{n\to\infin}\frac{n}{3(n+1)}=
+\frac{|x-1|}{3}
+$&lt;/p&gt;
+&lt;p&gt;Thus, the $K$ is $1/3$ by &lt;code&gt;theorem 9.10&lt;/code&gt;, leading us to compute the radius as $\frac{R=1}{K=3}$, so we can say that the series converges for $|x-1|&amp;lt;3$ and diverges for $|x-1|&amp;gt;3$. After evaluating the inequalities, we can say that the series converges for $-2\lt x\lt 4$&lt;/p&gt;
+&lt;h2 id=&#34;endpoints-of-interval-of-convergence&#34;&gt;Endpoints of Interval of Convergence&lt;/h2&gt;
+&lt;p&gt;The ratio test tells us the interval of convergence, but tells us nothing about the behavior of the endpoints of the interval. Unfortunately, there is not a theorem that can answer this question, but we can use some of the tests in sections 9.3 and 9.4 to learn more about the endpoints.&lt;/p&gt;
+&lt;p&gt;If we are asked to determine the interval of convergence for a series&lt;/p&gt;
+&lt;p&gt;$\frac{(x-1)}{3}-
+\frac{(x-1)^2}{2\times^2}+
+\frac{(x-1)^3}{3\times^3}-
+\frac{(x-1)^2}{4\times^4}+
+\cdots+
+(-1)^{n-1}\frac{(x-1)^n}{n\times^n}+\cdots$&lt;/p&gt;
+&lt;p&gt;This should not look familiar as we have already examined this series.&lt;/p&gt;
+&lt;p&gt;We have already determined that this series has a radius of 3 and converges from $-2\lt x\lt 4$. and diverges for $x\lt -2$ and $x\gt 4$. However, we do not know what happens at $x=-2$ and $x=4$.&lt;/p&gt;
+&lt;p&gt;We can use a harmonic series to examine the behavior of the endpoints&lt;/p&gt;
+&lt;p&gt;$1-\frac{1}{2}+\frac{1}{3}-\frac{1}{4}+\frac{1}{5}-\cdots$&lt;/p&gt;
+&lt;p&gt;This is an alternating series, so by the alternating series test, we know that it converges. We can apply this to our series by centering it at $x=-2$ we get the series&lt;/p&gt;
+&lt;p&gt;$-1-\frac{1}{2}-\frac{1}{3}-\frac{1}{4}-\frac{1}{5}-\cdots$&lt;/p&gt;
+&lt;p&gt;Because this is a negative harmonic series, it diverges. Therefore, we can say that the series diverges at $x=-2$. By doing the same thing centered at $x=4$, we can say that the series converges at $x=4$, meaning the right endpoint is included and the left endpoint is not included.&lt;/p&gt;
+&lt;h2 id=&#34;all-odd-or-all-even-terms&#34;&gt;All odd or all even terms&lt;/h2&gt;
+&lt;p&gt;The ratio test requires $\lim\limits_{n\to\infin}\frac{|a_{n+1}|}{|a_n|}$ to be defined for $a_n=C_n(x-a)^n$ but if the power series has only even or odd powers, some coefficients of $C_n$ will be $0$ and the ratio test cannot work. To solve this, we can take advantage of the flexibility of series and rewrite the series in a way that the ratio test can work (where the terms are not 0).&lt;/p&gt;
+&lt;p&gt;For example, if we are instructed to find the radius and interval of convergence for the series&lt;/p&gt;
+&lt;p&gt;$1+2^2x^2+2^4x^4+2^6x^6+\cdots$&lt;/p&gt;
+&lt;p&gt;By saying that the series cannot exist when odd, we mean that the series does not exist as written when $n$ is odd, or that the term $2^3x^3$ does not exist. To defeat this, we can rewrite it as a series that &lt;em&gt;can&lt;/em&gt; accept odd terms&lt;/p&gt;
+&lt;p&gt;We can make every $n$ term even by multiplying it by $2$, so we can rewrite our general terms as&lt;/p&gt;
+&lt;p&gt;$a_n=2^{2n}x^{2n}$&lt;/p&gt;
+&lt;p&gt;Then finally by applying our formula, we will replace $n$ with $n+1$ to get&lt;/p&gt;
+&lt;p&gt;$a_{n+1}=2^{2(n+1)}x^{2(n+1)}$&lt;/p&gt;
+&lt;p&gt;We can now use the ratio test to determine the radius and interval of convergence&lt;/p&gt;
+&lt;p&gt;$\frac{|a_{n+1}|}{|a_n|}=
+\frac{2^{2(n+2)}x^{2(n+2)}}{2^{2n}x^{2n}}=
+|{2^2x^2}|=4x^2$&lt;/p&gt;
+&lt;p&gt;The ratio test shows that the series converges if $|x|&amp;lt;\frac{1}{2}$ ($4x^2\lt 1$). This means the radius of convergence is $\frac{1}{2}$ and the interval of convergence is $-1/2\lt x\lt 1.2$. We can use theorem 9.2 to test the convergence at endpoints, and can see that both endpoints are 1, so the series diverges.&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
       <title>Formulas</title>
       <link>https://math.jackcrane.rocks/pages/formulas/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -560,6 +830,61 @@ If $\lim\limits_{n\to\infin}\int\limits_1^nf(x)dx$, converges, then $\sum{a_n}$ 
 &lt;p&gt;If $\lim\limits_{n\to\infin}\int\limits_1^nf(x)dx$, diverges, then $\sum{a_n}$ diverges&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;P-series test&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;$\sum\limits_{n=1}^\infin \frac{1}{n^p}$ converges if $p&amp;gt;1$ and diverges if $p\leq1$.&lt;/p&gt;
+&lt;h2 id=&#34;940&#34;&gt;9.4.0&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Comparison test&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Suppose $0\leq a_n\leq b_n$ for all $n$ beyond a certain value.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If $\sum{b_n}$ converges, then $\sum{a_n}$ converges&lt;/li&gt;
+&lt;li&gt;If $\sum{b_n}$ diverges, then $\sum{a_n}$ diverges&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Limit comparison test&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Suppose $a_n&amp;gt;0$ and $b_n&amp;gt;0$ for all $n$. If&lt;/p&gt;
+&lt;p&gt;$\lim\limits_{n\to\infin} \frac{a_n}{b_n} = c$&lt;/p&gt;
+&lt;p&gt;where $c&amp;gt;0$, then the two series $\sum{a_n}$ and $\sum{b_n}$ either both converge or diverge.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Absolute convergence test&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;If $\sum{|a_n|}$ converges, then so does $\sum{a_n}$.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ratio test&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;For a series $\sum{a_n}$, suppose the sequence of ratios $|a_{n+1}/a_n|$ has a limit:&lt;/p&gt;
+&lt;p&gt;$\lim\limits_{n\to\infin} |a_{n+1}|/|a_n| = L$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If $L&amp;lt;1$, then $\sum{a_n}$ converges&lt;/li&gt;
+&lt;li&gt;If $L&amp;gt;1$ or $L=\infin$, then $\sum{a_n}$ diverges&lt;/li&gt;
+&lt;li&gt;If $L=1$, the test does not tell us anything about the convergence of the series&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Alternating series test&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;An alternating series of the form&lt;/p&gt;
+&lt;p&gt;$\sum\limits_{n=1}^\infin (-1)^{n-1}a_n=a_1-a_2+a_3-a_4+\cdots$&lt;/p&gt;
+&lt;p&gt;converges if&lt;/p&gt;
+&lt;p&gt;$0 \lt a_{n+1} \lt a_n$ for all $n$. and $\lim\limits_{n\to\infin} a_n = 0$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Error bounds for alternating series&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Let $S_n=\sum\limits_{i=1}^n (-1)^{i-1}a_i$ be the $n^{th}$ partial sum of an alternating series and let $S=\lim\limits_{n\to\infin}S_n$. Suppose that $0 \lt a_{n+1} \lt a_n$ for all $n$ and $\lim\limits_{n\to\infin} a_n = 0$. Then $|S-S_n|\leq a_{n+1}$.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Absolute or conditional convergence test&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;We say that a series $\sum{a_n}$ is&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Absolutely convergent if $\sum{a_n}$ and $\sum{|a_n|}$ both converge&lt;/li&gt;
+&lt;li&gt;Conditionally convergent if $\sum{a_n}$ converges but $\sum{|a_n|}$ diverges&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;950&#34;&gt;9.5.0&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Power series&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;A power series about $x=a$ is a sum of constants times powers of $x-a$:&lt;/p&gt;
+&lt;p&gt;$C_0+C_1(x-a)+C_2(x-a)^2+\cdots+C_n(x-a)^n+\cdots=\sum\limits_{n=0}^\infin C_n(x-a)^n$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Radius of convergence&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The radius of convergence $R$ of a power series has 3 possible states&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$R=0$: The series converges for only $x=a$&lt;/li&gt;
+&lt;li&gt;$R=\infin$: The series converges for all $x$&lt;/li&gt;
+&lt;li&gt;$R&amp;gt;0$: The series converges for $|x-a|&amp;lt;R$ and diverges for $|x-a|\gt R$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Calculate with a ratio test&lt;/p&gt;
+&lt;p&gt;$\sum\limits_{n=0}^\infin C_n(x-a)^n$&lt;/p&gt;
+&lt;p&gt;we can use the ratio test by setting $a_n=C_n(x-a)^n$ the applying the following rules&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If $\lim\limits_{n\to\infin}|a_{n+1}|/|a_n|$ is infinite, then the radius is $0$.&lt;/li&gt;
+&lt;li&gt;If $\lim\limits_{n\to\infin}|a_{n+1}|/|a_n|$ is $0$, then the radius is $\infin$.&lt;/li&gt;
+&lt;li&gt;If $\lim\limits_{n\to\infin}|a_{n+1}|/|a_n| = K|x-a|$, where K is finite and not $0$, then the radius is $1/K$.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Interval of convergence&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The interval of convergence of a power series is the interval between the two points $a-R$ and $a+R$, including endpoints where the series converges.&lt;/p&gt;
 </content>
     </item>
     

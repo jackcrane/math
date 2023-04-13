@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>9.5.1: Interval of convergence :: CalcSheets</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="This reference sheet covers calculating intervals of convergence on power series." />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="https://math.jackcrane.rocks/pages/interval-of-convergence/" />
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="https://math.jackcrane.rocks/styles.css">
+
+
+
+<link rel="stylesheet" href="https://math.jackcrane.rocks/style.css">
+
+
+
+  <link rel="shortcut icon" href="https://math.jackcrane.rocks/img/theme-colors/blue.png">
+  <link rel="apple-touch-icon" href="https://math.jackcrane.rocks/img/theme-colors/blue.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+  
+    <meta name="twitter:site" content="" />
+  
+    <meta name="twitter:creator" content="" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="9.5.1: Interval of convergence">
+<meta property="og:description" content="This reference sheet covers calculating intervals of convergence on power series." />
+<meta property="og:url" content="https://math.jackcrane.rocks/pages/interval-of-convergence/" />
+<meta property="og:site_name" content="CalcSheets" />
+
+  
+    <meta property="og:image" content="https://math.jackcrane.rocks/img/favicon/blue.png">
+  
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+
+
+
+
+
+
+
+
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css"
+  integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0"
+  crossorigin="anonymous"
+/>
+
+
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js"
+  integrity="sha384-PwRUT/YqbnEjkZO0zZxNqcxACrXe+j766U2amXcgMg5457rve2Y7I6ZJSm2A0mS4"
+  crossorigin="anonymous"
+></script>
+
+
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js"
+  integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+  crossorigin="anonymous"
+  onload="renderMathInElement(document.body);"
+></script>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: "$$", right: "$$", display: true },
+        { left: "$", right: "$", display: false },
+      ],
+    });
+  });
+</script>
+
+<style>
+  p,
+  span,
+  li {
+    line-height: 2;
+  }
+  .katex {
+    line-height: initial;
+    color: #23b0ff;
+    background-color: #23aeff1d;
+    padding: 0.5px 3px;
+    margin: 2px 0;
+     
+    transition: 0.2s;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    display: inline-block;
+  }
+  .katex * {
+    line-height: initial;
+  }
+  .katex:hover {
+    background-color: #23aeff3d;
+    border: 1px solid #23aeff;
+  }
+   
+  ::selection {
+    background: #23b0ff;
+    color: #fff;
+  }
+  @media print {
+     
+    body {
+      visibility: visible !important;
+      padding: 20px;
+      background-color: #000;
+    }
+    * {
+      visibility: visible !important;
+    }
+    html {
+      filter: invert();
+      background-color: #000;
+    }
+  }
+  @media print {
+    .header {
+      display: initial;
+    }
+  }
+</style>
+
+
+</head>
+<body class="blue">
+
+
+<div class="container center headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Jack&#39;s Calculus Sheets
+  </div>
+</a>
+
+    </div>
+    
+    
+  </div>
+  
+</header>
+
+
+  <div class="content">
+    
+<article class="post">
+  <h1 class="post-title">
+    <a href="https://math.jackcrane.rocks/pages/interval-of-convergence/">9.5.1: Interval of convergence</a>
+  </h1>
+  <div class="post-meta">
+    
+    
+    
+  </div>
+
+  
+  
+
+
+  
+
+  <div class="post-content"><div>
+        <h1 id="finding-the-interval-of-convergence">Finding the interval of convergence<a href="#finding-the-interval-of-convergence" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p>All power series have a radius of convergence, denoted by $R$. This radius helps us determine the intervals of convergence.</p>
+<table>
+<thead>
+<tr>
+<th>$R$</th>
+<th>Conditions of convergence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$R=0$</td>
+<td>The series converges only for $x=a$</td>
+</tr>
+<tr>
+<td>$R=\infty$</td>
+<td>The series converges for all $x$</td>
+</tr>
+</tbody>
+</table>
+<p>There is a positive radius of convergence such that the series converges for $|x-a|&lt;R$ and diverges for $|x-a|&gt;R$</p>
+<p>This leads us to the definition of the interval of convergence:</p>
+<p>The interval of convergence is the interval between $a-R$ and $a+R$ and it includes any endpoint where the series converges.</p>
+<p>There are certain series whose radii of convergence are known:</p>
+<table>
+<thead>
+<tr>
+<th>Series</th>
+<th>Converges for</th>
+<th>Diverges for</th>
+<th>Radius of convergence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$1+x+x^2+\cdots$</td>
+<td>$|x|&lt;1$</td>
+<td>$|x|&gt;1$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$1+\frac{x}{3}+(\frac{x}{3})^2+\cdots$</td>
+<td>$|x/3|&lt;1$</td>
+<td>$|x/3|&gt;1$</td>
+<td>$3$</td>
+</tr>
+</tbody>
+</table>
+<p>We can use <code>theorem 9.10</code> to calculate the radius of convergence for a power series. We can use the ratio test to find the values of $x$ for which a power series converges. If we use the series</p>
+<p>$\sum\limits_{n=0}^\infin C_n(x-a)^n$</p>
+<p>which can be re-written as</p>
+<p>$a_n=C_n(x-a)^n$</p>
+<p>If we assume $C_n\neq0$ and $x\neq a$, we can use limits:</p>
+<p>$\lim\limits_{n\to\infin}\frac{|a_{n+1}|}{|a_n|} = \lim\limits_{n\to\infin}\frac{|C_{n+1}(x-a)^{n+1}|}{|C_n(x-a)^n|}=\lim\limits_{n\to\infin}\frac{|C_{n+1}||x-a|}{|C_n|}=|x-a|\lim\limits_{n\to\infin}\frac{|C_{n+1}|}{C_n}$</p>
+<!-- raw HTML omitted -->
+<table>
+<thead>
+<tr>
+<th>Case</th>
+<th>Limit</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>$\lim\limits_{n\to\infin}\frac{|a_{n+1}|}{|a_n|}=\infin$</td>
+<td>The power series converges for only $x=a$, with a radius of $0$</td>
+</tr>
+<tr>
+<td>2</td>
+<td>$\lim\limits_{n\to\infin}\frac{|a_{n+1}|}{|a_n|}=0$</td>
+<td>The power series converges for all $x$, with a radius of $\infin$</td>
+</tr>
+</tbody>
+</table>
+<h2 id="method-for-computing-the-radius-of-convergence-theorem-910">Method for computing the radius of convergence <code>Theorem 9.10</code><a href="#method-for-computing-the-radius-of-convergence-theorem-910" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>To calculate the radius of convergence, $R$, for a power series</p>
+<p>$\sum\limits_{n=0}^\infin C_n(x-a)^n$</p>
+<p>we can use the ratio test by setting $a_n=C_n(x-a)^n$ the applying the following rules</p>
+<ul>
+<li>If $\lim\limits_{n\to\infin}|a_{n+1}|/|a_n|$ is infinite, then the radius is $0$.</li>
+<li>If $\lim\limits_{n\to\infin}|a_{n+1}|/|a_n|$ is $0$, then the radius is $\infin$.</li>
+<li>If $\lim\limits_{n\to\infin}|a_{n+1}|/|a_n| = K|x-a|$, where K is finite and not $0$, then the radius is $1/K$.</li>
+</ul>
+<hr>
+<p>If $\lim\limits_{n\to\infin}|a_{n+1}|/|a_n|$ fails to exist, the ratio test is inconclusive and does not tell us anything about the convergence of the series. This can occur when some of the $C_n$ terms are $0$.</p>
+<p>If we are asked to prove that the power series converges for all $x$</p>
+<p>$1+x+\frac{x^2}{2!}+\frac{x^3}{3!}+\cdots+\frac{x^n}{n!}$</p>
+<p>Our first step is to verify that the ratio test will actually work by verifying none of our terms will evaluate to $0$, or in this case $C_n=1/n!$. Because none of our terms are in this form, we can use the ratio test.</p>
+<p>$\lim\limits_{n\to\infin}\frac{|a_{n+1}|}{|a_n|}=|x|\lim\limits_{n\to\infin}\frac{|C_{n+1}|}{|C_n|}=|x|\lim\limits_{n\to\infin}\frac{1/(n+1)!}{1/n!}=|x|\lim\limits_{n\to\infin}\frac{n!}{(n+1)!}=|x|\lim\limits_{n\to\infin}\frac{1}{n+1}=0$</p>
+<p>This will result in $R=\infin$, meaning that the series will converge for all x.</p>
+<p>And if we are asked to determine the radius of convergence for a series</p>
+<p>$\frac{x-1}{3}-\frac{(x-1)^2}{2\times3^2}+\frac{(x-1)^3}{3\times3^3}-\frac{(x-1)^4}{4\times3^4}+\cdots+(-1)^{n-1}\frac{(x-1)^n}{n\times3^n}+\cdots$</p>
+<p>Because $C_n=(-1)^{n-1}/(n\times3^n)$ can never be $0$, we can use the ratio test</p>
+<!-- raw HTML omitted -->
+<p>$
+\lim\limits_{n\to\infin}\frac{|a_{n+1}|}{|a_n|}=
+|x-1|\lim\limits_{n\to\infin}\frac{|C_{n+1}|}{|C_n|}=
+|x-1|\lim\limits_{n\to\infin}\frac{|\frac{(-1)^n}{(n+1)3^{n+1}}|}{|\frac{(-1)^{n-1}}{n3^n}|}=
+|x-1|\lim\limits_{n\to\infin}\frac{n}{3(n+1)}=
+\frac{|x-1|}{3}
+$</p>
+<p>Thus, the $K$ is $1/3$ by <code>theorem 9.10</code>, leading us to compute the radius as $\frac{R=1}{K=3}$, so we can say that the series converges for $|x-1|&lt;3$ and diverges for $|x-1|&gt;3$. After evaluating the inequalities, we can say that the series converges for $-2\lt x\lt 4$</p>
+<h2 id="endpoints-of-interval-of-convergence">Endpoints of Interval of Convergence<a href="#endpoints-of-interval-of-convergence" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>The ratio test tells us the interval of convergence, but tells us nothing about the behavior of the endpoints of the interval. Unfortunately, there is not a theorem that can answer this question, but we can use some of the tests in sections 9.3 and 9.4 to learn more about the endpoints.</p>
+<p>If we are asked to determine the interval of convergence for a series</p>
+<p>$\frac{(x-1)}{3}-
+\frac{(x-1)^2}{2\times^2}+
+\frac{(x-1)^3}{3\times^3}-
+\frac{(x-1)^2}{4\times^4}+
+\cdots+
+(-1)^{n-1}\frac{(x-1)^n}{n\times^n}+\cdots$</p>
+<p>This should not look familiar as we have already examined this series.</p>
+<p>We have already determined that this series has a radius of 3 and converges from $-2\lt x\lt 4$. and diverges for $x\lt -2$ and $x\gt 4$. However, we do not know what happens at $x=-2$ and $x=4$.</p>
+<p>We can use a harmonic series to examine the behavior of the endpoints</p>
+<p>$1-\frac{1}{2}+\frac{1}{3}-\frac{1}{4}+\frac{1}{5}-\cdots$</p>
+<p>This is an alternating series, so by the alternating series test, we know that it converges. We can apply this to our series by centering it at $x=-2$ we get the series</p>
+<p>$-1-\frac{1}{2}-\frac{1}{3}-\frac{1}{4}-\frac{1}{5}-\cdots$</p>
+<p>Because this is a negative harmonic series, it diverges. Therefore, we can say that the series diverges at $x=-2$. By doing the same thing centered at $x=4$, we can say that the series converges at $x=4$, meaning the right endpoint is included and the left endpoint is not included.</p>
+<h2 id="all-odd-or-all-even-terms">All odd or all even terms<a href="#all-odd-or-all-even-terms" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>The ratio test requires $\lim\limits_{n\to\infin}\frac{|a_{n+1}|}{|a_n|}$ to be defined for $a_n=C_n(x-a)^n$ but if the power series has only even or odd powers, some coefficients of $C_n$ will be $0$ and the ratio test cannot work. To solve this, we can take advantage of the flexibility of series and rewrite the series in a way that the ratio test can work (where the terms are not 0).</p>
+<p>For example, if we are instructed to find the radius and interval of convergence for the series</p>
+<p>$1+2^2x^2+2^4x^4+2^6x^6+\cdots$</p>
+<p>By saying that the series cannot exist when odd, we mean that the series does not exist as written when $n$ is odd, or that the term $2^3x^3$ does not exist. To defeat this, we can rewrite it as a series that <em>can</em> accept odd terms</p>
+<p>We can make every $n$ term even by multiplying it by $2$, so we can rewrite our general terms as</p>
+<p>$a_n=2^{2n}x^{2n}$</p>
+<p>Then finally by applying our formula, we will replace $n$ with $n+1$ to get</p>
+<p>$a_{n+1}=2^{2(n+1)}x^{2(n+1)}$</p>
+<p>We can now use the ratio test to determine the radius and interval of convergence</p>
+<p>$\frac{|a_{n+1}|}{|a_n|}=
+\frac{2^{2(n+2)}x^{2(n+2)}}{2^{2n}x^{2n}}=
+|{2^2x^2}|=4x^2$</p>
+<p>The ratio test shows that the series converges if $|x|&lt;\frac{1}{2}$ ($4x^2\lt 1$). This means the radius of convergence is $\frac{1}{2}$ and the interval of convergence is $-1/2\lt x\lt 1.2$. We can use theorem 9.2 to test the convergence at endpoints, and can see that both endpoints are 1, so the series diverges.</p>
+
+      </div></div>
+
+  
+    
+<div class="pagination">
+    <div class="pagination__title">
+        <span class="pagination__title-h">Read other pages</span>
+        <hr />
+    </div>
+    <div class="pagination__buttons">
+        
+        <span class="button previous">
+            <a href="https://math.jackcrane.rocks/pages/power-series/">
+                <span class="button__icon">←</span>
+                <span class="button__text">9.5.0: Power series</span>
+            </a>
+        </span>
+        
+        
+        <span class="button next">
+            <a href="https://math.jackcrane.rocks/pages/formulas/">
+                <span class="button__text">Formulas</span>
+                <span class="button__icon">→</span>
+            </a>
+        </span>
+        
+    </div>
+</div>
+
+  
+
+  
+    
+
+  
+</article>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    <span
+      >Calculus reference Sheets :: &copy; 2023 by
+      <a href="https://jackcrane.rocks" target="_blank">Jack Crane</a> based on
+      course content in Fr. May's class</span
+    >
+  </div>
+</footer>
+
+  
+
+<script type="text/javascript" src="/bundle.min.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>
