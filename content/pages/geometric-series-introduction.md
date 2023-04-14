@@ -1,6 +1,7 @@
 ---
 title: "9.2.0: Geometric series Introduction"
 description: "This reference sheet covers introductions to geometric series."
+weight: 1
 ---
 
 # Geometric series

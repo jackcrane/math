@@ -1,6 +1,7 @@
 ---
 title: "9.3.0: Convergence of series"
 description: "This reference sheet covers more methods to predict and compute the convergence of series."
+weight: 1
 ---
 
 # Convergence of series

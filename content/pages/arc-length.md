@@ -1,6 +1,7 @@
 ---
 title: "8.2.3: Arc Length"
 description: "This reference sheet covers using integrals to find the length of an arc on a curve."
+weight: 1
 ---
 
 # Finding the length of an arc

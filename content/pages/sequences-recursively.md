@@ -1,6 +1,7 @@
 ---
 title: "9.1.1: Sequences through recursion"
 description: "This reference sheet covers infinite sequences of numbers through recursion"
+weight: 1
 ---
 
 # Sequences through recursion

@@ -1,6 +1,7 @@
 ---
 title: "9.4.0: Convergence Tests"
 description: "This reference sheet covers comparing two series to predict convergence."
+weight: 1
 ---
 
 # Comparison of series

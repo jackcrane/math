@@ -1,6 +1,7 @@
 ---
 title: "9.5.0: Power series"
 description: "This reference sheet covers using the power series to calculate the interval of convergence."
+weight: 1
 ---
 
 # Comparison of series

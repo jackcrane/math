@@ -1,6 +1,7 @@
 ---
 title: "8.2.2: Volumes of revolutions around a line"
 description: "This reference sheet covers using integrals to find volumes of objects defined by multiple lines that revolve around an axis or a line."
+weight: 1
 ---
 
 # Finding the volume of a region through revolution around a defined line

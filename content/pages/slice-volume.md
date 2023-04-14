@@ -1,6 +1,7 @@
 ---
 title: "8.1.2: Finding volumes by slicing"
 description: "This reference sheet covers using integrals to find volumes of objects defined by functions."
+weight: 1
 ---
 
 # Calculating the area of a region under a curve

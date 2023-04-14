@@ -1,6 +1,7 @@
 ---
 title: "8.2.1: Volumes of revolutions"
 description: "This reference sheet covers using integrals to find volumes of objects that revolve around an axis or a line."
+weight: 1
 ---
 
 # Finding the volume of a region through revolution

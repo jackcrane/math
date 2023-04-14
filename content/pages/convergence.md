@@ -1,6 +1,7 @@
 ---
 title: "9.1.2: Convergence of sequences"
 description: "This reference sheet covers finding the convergence of sequences of numbers"
+weight: 1
 ---
 
 # Convergence of sequences
