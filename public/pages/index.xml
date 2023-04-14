@@ -800,6 +800,20 @@ $&lt;/p&gt;
     </item>
     
     <item>
+      <title>10.1.0: Taylor Polynomials</title>
+      <link>https://math.jackcrane.rocks/pages/taylor-polynomials/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://math.jackcrane.rocks/pages/taylor-polynomials/</guid>
+      <description>Linear Approximations with Taylor Polynomials We learned how to approximate a function using a 1-degree polynomial last year: we learned how to form a tangent line.
+The key to tangent lines is that they hav the same slope and value at a point as the original function, meaning that the tangent line will ever</description>
+      <content>&lt;h1 id=&#34;linear-approximations-with-taylor-polynomials&#34;&gt;Linear Approximations with Taylor Polynomials&lt;/h1&gt;
+&lt;p&gt;We learned how to approximate a function using a 1-degree polynomial last year: we learned how to form a tangent line.&lt;/p&gt;
+&lt;p&gt;The key to tangent lines is that they hav the same slope and value at a point as the original function, meaning that the tangent line will ever&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
       <title>Formulas</title>
       <link>https://math.jackcrane.rocks/pages/formulas/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
