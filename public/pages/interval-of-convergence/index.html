@@ -90,6 +90,13 @@
   onload="renderMathInElement(document.body);"
 ></script>
 
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="https://tikzjax.com/v1/fonts.css"
+/>
+<script src="https://tikzjax.com/v1/tikzjax.js"></script>
+
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
@@ -131,6 +138,14 @@
   ::selection {
     background: #23b0ff;
     color: #fff;
+  }
+  svg {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    page-break-before: always;
+  }
+  text {
+    fill: white !important;
   }
   @media print {
      
@@ -251,7 +266,7 @@
 <p>$a_n=C_n(x-a)^n$</p>
 <p>If we assume $C_n\neq0$ and $x\neq a$, we can use limits:</p>
 <p>$\lim\limits_{n\to\infin}\frac{|a_{n+1}|}{|a_n|} = \lim\limits_{n\to\infin}\frac{|C_{n+1}(x-a)^{n+1}|}{|C_n(x-a)^n|}=\lim\limits_{n\to\infin}\frac{|C_{n+1}||x-a|}{|C_n|}=|x-a|\lim\limits_{n\to\infin}\frac{|C_{n+1}|}{C_n}$</p>
-<!-- raw HTML omitted -->
+<!-- prettier-ignore -->
 <table>
 <thead>
 <tr>
@@ -292,7 +307,7 @@
 <p>And if we are asked to determine the radius of convergence for a series</p>
 <p>$\frac{x-1}{3}-\frac{(x-1)^2}{2\times3^2}+\frac{(x-1)^3}{3\times3^3}-\frac{(x-1)^4}{4\times3^4}+\cdots+(-1)^{n-1}\frac{(x-1)^n}{n\times3^n}+\cdots$</p>
 <p>Because $C_n=(-1)^{n-1}/(n\times3^n)$ can never be $0$, we can use the ratio test</p>
-<!-- raw HTML omitted -->
+<!-- prettier-ignore -->
 <p>$
 \lim\limits_{n\to\infin}\frac{|a_{n+1}|}{|a_n|}=
 |x-1|\lim\limits_{n\to\infin}\frac{|C_{n+1}|}{|C_n|}=

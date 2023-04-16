@@ -90,6 +90,13 @@
   onload="renderMathInElement(document.body);"
 ></script>
 
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="https://tikzjax.com/v1/fonts.css"
+/>
+<script src="https://tikzjax.com/v1/tikzjax.js"></script>
+
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
@@ -131,6 +138,14 @@
   ::selection {
     background: #23b0ff;
     color: #fff;
+  }
+  svg {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    page-break-before: always;
+  }
+  text {
+    fill: white !important;
   }
   @media print {
      
@@ -199,7 +214,440 @@
   <div class="post-content"><div>
         <h1 id="linear-approximations-with-taylor-polynomials">Linear Approximations with Taylor Polynomials<a href="#linear-approximations-with-taylor-polynomials" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
 <p>We learned how to approximate a function using a 1-degree polynomial last year: we learned how to form a tangent line.</p>
-<p>The key to tangent lines is that they hav the same slope and value at a point as the original function, meaning that the tangent line will ever</p>
+<p>The key to tangent lines is that they hav the same slope and value at a point as the original function, meaning that the tangent line will ever. In general, tangent lines can be summarized to be more accurate as the point of inspection approaches the point of tangency.</p>
+<p>Tangent line approximations are also referred to as the first Taylor approximation:</p>
+<p><strong>Taylor polynomial of Degree 1 approximating $f(x)$ for $x$ near $0$</strong></p>
+<p>$f(x)\approx P_1(x)=f(0)+f&rsquo;(0)x$</p>
+<p>If we are asked to find the taylor polynomial of degree 1 for $g(x)=cos(x)$ for $x$ near $0$, the first step is to compute the tangent line. We know the tangent line at $x=0$ is just a horizontal line at $y=1$.</p>
+<p>This can be confirmed by computing guesses that are close to, but not equal to, $0$:</p>
+<p>$g(0.05) = cos(0.05) \approx 0.998$</p>
+<p>$g(-0.1) = cos(-0.1) \approx 0.995$</p>
+<p>$g(0.4) = cos(0.4) \approx 0.921$</p>
+<p>However, as we get further away from $0$, the tangent line becomes less accurate.</p>
+<script type="text/tikz">
+  \definecolor{theme}{HTML}{23b0ff}
+  \begin{tikzpicture}
+    \draw[->, white] (-3, 0) -- (3, 0);
+    \draw[->, white] (0, -3) -- (0, 3);
+    \draw[color=theme]   plot (\x,{cos(\x r)});
+    \draw[domain=-4:4,smooth,variable=\x,red] plot ({\x},{1});
+  \end{tikzpicture}
+</script>
+<p>To advance past this limitation, we can use more complex equations to serve as our approximation functions, like</p>
+<h2 id="quadratic-approximations">Quadratic Approximations<a href="#quadratic-approximations" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Using a quadratic polynomial, we can approximate a function with a much higher degree of accuracy than we could with a line.</p>
+<p>If we are instructed to find a quadratic approximation for $g(x)=cos(x)$ for $x$ near $0$, our first step is to understand what will form a better approximation than a line.</p>
+<p>The rule we have to follow is that the polynomial must have the same value, slope, and second derivative as the original function at the point of inspection. In mathematical terms, this means that the polynomial must satisfy the following conditions:</p>
+<ul>
+<li>$P_2(0)=g(0)$</li>
+<li>$P_2&rsquo;(0)=g&rsquo;(0)$</li>
+<li>$P_2&rsquo;&rsquo;(0)=g&rsquo;&rsquo;(0)$</li>
+</ul>
+<p>We can start with the general form of a quadratic polynomial:</p>
+<p>$P_2(x)=ax^2+bx+c$</p>
+<p>We can then substitute in the C-functions:</p>
+<p>$P_2(0)=C_0+C_1x+C_2x^2$</p>
+<p>The next step is to compute the C cases, which can be done by plugging in values and computing the derivative</p>
+<table>
+<thead>
+<tr>
+<th>Polynomial form</th>
+<th>Function value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$P_2(x)=C_0+C_1x+C_2x^2$</td>
+<td>$g(x)=cos(x)$</td>
+</tr>
+<tr>
+<td>$P_2&rsquo;(x)=C_1+2C_2x$</td>
+<td>$g&rsquo;(x)=-sin(x)$</td>
+</tr>
+<tr>
+<td>$P_2&rsquo;&rsquo;(x)=2C_2$</td>
+<td>$g&rsquo;&rsquo;(x)=-cos(x)$</td>
+</tr>
+</tbody>
+</table>
+<p>We can then solve for the C values:</p>
+<table>
+<thead>
+<tr>
+<th>C value</th>
+<th>Intermediate</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$C_0$</td>
+<td>$P_2(0)=g(0)=cos(0)$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$C_1$</td>
+<td>$P_2&rsquo;(0)=g&rsquo;(0)=-sin(0)$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$2C_2$</td>
+<td>$P_2&rsquo;&rsquo;(0)=g&rsquo;&rsquo;(0)=-cos(0)$ Note the C value is multiplied by 2, so value must be halved</td>
+<td>$-1$ $-1/2$</td>
+</tr>
+</tbody>
+</table>
+<p>And finally, we can plug in the values to get our quadratic approximation:</p>
+<p>$cos(x)\approx 1+0x-\frac{1}{2}x^2=1-\frac{x^2}{2}$</p>
+<p>By plotting the original function</p>
+<script type="text/tikz">
+  \definecolor{theme}{HTML}{23b0ff}
+  \begin{tikzpicture}
+    \draw[->, white] (-3, 0) -- (3, 0);
+    \draw[->, white] (0, -3) -- (0, 3);
+    \draw[color=theme]   plot (\x,{cos(\x r)});
+    \draw[domain=-3:3,smooth,variable=\x,red] plot ({\x},{1-\x*\x/2});
+  \end{tikzpicture}
+</script>
+<p>We can see that the quadratic approximation is much more accurate than the linear approximation across the domain of $[-\pi, \pi]$, and by doing the same thing we did to test the accuracy of the linear approximation, we can see that the quadratic approximation provides a much more accurate approximation for values that have a more varied distance from $0$.</p>
+<p>We can generalize this to the formula</p>
+<p><strong>Taylor polynomial of Degree 2 approximating $f(x)$ for $x$ near $0$</strong></p>
+<p>$f(x)\approx P_2(x)=f(0)+f&rsquo;(0)x+\frac{f&rsquo;&rsquo;(0)}{2}x^2$</p>
+<p>The second Taylor approximation is far more accurate than the first, but is still limited in its accuracy and the domain of values it can accurately approximate. To get a more accurate approximation, we can use&hellip;</p>
+<h2 id="higher-degree-polynomials">Higher-degree polynomials<a href="#higher-degree-polynomials" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>The graph above shows that the second-degree polynomial is far more accurate than the first-degree polynomial, but it is still limited in its accuracy as it can still bend away from the original function for larger values of $x$. To get a more accurate approximation, we can use higher-degree polynomials.</p>
+<p>$f(x)\approx P_n(x)=C_0+C_1x+C_2x^2+\cdots +C_{n-1}x^{n-1}+C_nx^n$</p>
+<p>To find the values of the constants we need the function and each of its first $n$ derivatives to agree with the polynomial at $x=0$. Generally speaking, the higher a degree of a Taylor polynomial, the larger the interval for which the approximation is valid.</p>
+<p>To find the constants, with $n=3$ as an example, we can construct a sum</p>
+<p>$f(x)\approx C_0+C_1x+C_2x^2+C_3x^3$</p>
+<p>We can substitute $x=0$ to get $C_0$, and we can differentiate and substitute to get further values of $C$</p>
+<p>In general, we can use the following formula to find the $C$ values:</p>
+<p>$C_n=\frac{f^{(n)}(0)}{n!}$</p>
+<p>From there, we can define the nth-degree Taylor polynomial as</p>
+<p>$f(x)\approx P_n(x)=f(0)+f&rsquo;(0)x+\frac{f&rsquo;&rsquo;(0)}{2}x^2+\frac{f&rsquo;&rsquo;&rsquo;(0)}{3!}x^3+\cdots +\frac{f^{(n)}(0)}{n!}x^n$</p>
+<p>Where $P_n(x)$ is the Taylor polynomial of the $n$th degree centered at $x=0$.</p>
+<p>If we examine the taylor polynomial at each degree, we can see that the higher the degree, the more accurate the approximation is.</p>
+<p>We will be approximating the function $f(x)=sin(x)$ for $x$ near $0$.</p>
+<blockquote>
+<p><strong>1st degree</strong></p>
+<table>
+<thead>
+<tr>
+<th>Polynomial form</th>
+<th>Value at 0</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$f(x)=sin(x)$</td>
+<td>$f(0)=0$</td>
+</tr>
+<tr>
+<td>$f&rsquo;(x)=cos(x)$</td>
+<td>$f&rsquo;(0)=1$</td>
+</tr>
+</tbody>
+</table>
+<p>Leading us to a first-degree Taylor polynomial of $f(x)$ for $x$ near $0$:</p>
+<p>$f(x)\approx P_2(x)=0+1x+\frac{1}{2}x^2$</p>
+  <script type="text/tikz">
+    \definecolor{theme}{HTML}{23b0ff}
+    \begin{tikzpicture}
+
+      \draw[->, white] (-3, 0) -- (3, 0);
+      \draw[->, white] (0, -3) -- (0, 3);
+      \draw[color=theme]   plot (\x,{sin(\x r)}) node[right] {sin(x)};
+      \draw[domain=-3:3,smooth,variable=\x,red] plot ({\x},{0+\x});
+
+  \end{tikzpicture}
+  </script>
+<p>We can see that the first-degree Taylor polynomial is already accurate for values of $x$ near $0$, but rapidly becomes inaccurate as $x$ increases.</p>
+</blockquote>
+<blockquote>
+<p><strong>2nd degree</strong></p>
+<table>
+<thead>
+<tr>
+<th>Polynomial form</th>
+<th>Value at 0</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$f(x)=sin(x)$</td>
+<td>$f(0)=0$</td>
+</tr>
+<tr>
+<td>$f&rsquo;(x)=cos(x)$</td>
+<td>$f&rsquo;(0)=1$</td>
+</tr>
+</tbody>
+</table>
+<p>This leads us to a second-degree Taylor polynomial of $f(x)$ for $x$ near $0$:</p>
+<p>$f(x)\approx P_2(x)=0+1x+\frac{0}{2!}x^2$</p>
+  <script type="text/tikz">
+    \definecolor{theme}{HTML}{23b0ff}
+    \begin{tikzpicture}
+
+      \draw[->, white] (-3, 0) -- (3, 0);
+      \draw[->, white] (0, -3) -- (0, 3);
+      \draw[color=theme]   plot (\x,{sin(\x r)}) node[right] {sin(x)};
+      \draw[domain=-3:3,smooth,variable=\x,red] plot ({\x},{0+\x});
+
+  \end{tikzpicture}
+  </script>
+</blockquote>
+<blockquote>
+<p><strong>3rd degree</strong></p>
+<table>
+<thead>
+<tr>
+<th>Polynomial form</th>
+<th>Value at 0</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$f(x)=sin(x)$</td>
+<td>$f(0)=0$</td>
+</tr>
+<tr>
+<td>$f&rsquo;(x)=cos(x)$</td>
+<td>$f&rsquo;(0)=1$</td>
+</tr>
+<tr>
+<td>$f&rsquo;&rsquo;(x)=-sin(x)$</td>
+<td>$f&rsquo;&rsquo;(0)=0$</td>
+</tr>
+<tr>
+<td>$f&rsquo;&rsquo;&rsquo;(x)=-cos(x)$</td>
+<td>$f&rsquo;&rsquo;&rsquo;(0)=-1$</td>
+</tr>
+</tbody>
+</table>
+<p>This leads us to a third-degree Taylor polynomial of $f(x)$ for $x$ near $0$:</p>
+<p>$f(x)\approx P_3(x)=0+1x+\frac{0}{2!}x^2-\frac{1}{3!}x^3$</p>
+  <script type="text/tikz">
+    \definecolor{theme}{HTML}{23b0ff}
+    \begin{tikzpicture}
+
+      \draw[->, white] (-3, 0) -- (3, 0);
+      \draw[->, white] (0, -3) -- (0, 3);
+      \draw[color=theme]   plot (\x,{sin(\x r)}) node[right] {sin(x)};
+      \draw[domain=-3:3,smooth,variable=\x,red] plot ({\x},{0+\x-\x^3/6});
+
+  \end{tikzpicture}
+  </script>
+</blockquote>
+<blockquote>
+<p><strong>4th degree</strong></p>
+<table>
+<thead>
+<tr>
+<th>Polynomial form</th>
+<th>Value at 0</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$f(x)=sin(x)$</td>
+<td>$f(0)=0$</td>
+</tr>
+<tr>
+<td>$f&rsquo;(x)=cos(x)$</td>
+<td>$f&rsquo;(0)=1$</td>
+</tr>
+<tr>
+<td>$f&rsquo;&rsquo;(x)=-sin(x)$</td>
+<td>$f&rsquo;&rsquo;(0)=0$</td>
+</tr>
+<tr>
+<td>$f&rsquo;&rsquo;&rsquo;(x)=-cos(x)$</td>
+<td>$f&rsquo;&rsquo;&rsquo;(0)=-1$</td>
+</tr>
+<tr>
+<td>$f^{(4)}(x)=sin(x)$</td>
+<td>$f^{(4)}(0)=0$</td>
+</tr>
+</tbody>
+</table>
+<p>This leads us to a fourth-degree Taylor polynomial of $f(x)$ for $x$ near $0$:</p>
+<p>$f(x)\approx P_4(x)=0+1x+\frac{0}{2!}x^2-\frac{1}{3!}x^3+\frac{0}{4!}x^4$</p>
+  <script type="text/tikz">
+    \definecolor{theme}{HTML}{23b0ff}
+    \begin{tikzpicture}
+
+      \draw[->, white] (-3, 0) -- (3, 0);
+      \draw[->, white] (0, -3) -- (0, 3);
+      \draw[color=theme]   plot (\x,{sin(\x r)}) node[right] {sin(x)};
+      \draw[domain=-3:3,smooth,variable=\x,red] plot ({\x},{0+\x-\x^3/6});
+
+  \end{tikzpicture}
+  </script>
+</blockquote>
+<blockquote>
+<p><strong>5th degree</strong></p>
+<table>
+<thead>
+<tr>
+<th>Polynomial form</th>
+<th>Value at 0</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$f(x)=sin(x)$</td>
+<td>$f(0)=0$</td>
+</tr>
+<tr>
+<td>$f&rsquo;(x)=cos(x)$</td>
+<td>$f&rsquo;(0)=1$</td>
+</tr>
+<tr>
+<td>$f&rsquo;&rsquo;(x)=-sin(x)$</td>
+<td>$f&rsquo;&rsquo;(0)=0$</td>
+</tr>
+<tr>
+<td>$f&rsquo;&rsquo;&rsquo;(x)=-cos(x)$</td>
+<td>$f&rsquo;&rsquo;&rsquo;(0)=-1$</td>
+</tr>
+<tr>
+<td>$f^{(4)}(x)=sin(x)$</td>
+<td>$f^{(4)}(0)=0$</td>
+</tr>
+<tr>
+<td>$f^{(5)}(x)=cos(x)$</td>
+<td>$f^{(5)}(0)=1$</td>
+</tr>
+</tbody>
+</table>
+<p>This leads us to a fifth-degree Taylor polynomial of $f(x)$ for $x$ near $0$:</p>
+<p>$f(x)\approx P_6(x)=0+1x+\frac{0}{2!}x^2-\frac{1}{3!}x^3+\frac{0}{4!}x^4+\frac{1}{5!}x^5$</p>
+  <script type="text/tikz">
+    \definecolor{theme}{HTML}{23b0ff}
+    \begin{tikzpicture}
+
+      \draw[->, white] (-3, 0) -- (3, 0);
+      \draw[->, white] (0, -3) -- (0, 3);
+      \draw[color=theme]   plot (\x,{sin(\x r)}) node[right] {sin(x)};
+      \draw[domain=-3:3,smooth,variable=\x,red] plot ({\x},{0+\x-\x^3/6+\x^5/120});
+
+  \end{tikzpicture}
+  </script>
+</blockquote>
+<blockquote>
+<p><strong>6th degree</strong></p>
+<table>
+<thead>
+<tr>
+<th>Polynomial form</th>
+<th>Value at 0</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$f(x)=sin(x)$</td>
+<td>$f(0)=0$</td>
+</tr>
+<tr>
+<td>$f&rsquo;(x)=cos(x)$</td>
+<td>$f&rsquo;(0)=1$</td>
+</tr>
+<tr>
+<td>$f&rsquo;&rsquo;(x)=-sin(x)$</td>
+<td>$f&rsquo;&rsquo;(0)=0$</td>
+</tr>
+<tr>
+<td>$f&rsquo;&rsquo;&rsquo;(x)=-cos(x)$</td>
+<td>$f&rsquo;&rsquo;&rsquo;(0)=-1$</td>
+</tr>
+<tr>
+<td>$f^{(4)}(x)=sin(x)$</td>
+<td>$f^{(4)}(0)=0$</td>
+</tr>
+<tr>
+<td>$f^{(5)}(x)=cos(x)$</td>
+<td>$f^{(5)}(0)=1$</td>
+</tr>
+<tr>
+<td>$f^{(6)}(x)=-sin(x)$</td>
+<td>$f^{(6)}(0)=0$</td>
+</tr>
+</tbody>
+</table>
+<p>This leads us to a sixth-degree Taylor polynomial of $f(x)$ for $x$ near $0$:</p>
+<p>$f(x)\approx P_6(x)=0+1x+\frac{0}{2!}x^2-\frac{1}{3!}x^3+\frac{0}{4!}x^4+\frac{1}{5!}x^5+0x^6$</p>
+  <script type="text/tikz">
+    \definecolor{theme}{HTML}{23b0ff}
+    \begin{tikzpicture}
+
+      \draw[->, white] (-3, 0) -- (3, 0);
+      \draw[->, white] (0, -3) -- (0, 3);
+      \draw[color=theme]   plot (\x,{sin(\x r)}) node[right] {sin(x)};
+      \draw[domain=-3:3,smooth,variable=\x,red] plot ({\x},{0+\x-\x^3/6+\x^5/120});
+
+  \end{tikzpicture}
+  </script>
+</blockquote>
+<blockquote>
+<p><strong>7th degree</strong></p>
+<table>
+<thead>
+<tr>
+<th>Polynomial form</th>
+<th>Value at 0</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$f(x)=sin(x)$</td>
+<td>$f(0)=0$</td>
+</tr>
+<tr>
+<td>$f&rsquo;(x)=cos(x)$</td>
+<td>$f&rsquo;(0)=1$</td>
+</tr>
+<tr>
+<td>$f&rsquo;&rsquo;(x)=-sin(x)$</td>
+<td>$f&rsquo;&rsquo;(0)=0$</td>
+</tr>
+<tr>
+<td>$f&rsquo;&rsquo;&rsquo;(x)=-cos(x)$</td>
+<td>$f&rsquo;&rsquo;&rsquo;(0)=-1$</td>
+</tr>
+<tr>
+<td>$f^{(4)}(x)=sin(x)$</td>
+<td>$f^{(4)}(0)=0$</td>
+</tr>
+<tr>
+<td>$f^{(5)}(x)=cos(x)$</td>
+<td>$f^{(5)}(0)=1$</td>
+</tr>
+<tr>
+<td>$f^{(6)}(x)=-sin(x)$</td>
+<td>$f^{(6)}(0)=0$</td>
+</tr>
+<tr>
+<td>$f^{(7)}(x)=-cos(x)$</td>
+<td>$f^{(7)}(0)=-1$</td>
+</tr>
+</tbody>
+</table>
+<p>This leads us to a seventh-degree Taylor polynomial of $f(x)$ for $x$ near $0$:</p>
+<p>$f(x)\approx P_8(x)=0+1x+\frac{0}{2!}x^2-\frac{1}{3!}x^3+\frac{0}{4!}x^4+\frac{1}{5!}x^5+\frac{0}{6!}x^6-\frac{1}{7!}x^7$</p>
+  <script type="text/tikz">
+    \definecolor{theme}{HTML}{23b0ff}
+    \begin{tikzpicture}
+
+      \draw[->, white] (-3, 0) -- (3, 0);
+      \draw[->, white] (0, -3) -- (0, 3);
+      \draw[color=theme]   plot (\x,{sin(\x r)}) node[right] {sin(x)};
+      \draw[domain=-3:3,smooth,variable=\x,red] plot ({\x},{0+\x-\x^3/6-\x^7/5040});
+
+  \end{tikzpicture}
+  </script>
+</blockquote>
+<p>We can see how the taylor polynomial is getting closer and closer to the actual function as x is increasing. Generally, the more terms we add to the Taylor polynomial, the closer it will be to the actual function. However, the more terms we add, the more complex the polynomial becomes.</p>
 
       </div></div>
 

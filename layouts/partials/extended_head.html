@@ -41,6 +41,14 @@
     background: #23b0ff;
     color: #fff;
   }
+  svg {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    page-break-before: always;
+  }
+  text {
+    fill: white !important;
+  }
   @media print {
     /* Force everything to show */
     body {

@@ -93,3 +93,6 @@ paginate = 50
     [languages.en.params.logo]
       logoText = "Jack's Calculus Sheets"
       logoHomeLink = "/"
+
+[markup.goldmark.renderer]
+unsafe= true
