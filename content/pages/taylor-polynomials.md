@@ -30,11 +30,12 @@ However, as we get further away from $0$, the tangent line becomes less accurate
 
 <script type="text/tikz">
   \definecolor{theme}{HTML}{23b0ff}
+  \definecolor{theme_invert}{HTML}{b64b00}
   \begin{tikzpicture}
-    \draw[->, white] (-3, 0) -- (3, 0);
-    \draw[->, white] (0, -3) -- (0, 3);
+    \draw[->, gray] (-3, 0) -- (3, 0);
+    \draw[->, gray] (0, -3) -- (0, 3);
     \draw[color=theme]   plot (\x,{cos(\x r)});
-    \draw[domain=-4:4,smooth,variable=\x,red] plot ({\x},{1});
+    \draw[domain=-4:4,smooth,variable=\x,theme_invert] plot ({\x},{1});
   \end{tikzpicture}
 </script>
 
@@ -84,11 +85,12 @@ By plotting the original function
 
 <script type="text/tikz">
   \definecolor{theme}{HTML}{23b0ff}
+  \definecolor{theme_invert}{HTML}{b64b00}
   \begin{tikzpicture}
-    \draw[->, white] (-3, 0) -- (3, 0);
-    \draw[->, white] (0, -3) -- (0, 3);
+    \draw[->, gray] (-3, 0) -- (3, 0);
+    \draw[->, gray] (0, -3) -- (0, 3);
     \draw[color=theme]   plot (\x,{cos(\x r)});
-    \draw[domain=-3:3,smooth,variable=\x,red] plot ({\x},{1-\x*\x/2});
+    \draw[domain=-3:3,smooth,variable=\x,theme_invert] plot ({\x},{1-\x*\x/2});
   \end{tikzpicture}
 </script>
 
@@ -145,12 +147,13 @@ $f(x)\approx P_2(x)=0+1x+\frac{1}{2}x^2$
 
   <script type="text/tikz">
     \definecolor{theme}{HTML}{23b0ff}
+  \definecolor{theme_invert}{HTML}{b64b00}
     \begin{tikzpicture}
 
-      \draw[->, white] (-3, 0) -- (3, 0);
-      \draw[->, white] (0, -3) -- (0, 3);
+      \draw[->, gray] (-3, 0) -- (3, 0);
+      \draw[->, gray] (0, -3) -- (0, 3);
       \draw[color=theme]   plot (\x,{sin(\x r)}) node[right] {sin(x)};
-      \draw[domain=-3:3,smooth,variable=\x,red] plot ({\x},{0+\x});
+      \draw[domain=-3:3,smooth,variable=\x,theme_invert] plot ({\x},{0+\x});
 
   \end{tikzpicture}
   </script>
@@ -174,12 +177,13 @@ $f(x)\approx P_2(x)=0+1x+\frac{0}{2!}x^2$
 
   <script type="text/tikz">
     \definecolor{theme}{HTML}{23b0ff}
+  \definecolor{theme_invert}{HTML}{b64b00}
     \begin{tikzpicture}
 
-      \draw[->, white] (-3, 0) -- (3, 0);
-      \draw[->, white] (0, -3) -- (0, 3);
+      \draw[->, gray] (-3, 0) -- (3, 0);
+      \draw[->, gray] (0, -3) -- (0, 3);
       \draw[color=theme]   plot (\x,{sin(\x r)}) node[right] {sin(x)};
-      \draw[domain=-3:3,smooth,variable=\x,red] plot ({\x},{0+\x});
+      \draw[domain=-3:3,smooth,variable=\x,theme_invert] plot ({\x},{0+\x});
 
   \end{tikzpicture}
   </script>
@@ -203,12 +207,13 @@ $f(x)\approx P_3(x)=0+1x+\frac{0}{2!}x^2-\frac{1}{3!}x^3$
 
   <script type="text/tikz">
     \definecolor{theme}{HTML}{23b0ff}
+  \definecolor{theme_invert}{HTML}{b64b00}
     \begin{tikzpicture}
 
-      \draw[->, white] (-3, 0) -- (3, 0);
-      \draw[->, white] (0, -3) -- (0, 3);
+      \draw[->, gray] (-3, 0) -- (3, 0);
+      \draw[->, gray] (0, -3) -- (0, 3);
       \draw[color=theme]   plot (\x,{sin(\x r)}) node[right] {sin(x)};
-      \draw[domain=-3:3,smooth,variable=\x,red] plot ({\x},{0+\x-\x^3/6});
+      \draw[domain=-3:3,smooth,variable=\x,theme_invert] plot ({\x},{0+\x-\x^3/6});
 
   \end{tikzpicture}
   </script>
@@ -233,12 +238,13 @@ $f(x)\approx P_4(x)=0+1x+\frac{0}{2!}x^2-\frac{1}{3!}x^3+\frac{0}{4!}x^4$
 
   <script type="text/tikz">
     \definecolor{theme}{HTML}{23b0ff}
+  \definecolor{theme_invert}{HTML}{b64b00}
     \begin{tikzpicture}
 
-      \draw[->, white] (-3, 0) -- (3, 0);
-      \draw[->, white] (0, -3) -- (0, 3);
+      \draw[->, gray] (-3, 0) -- (3, 0);
+      \draw[->, gray] (0, -3) -- (0, 3);
       \draw[color=theme]   plot (\x,{sin(\x r)}) node[right] {sin(x)};
-      \draw[domain=-3:3,smooth,variable=\x,red] plot ({\x},{0+\x-\x^3/6});
+      \draw[domain=-3:3,smooth,variable=\x,theme_invert] plot ({\x},{0+\x-\x^3/6});
 
   \end{tikzpicture}
   </script>
@@ -264,12 +270,13 @@ $f(x)\approx P_6(x)=0+1x+\frac{0}{2!}x^2-\frac{1}{3!}x^3+\frac{0}{4!}x^4+\frac{1
 
   <script type="text/tikz">
     \definecolor{theme}{HTML}{23b0ff}
+  \definecolor{theme_invert}{HTML}{b64b00}
     \begin{tikzpicture}
 
-      \draw[->, white] (-3, 0) -- (3, 0);
-      \draw[->, white] (0, -3) -- (0, 3);
+      \draw[->, gray] (-3, 0) -- (3, 0);
+      \draw[->, gray] (0, -3) -- (0, 3);
       \draw[color=theme]   plot (\x,{sin(\x r)}) node[right] {sin(x)};
-      \draw[domain=-3:3,smooth,variable=\x,red] plot ({\x},{0+\x-\x^3/6+\x^5/120});
+      \draw[domain=-3:3,smooth,variable=\x,theme_invert] plot ({\x},{0+\x-\x^3/6+\x^5/120});
 
   \end{tikzpicture}
   </script>
@@ -296,12 +303,13 @@ $f(x)\approx P_6(x)=0+1x+\frac{0}{2!}x^2-\frac{1}{3!}x^3+\frac{0}{4!}x^4+\frac{1
 
   <script type="text/tikz">
     \definecolor{theme}{HTML}{23b0ff}
+  \definecolor{theme_invert}{HTML}{b64b00}
     \begin{tikzpicture}
 
-      \draw[->, white] (-3, 0) -- (3, 0);
-      \draw[->, white] (0, -3) -- (0, 3);
+      \draw[->, gray] (-3, 0) -- (3, 0);
+      \draw[->, gray] (0, -3) -- (0, 3);
       \draw[color=theme]   plot (\x,{sin(\x r)}) node[right] {sin(x)};
-      \draw[domain=-3:3,smooth,variable=\x,red] plot ({\x},{0+\x-\x^3/6+\x^5/120});
+      \draw[domain=-3:3,smooth,variable=\x,theme_invert] plot ({\x},{0+\x-\x^3/6+\x^5/120});
 
   \end{tikzpicture}
   </script>
@@ -329,12 +337,13 @@ $f(x)\approx P_8(x)=0+1x+\frac{0}{2!}x^2-\frac{1}{3!}x^3+\frac{0}{4!}x^4+\frac{1
 
   <script type="text/tikz">
     \definecolor{theme}{HTML}{23b0ff}
+  \definecolor{theme_invert}{HTML}{b64b00}
     \begin{tikzpicture}
 
-      \draw[->, white] (-3, 0) -- (3, 0);
-      \draw[->, white] (0, -3) -- (0, 3);
+      \draw[->, gray] (-3, 0) -- (3, 0);
+      \draw[->, gray] (0, -3) -- (0, 3);
       \draw[color=theme]   plot (\x,{sin(\x r)}) node[right] {sin(x)};
-      \draw[domain=-3:3,smooth,variable=\x,red] plot ({\x},{0+\x-\x^3/6-\x^7/5040});
+      \draw[domain=-3:3,smooth,variable=\x,theme_invert] plot ({\x},{0+\x-\x^3/6-\x^7/5040});
 
   \end{tikzpicture}
   </script>
@@ -342,3 +351,9 @@ $f(x)\approx P_8(x)=0+1x+\frac{0}{2!}x^2-\frac{1}{3!}x^3+\frac{0}{4!}x^4+\frac{1
 </blockquote>
 
 We can see how the taylor polynomial is getting closer and closer to the actual function as x is increasing. Generally, the more terms we add to the Taylor polynomial, the closer it will be to the actual function. However, the more terms we add, the more complex the polynomial becomes.
+
+## Taylor polynomials around $x=a$
+
+We can also use Taylor polynomials to approximate functions around a point other than $x=0$ by simply changing the value of $x$ that we plug into each term in the taylor polynomial, thus changing the formula to:
+
+$f(x)\approx P_n(x)=f(a)+f'(a)(x-a)+\frac{f''(a)}{2!}(x-a)^2+\frac{f'''(a)}{3!}(x-a)^3+...+\frac{f^{(n)}(a)}{n!}(x-a)^n$

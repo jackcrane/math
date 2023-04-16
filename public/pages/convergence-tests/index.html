@@ -161,6 +161,14 @@
       filter: invert();
       background-color: #000;
     }
+    svg {
+      filter: invert() !important;
+       
+      transform: scaleX(-1);
+    }
+    text {
+      fill: black !important;
+    }
   }
   @media print {
     .header {
