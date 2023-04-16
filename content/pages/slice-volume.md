@@ -1,7 +1,7 @@
 ---
 title: "8.1.2: Finding volumes by slicing"
 description: "This reference sheet covers using integrals to find volumes of objects defined by functions."
-weight: 1
+weight: 2
 ---
 
 # Calculating the area of a region under a curve
@@ -41,11 +41,11 @@ $\sum\limits_{i=0}^{n}\pi(5-h_i)^2\Delta h$
 
 And then we can convert the sum to an integral:
 
-$\int_0^5\pi(5-h)^2\,dh$
+$\int\limits_0^5\pi(5-h)^2\,dh$
 
 Which can finally be solved to find the volume of the cone:
 
-$\int_0^5\pi(5-h)^2\,dh = \frac{-\pi}{3}(5-h)^3\Bigg|_0^5=\frac{125}{3}\pi\text{ cm}^3$
+$\int\limits_0^5\pi(5-h)^2\,dh = \frac{-\pi}{3}(5-h)^3\Bigg|_0^5=\frac{125}{3}\pi\text{ cm}^3$
 
 Now that we have found the volume of the cone, we can use the known cone volume function to check our work:
 
@@ -73,7 +73,7 @@ $\sum\limits_{i=0}^{n}\pi(7^2-h_i^2)\Delta h$
 
 And then converted to an integral from $0$ to $7$ (bottom to top of the hemisphere):
 
-$\int_0^7\pi(7^2-h^2)\,dh$
+$\int\limits_0^7\pi(7^2-h^2)\,dh$
 
 ## Conclusion
 

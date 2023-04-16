@@ -2,6 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://math.jackcrane.rocks/pages/welcome/</loc>
+  </url><url>
     <loc>https://math.jackcrane.rocks/pages/slice-area/</loc>
   </url><url>
     <loc>https://math.jackcrane.rocks/pages/slice-volume/</loc>

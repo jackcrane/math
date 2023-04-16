@@ -161,7 +161,7 @@
       filter: invert();
       background-color: #000;
     }
-    svg {
+    .graph > svg {
       filter: invert() !important;
        
       transform: scaleX(-1);
@@ -243,9 +243,9 @@
 <p>Now that we know the width of a slice at any height, we are ready to construct our sum</p>
 <p>$\sum\limits_{i=0}^{n}\pi(5-h_i)^2\Delta h$</p>
 <p>And then we can convert the sum to an integral:</p>
-<p>$\int_0^5\pi(5-h)^2,dh$</p>
+<p>$\int\limits_0^5\pi(5-h)^2,dh$</p>
 <p>Which can finally be solved to find the volume of the cone:</p>
-<p>$\int_0^5\pi(5-h)^2,dh = \frac{-\pi}{3}(5-h)^3\Bigg|_0^5=\frac{125}{3}\pi\text{ cm}^3$</p>
+<p>$\int\limits_0^5\pi(5-h)^2,dh = \frac{-\pi}{3}(5-h)^3\Bigg|_0^5=\frac{125}{3}\pi\text{ cm}^3$</p>
 <p>Now that we have found the volume of the cone, we can use the known cone volume function to check our work:</p>
 <p>$\frac{1}{3}\pi(5)^2(10)=\frac{125}{3}\pi\text{ cm}^3$</p>
 <h2 id="finding-the-volume-of-a-hemisphere">Finding the volume of a hemisphere<a href="#finding-the-volume-of-a-hemisphere" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
@@ -259,7 +259,7 @@
 <p>Then the slices can be combined to a summation:</p>
 <p>$\sum\limits_{i=0}^{n}\pi(7^2-h_i^2)\Delta h$</p>
 <p>And then converted to an integral from $0$ to $7$ (bottom to top of the hemisphere):</p>
-<p>$\int_0^7\pi(7^2-h^2),dh$</p>
+<p>$\int\limits_0^7\pi(7^2-h^2),dh$</p>
 <h2 id="conclusion">Conclusion<a href="#conclusion" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
 <p>This sheet covers how to find the volume of any regular 3d shape that can be defined by a function. The process is very similar to finding the area of a region bounded by curves, but with a few extra steps. The most important thing to remember is that the slices need to be as simple as possible, so that the area of the slice can be easily calculated.</p>
 

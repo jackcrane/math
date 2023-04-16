@@ -1,7 +1,7 @@
 ---
 title: "8.1.1: Finding areas by slicing"
 description: "This reference sheet covers using an integral to find the area of a region under a curve."
-weight: 1
+weight: 2
 ---
 
 # Using integrals to find the area of 2d region defined by a function.
@@ -12,11 +12,11 @@ weight: 1
 
 In previous chapters, we found the area under a curve by cutting it up into increasingly tiny rectangles (or other shapes) and adding their areas:
 
-$\lim_{n \to \infty} \sum\limits_{i=0}^{n} (\frac{b-a}{n})*f(a+\frac{b-a}{n}k)$
+$\lim\limits_{n \to \infty} \sum\limits_{i=0}^{n} (\frac{b-a}{n})*f(a+\frac{b-a}{n}k)$
 
 This can be a good way to approximate the area under a curve, but it can be time consuming and is inexact. This chapter focuses on using an integral to find the area under a curve instead:
 
-$\int_a^b f(x) dx$
+$\int\limits_a^b f(x) dx$
 
 Once we know how to find the area under the curve, however, we can use the same techniques to find the area of any region bounded by one or more curves.
 
@@ -35,11 +35,11 @@ $\int x^2 dx = \frac{1}{3}x^3 + C$
 
 where $C$ is a constant of integration. To find the area under the curve, we need to evaluate the integral at the upper and lower bounds of the curve:
 
-$\int_a^b f(x) dx = F(a) - F(b) = \lim_{n \to b-}F(a) - \lim_{n \to b-}F(b)$
+$\int\limits_a^b f(x) dx = F(a) - F(b) = \lim\limits_{n \to b-}F(a) - \lim\limits_{n \to b-}F(b)$
 
 where $F(x)$ is the integral of $f(x)$. Recalling that $F(x)=\frac{1}{3}x^3 + C$, we can apply the definition to find the area:
 
-$\int_0^1 x^2 dx = \frac{1}{3} - 0 = \frac{1}{3}$
+$\int\limits_0^1 x^2 dx = \frac{1}{3} - 0 = \frac{1}{3}$
 
 ## Calculating the Area of a triangular region
 
@@ -57,7 +57,7 @@ $\sum\limits_{i=0}^{n}w_i\Delta h=\sum\limits_{i=0}^{n}\textcolor{#ff6600}{10-2h
 
 By taking the limit to infinity, we can get the integral for the area of the triangle:
 
-$\sum\limits\_{i=0}^{n}{10-2h_i}\Delta h\ = \int_0^5(10-2h)dh\text{ cm}^2$
+$\sum\limits\_{i=0}^{n}{10-2h_i}\Delta h\ = \int\limits_0^5(10-2h)dh\text{ cm}^2$
 
 And finally, by evaluating the integral at the upper and lower bounds, we can find the area of the triangle:
 
@@ -85,7 +85,7 @@ $\sum\limits_{i=0}^{n}w_i\Delta h=\sum\limits_{i=0}^{n}\textcolor{#ff6600}{2\sqr
 
 And taking the limit to infinity to get the integral:
 
-$\sum\limits_{i=0}^{n}{2\sqrt{49-h_i^2}}\Delta h\ = 2\int_0^7(\sqrt{49-h^2})dh\text{ cm}^2$
+$\sum\limits_{i=0}^{n}{2\sqrt{49-h_i^2}}\Delta h\ = 2\int\limits_0^7(\sqrt{49-h^2})dh\text{ cm}^2$
 
 And finally, evaluating the integral using the table of integrals:
 

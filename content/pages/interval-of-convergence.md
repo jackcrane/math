@@ -1,7 +1,7 @@
 ---
 title: "9.5.1: Interval of convergence"
 description: "This reference sheet covers calculating intervals of convergence on power series."
-weight: 1
+weight: 2
 ---
 
 # Finding the interval of convergence

@@ -1,7 +1,7 @@
 ---
 title: "8.2.1: Volumes of revolutions"
 description: "This reference sheet covers using integrals to find volumes of objects that revolve around an axis or a line."
-weight: 1
+weight: 2
 ---
 
 # Finding the volume of a region through revolution
@@ -32,7 +32,7 @@ $\sum\limits_{i=0}^{n-1}\pi(e^{-x})^2\Delta x$
 
 From the question, we know that the bounds of the shape are $x=0$ and $x=1$, and we can convert the summation to an integral:
 
-$\int_0^1\pi(e^{-x})^2\,dx=\pi(-\frac{1}{2})e^{-2x}\Bigg|_0^1=1.36$
+$\int\limits_0^1\pi(e^{-x})^2\,dx=\pi(-\frac{1}{2})e^{-2x}\Bigg|_0^1=1.36$
 
 ## Finding the volume of a weird shape 2
 
@@ -54,7 +54,7 @@ $V = \pi (3+\cos(\frac{\pi y}{25}))^2 \cdot dy$
 
 We can integrate over the range of $y$ to find the total volume of the shape:
 
-$\int_{0}^{100} \pi (3+\cos(\frac{\pi y}{25}))^2 \cdot dy = 2984.5\text{ cm}^3$
+$\int\limits_{0}^{100} \pi (3+\cos(\frac{\pi y}{25}))^2 \cdot dy = 2984.5\text{ cm}^3$
 
 ## Conclusion
 

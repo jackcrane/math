@@ -161,7 +161,7 @@
       filter: invert();
       background-color: #000;
     }
-    svg {
+    .graph > svg {
       filter: invert() !important;
        
       transform: scaleX(-1);
@@ -238,7 +238,7 @@
 <p>Converting to a summation we can get a representation of the entire shape:</p>
 <p>$\sum\limits_{i=0}^{n-1}\pi(e^{-x})^2\Delta x$</p>
 <p>From the question, we know that the bounds of the shape are $x=0$ and $x=1$, and we can convert the summation to an integral:</p>
-<p>$\int_0^1\pi(e^{-x})^2,dx=\pi(-\frac{1}{2})e^{-2x}\Bigg|_0^1=1.36$</p>
+<p>$\int\limits_0^1\pi(e^{-x})^2,dx=\pi(-\frac{1}{2})e^{-2x}\Bigg|_0^1=1.36$</p>
 <h2 id="finding-the-volume-of-a-weird-shape-2">Finding the volume of a weird shape 2<a href="#finding-the-volume-of-a-weird-shape-2" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
 <p>We have a shape defined by the curve $r=3+\cos(\frac{\pi y}{25})$, which is revolved around the $y$-axis, and is 100 units tall.</p>
 <p>Just like finding the volume of a defined solid, we want to find the way to slice the shape that will result in the easiest 2d shapes to work with. In this case, we will be using slices that are perpendicular to the $y$-axis, which will result in circular discs.</p>
@@ -249,7 +249,7 @@
 <p>$V = A \cdot dy$</p>
 <p>$V = \pi (3+\cos(\frac{\pi y}{25}))^2 \cdot dy$</p>
 <p>We can integrate over the range of $y$ to find the total volume of the shape:</p>
-<p>$\int_{0}^{100} \pi (3+\cos(\frac{\pi y}{25}))^2 \cdot dy = 2984.5\text{ cm}^3$</p>
+<p>$\int\limits_{0}^{100} \pi (3+\cos(\frac{\pi y}{25}))^2 \cdot dy = 2984.5\text{ cm}^3$</p>
 <h2 id="conclusion">Conclusion<a href="#conclusion" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
 <p>In this sheet, we found the volume of a shape that is revolved around an axis. This is a useful technique that can be used to compute the volume of many objects with circular cross-sections.</p>
 

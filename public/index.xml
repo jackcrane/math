@@ -7,6 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://math.jackcrane.rocks/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Welcome to CalcSheets</title>
+      <link>https://math.jackcrane.rocks/pages/welcome/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://math.jackcrane.rocks/pages/welcome/</guid>
+      <description>Welcome! This is a project by Jack Crane based on Fr. May&amp;rsquo;s Calculus 2 course at Saint Louis University. Content and practice problems is based on content in the textbook with additional content from class notes and other sources thrown in.
+This reference has been completed up to April 15, 2023, and more content will be added as the course progresses.
+All content is available online at math.jackcrane.rocks. It is open source and available on GitHub as a Hugo site with Markdown and LaTeX content.</description>
+      <content>&lt;h1 id=&#34;welcome&#34;&gt;Welcome!&lt;/h1&gt;
+&lt;p&gt;This is a project by Jack Crane based on Fr. May&amp;rsquo;s Calculus 2 course at Saint Louis University. Content and practice problems is based on content in the textbook with additional content from class notes and other sources thrown in.&lt;/p&gt;
+&lt;p&gt;This reference has been completed up to April 15, 2023, and more content will be added as the course progresses.&lt;/p&gt;
+&lt;p&gt;All content is available online at &lt;a href=&#34;https://math.jackcrane.rocks&#34;&gt;math.jackcrane.rocks&lt;/a&gt;. It is open source and available on &lt;a href=&#34;https://github.com/jackcrane/math&#34;&gt;GitHub&lt;/a&gt; as a Hugo site with Markdown and LaTeX content.&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
       <title>8.1.1: Finding areas by slicing</title>
       <link>https://math.jackcrane.rocks/pages/slice-area/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -14,7 +30,7 @@
       <guid>https://math.jackcrane.rocks/pages/slice-area/</guid>
       <description>Using integrals to find the area of 2d region defined by a function. This reference sheet covers using an integral to find the area of a region under a curve.
 Introduction In previous chapters, we found the area under a curve by cutting it up into increasingly tiny rectangles (or other shapes) and adding their areas:
-$\lim_{n \to \infty} \sum\limits_{i=0}^{n} (\frac{b-a}{n})*f(a+\frac{b-a}{n}k)$
+$\lim\limits_{n \to \infty} \sum\limits_{i=0}^{n} (\frac{b-a}{n})*f(a+\frac{b-a}{n}k)$
 This can be a good way to approximate the area under a curve, but it can be time consuming and is inexact.</description>
       <content>&lt;h1 id=&#34;using-integrals-to-find-the-area-of-2d-region-defined-by-a-function&#34;&gt;Using integrals to find the area of 2d region defined by a function.&lt;/h1&gt;
 &lt;blockquote&gt;
@@ -22,9 +38,9 @@ This can be a good way to approximate the area under a curve, but it can be time
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;In previous chapters, we found the area under a curve by cutting it up into increasingly tiny rectangles (or other shapes) and adding their areas:&lt;/p&gt;
-&lt;p&gt;$\lim_{n \to \infty} \sum\limits_{i=0}^{n} (\frac{b-a}{n})*f(a+\frac{b-a}{n}k)$&lt;/p&gt;
+&lt;p&gt;$\lim\limits_{n \to \infty} \sum\limits_{i=0}^{n} (\frac{b-a}{n})*f(a+\frac{b-a}{n}k)$&lt;/p&gt;
 &lt;p&gt;This can be a good way to approximate the area under a curve, but it can be time consuming and is inexact. This chapter focuses on using an integral to find the area under a curve instead:&lt;/p&gt;
-&lt;p&gt;$\int_a^b f(x) dx$&lt;/p&gt;
+&lt;p&gt;$\int\limits_a^b f(x) dx$&lt;/p&gt;
 &lt;p&gt;Once we know how to find the area under the curve, however, we can use the same techniques to find the area of any region bounded by one or more curves.&lt;/p&gt;
 &lt;h2 id=&#34;things-to-know&#34;&gt;Things to Know&lt;/h2&gt;
 &lt;p&gt;Before diving into using the integral to find the area under a curve, there are a few important things to keep in mind:&lt;/p&gt;
@@ -36,9 +52,9 @@ This can be a good way to approximate the area under a curve, but it can be time
 &lt;p&gt;To calculate the area under a curve, we need to find the integral of the function that describes the curve. For example, if we want to find the area under the curve $y = x^2$, we need to find the integral of $x^2$:&lt;/p&gt;
 &lt;p&gt;$\int x^2 dx = \frac{1}{3}x^3 + C$&lt;/p&gt;
 &lt;p&gt;where $C$ is a constant of integration. To find the area under the curve, we need to evaluate the integral at the upper and lower bounds of the curve:&lt;/p&gt;
-&lt;p&gt;$\int_a^b f(x) dx = F(a) - F(b) = \lim_{n \to b-}F(a) - \lim_{n \to b-}F(b)$&lt;/p&gt;
+&lt;p&gt;$\int\limits_a^b f(x) dx = F(a) - F(b) = \lim\limits_{n \to b-}F(a) - \lim\limits_{n \to b-}F(b)$&lt;/p&gt;
 &lt;p&gt;where $F(x)$ is the integral of $f(x)$. Recalling that $F(x)=\frac{1}{3}x^3 + C$, we can apply the definition to find the area:&lt;/p&gt;
-&lt;p&gt;$\int_0^1 x^2 dx = \frac{1}{3} - 0 = \frac{1}{3}$&lt;/p&gt;
+&lt;p&gt;$\int\limits_0^1 x^2 dx = \frac{1}{3} - 0 = \frac{1}{3}$&lt;/p&gt;
 &lt;h2 id=&#34;calculating-the-area-of-a-triangular-region&#34;&gt;Calculating the Area of a triangular region&lt;/h2&gt;
 &lt;p&gt;Finding the area under a curve is all well and good, but the real power comes from using the same techniques to find the area of &lt;em&gt;any&lt;/em&gt; region bounded by curves. For example, if we want to find the area of an isosceles triangle with base $10$ and height $5$, we could use the triangle area formula:&lt;/p&gt;
 &lt;p&gt;$\text{Area} = \frac{1}{2}\text{base} * \text{height}$&lt;/p&gt;
@@ -47,7 +63,7 @@ This can be a good way to approximate the area under a curve, but it can be time
 &lt;p&gt;Once we have a function that gives us the width of the subrectangles, we can construct a summation representing the area of the triangle:&lt;/p&gt;
 &lt;p&gt;$\sum\limits_{i=0}^{n}w_i\Delta h=\sum\limits_{i=0}^{n}\textcolor{#ff6600}{10-2h_i}\Delta h\text{ cm}^2$&lt;/p&gt;
 &lt;p&gt;By taking the limit to infinity, we can get the integral for the area of the triangle:&lt;/p&gt;
-&lt;p&gt;$\sum\limits_{i=0}^{n}{10-2h_i}\Delta h\ = \int_0^5(10-2h)dh\text{ cm}^2$&lt;/p&gt;
+&lt;p&gt;$\sum\limits_{i=0}^{n}{10-2h_i}\Delta h\ = \int\limits_0^5(10-2h)dh\text{ cm}^2$&lt;/p&gt;
 &lt;p&gt;And finally, by evaluating the integral at the upper and lower bounds, we can find the area of the triangle:&lt;/p&gt;
 &lt;p&gt;$(10h-2h)\Bigg|_0^5=25\text{ cm}^2$&lt;/p&gt;
 &lt;p&gt;And as a final step, checking our work with the traditional formula:&lt;/p&gt;
@@ -61,7 +77,7 @@ This can be a good way to approximate the area under a curve, but it can be time
 &lt;p&gt;And a summation:&lt;/p&gt;
 &lt;p&gt;$\sum\limits_{i=0}^{n}w_i\Delta h=\sum\limits_{i=0}^{n}\textcolor{#ff6600}{2\sqrt{49-h_i^2}}\Delta h\text{ cm}^2$&lt;/p&gt;
 &lt;p&gt;And taking the limit to infinity to get the integral:&lt;/p&gt;
-&lt;p&gt;$\sum\limits_{i=0}^{n}{2\sqrt{49-h_i^2}}\Delta h\ = 2\int_0^7(\sqrt{49-h^2})dh\text{ cm}^2$&lt;/p&gt;
+&lt;p&gt;$\sum\limits_{i=0}^{n}{2\sqrt{49-h_i^2}}\Delta h\ = 2\int\limits_0^7(\sqrt{49-h^2})dh\text{ cm}^2$&lt;/p&gt;
 &lt;p&gt;And finally, evaluating the integral using the table of integrals:&lt;/p&gt;
 &lt;p&gt;$2*\frac{1}{2}(h\sqrt{49-h^2}+49arcsin(\frac{h}{7}))\Bigg|_0^7=49arcsin(1)=\frac{49}{2}\pi$&lt;/p&gt;
 &lt;p&gt;And checking our work with the traditional formula:&lt;/p&gt;
@@ -102,9 +118,9 @@ Introduction In the previous sheet I defined how to find the area of a region bo
 &lt;p&gt;Now that we know the width of a slice at any height, we are ready to construct our sum&lt;/p&gt;
 &lt;p&gt;$\sum\limits_{i=0}^{n}\pi(5-h_i)^2\Delta h$&lt;/p&gt;
 &lt;p&gt;And then we can convert the sum to an integral:&lt;/p&gt;
-&lt;p&gt;$\int_0^5\pi(5-h)^2,dh$&lt;/p&gt;
+&lt;p&gt;$\int\limits_0^5\pi(5-h)^2,dh$&lt;/p&gt;
 &lt;p&gt;Which can finally be solved to find the volume of the cone:&lt;/p&gt;
-&lt;p&gt;$\int_0^5\pi(5-h)^2,dh = \frac{-\pi}{3}(5-h)^3\Bigg|_0^5=\frac{125}{3}\pi\text{ cm}^3$&lt;/p&gt;
+&lt;p&gt;$\int\limits_0^5\pi(5-h)^2,dh = \frac{-\pi}{3}(5-h)^3\Bigg|_0^5=\frac{125}{3}\pi\text{ cm}^3$&lt;/p&gt;
 &lt;p&gt;Now that we have found the volume of the cone, we can use the known cone volume function to check our work:&lt;/p&gt;
 &lt;p&gt;$\frac{1}{3}\pi(5)^2(10)=\frac{125}{3}\pi\text{ cm}^3$&lt;/p&gt;
 &lt;h2 id=&#34;finding-the-volume-of-a-hemisphere&#34;&gt;Finding the volume of a hemisphere&lt;/h2&gt;
@@ -118,7 +134,7 @@ Introduction In the previous sheet I defined how to find the area of a region bo
 &lt;p&gt;Then the slices can be combined to a summation:&lt;/p&gt;
 &lt;p&gt;$\sum\limits_{i=0}^{n}\pi(7^2-h_i^2)\Delta h$&lt;/p&gt;
 &lt;p&gt;And then converted to an integral from $0$ to $7$ (bottom to top of the hemisphere):&lt;/p&gt;
-&lt;p&gt;$\int_0^7\pi(7^2-h^2),dh$&lt;/p&gt;
+&lt;p&gt;$\int\limits_0^7\pi(7^2-h^2),dh$&lt;/p&gt;
 &lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;This sheet covers how to find the volume of any regular 3d shape that can be defined by a function. The process is very similar to finding the area of a region bounded by curves, but with a few extra steps. The most important thing to remember is that the slices need to be as simple as possible, so that the area of the slice can be easily calculated.&lt;/p&gt;
 </content>
@@ -150,7 +166,7 @@ Introduction Many shapes do not have names but can be easily defined by specifyi
 &lt;p&gt;Converting to a summation we can get a representation of the entire shape:&lt;/p&gt;
 &lt;p&gt;$\sum\limits_{i=0}^{n-1}\pi(e^{-x})^2\Delta x$&lt;/p&gt;
 &lt;p&gt;From the question, we know that the bounds of the shape are $x=0$ and $x=1$, and we can convert the summation to an integral:&lt;/p&gt;
-&lt;p&gt;$\int_0^1\pi(e^{-x})^2,dx=\pi(-\frac{1}{2})e^{-2x}\Bigg|_0^1=1.36$&lt;/p&gt;
+&lt;p&gt;$\int\limits_0^1\pi(e^{-x})^2,dx=\pi(-\frac{1}{2})e^{-2x}\Bigg|_0^1=1.36$&lt;/p&gt;
 &lt;h2 id=&#34;finding-the-volume-of-a-weird-shape-2&#34;&gt;Finding the volume of a weird shape 2&lt;/h2&gt;
 &lt;p&gt;We have a shape defined by the curve $r=3+\cos(\frac{\pi y}{25})$, which is revolved around the $y$-axis, and is 100 units tall.&lt;/p&gt;
 &lt;p&gt;Just like finding the volume of a defined solid, we want to find the way to slice the shape that will result in the easiest 2d shapes to work with. In this case, we will be using slices that are perpendicular to the $y$-axis, which will result in circular discs.&lt;/p&gt;
@@ -161,7 +177,7 @@ Introduction Many shapes do not have names but can be easily defined by specifyi
 &lt;p&gt;$V = A \cdot dy$&lt;/p&gt;
 &lt;p&gt;$V = \pi (3+\cos(\frac{\pi y}{25}))^2 \cdot dy$&lt;/p&gt;
 &lt;p&gt;We can integrate over the range of $y$ to find the total volume of the shape:&lt;/p&gt;
-&lt;p&gt;$\int_{0}^{100} \pi (3+\cos(\frac{\pi y}{25}))^2 \cdot dy = 2984.5\text{ cm}^3$&lt;/p&gt;
+&lt;p&gt;$\int\limits_{0}^{100} \pi (3+\cos(\frac{\pi y}{25}))^2 \cdot dy = 2984.5\text{ cm}^3$&lt;/p&gt;
 &lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;In this sheet, we found the volume of a shape that is revolved around an axis. This is a useful technique that can be used to compute the volume of many objects with circular cross-sections.&lt;/p&gt;
 </content>
@@ -227,17 +243,17 @@ The first step is to find the derivative of the curve.</description>
 &lt;h2 id=&#34;arc-length-on-a-standard-curve&#34;&gt;Arc length on a standard curve&lt;/h2&gt;
 &lt;p&gt;We have a curve $f(x)=x^3$ and want to find the length of the arc between $x=0$ and $x=5$.&lt;/p&gt;
 &lt;p&gt;The first step is to find the derivative of the curve. The derivative of $f(x)=x^3$ is $f&amp;rsquo;(x)=3x^2$. We will be using the non-parametric formula for arc length:&lt;/p&gt;
-&lt;p&gt;$\int_a^b\sqrt{1+(f&amp;rsquo;(x))^2}dx$&lt;/p&gt;
+&lt;p&gt;$\int\limits_a^b\sqrt{1+(f&amp;rsquo;(x))^2}dx$&lt;/p&gt;
 &lt;p&gt;After substituting in the values for $a$, $b$, and $f&amp;rsquo;(x)$, we get:&lt;/p&gt;
-&lt;p&gt;$\int_0^5\sqrt{1+(3x^2)^2}dx=125.68$&lt;/p&gt;
+&lt;p&gt;$\int\limits_0^5\sqrt{1+(3x^2)^2}dx=125.68$&lt;/p&gt;
 &lt;h2 id=&#34;arc-length-on-a-parametric-curve&#34;&gt;Arc length on a parametric curve&lt;/h2&gt;
 &lt;p&gt;If a particle is described as moving in a path defined by parametric equations with respect to a time value, we can use the parametric formula for arc length:&lt;/p&gt;
-&lt;p&gt;$\int_a^b\sqrt{(\frac{dx}{dt})^2+(\frac{dy}{dt})^2}dx$&lt;/p&gt;
+&lt;p&gt;$\int\limits_a^b\sqrt{(\frac{dx}{dt})^2+(\frac{dy}{dt})^2}dx$&lt;/p&gt;
 &lt;p&gt;We have an ellipse given by a parametric equations $x=2cos(t)$, $y=sin(t)$, and we want to find the length of the arc between $t=0$ and $t=2\pi$.&lt;/p&gt;
 &lt;p&gt;The first step is to find the derivatives of the parametric equations. The derivative of $x=2cos(t)$ is $x&amp;rsquo;=-2sin(t)$, and the derivative of $y=sin(t)$ is $y&amp;rsquo;=cos(t)$ Plugging those values into the parametric formula for arc length:&lt;/p&gt;
-&lt;p&gt;$\int_{0}^{2\pi}\sqrt{(-2sin(t))^2+(cos(t))^2}dt$&lt;/p&gt;
+&lt;p&gt;$\int\limits_{0}^{2\pi}\sqrt{(-2sin(t))^2+(cos(t))^2}dt$&lt;/p&gt;
 &lt;p&gt;After simplifying, we get:&lt;/p&gt;
-&lt;p&gt;$\int_{0}^{2\pi}\sqrt{4sin^2(t)+cos^2(t)}dt=9.69$&lt;/p&gt;
+&lt;p&gt;$\int\limits_{0}^{2\pi}\sqrt{4sin^2(t)+cos^2(t)}dt=9.69$&lt;/p&gt;
 &lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;Integrals can be used to find the length of an arc on a curve. The formula for arc length depends on whether the curve is parametric or non-parametric.&lt;/p&gt;
 </content>
@@ -819,6 +835,7 @@ The key to tangent lines is that they hav the same slope and value at a point as
 &lt;p&gt;$g(-0.1) = cos(-0.1) \approx 0.995$&lt;/p&gt;
 &lt;p&gt;$g(0.4) = cos(0.4) \approx 0.921$&lt;/p&gt;
 &lt;p&gt;However, as we get further away from $0$, the tangent line becomes less accurate.&lt;/p&gt;
+&lt;div class=&#34;graph&#34;&gt;
 &lt;script type=&#34;text/tikz&#34;&gt;
   \definecolor{theme}{HTML}{23b0ff}
   \definecolor{theme_invert}{HTML}{b64b00}
@@ -829,6 +846,7 @@ The key to tangent lines is that they hav the same slope and value at a point as
     \draw[domain=-4:4,smooth,variable=\x,theme_invert] plot ({\x},{1});
   \end{tikzpicture}
 &lt;/script&gt;
+&lt;/div&gt;
 &lt;p&gt;To advance past this limitation, we can use more complex equations to serve as our approximation functions, like&lt;/p&gt;
 &lt;h2 id=&#34;quadratic-approximations&#34;&gt;Quadratic Approximations&lt;/h2&gt;
 &lt;p&gt;Using a quadratic polynomial, we can approximate a function with a much higher degree of accuracy than we could with a line.&lt;/p&gt;
@@ -896,6 +914,7 @@ The key to tangent lines is that they hav the same slope and value at a point as
 &lt;p&gt;And finally, we can plug in the values to get our quadratic approximation:&lt;/p&gt;
 &lt;p&gt;$cos(x)\approx 1+0x-\frac{1}{2}x^2=1-\frac{x^2}{2}$&lt;/p&gt;
 &lt;p&gt;By plotting the original function&lt;/p&gt;
+&lt;div class=&#34;graph&#34;&gt;
 &lt;script type=&#34;text/tikz&#34;&gt;
   \definecolor{theme}{HTML}{23b0ff}
   \definecolor{theme_invert}{HTML}{b64b00}
@@ -906,6 +925,7 @@ The key to tangent lines is that they hav the same slope and value at a point as
     \draw[domain=-3:3,smooth,variable=\x,theme_invert] plot ({\x},{1-\x*\x/2});
   \end{tikzpicture}
 &lt;/script&gt;
+&lt;/div&gt;
 &lt;p&gt;We can see that the quadratic approximation is much more accurate than the linear approximation across the domain of $[-\pi, \pi]$, and by doing the same thing we did to test the accuracy of the linear approximation, we can see that the quadratic approximation provides a much more accurate approximation for values that have a more varied distance from $0$.&lt;/p&gt;
 &lt;p&gt;We can generalize this to the formula&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Taylor polynomial of Degree 2 approximating $f(x)$ for $x$ near $0$&lt;/strong&gt;&lt;/p&gt;
@@ -947,18 +967,19 @@ The key to tangent lines is that they hav the same slope and value at a point as
 &lt;/table&gt;
 &lt;p&gt;Leading us to a first-degree Taylor polynomial of $f(x)$ for $x$ near $0$:&lt;/p&gt;
 &lt;p&gt;$f(x)\approx P_2(x)=0+1x+\frac{1}{2}x^2$&lt;/p&gt;
+&lt;div class=&#34;graph&#34;&gt;
   &lt;script type=&#34;text/tikz&#34;&gt;
     \definecolor{theme}{HTML}{23b0ff}
   \definecolor{theme_invert}{HTML}{b64b00}
     \begin{tikzpicture}
-
-      \draw[-&gt;, gray] (-3, 0) -- (3, 0);
-      \draw[-&gt;, gray] (0, -3) -- (0, 3);
-      \draw[color=theme]   plot (\x,{sin(\x r)}) node[right] {sin(x)};
-      \draw[domain=-3:3,smooth,variable=\x,theme_invert] plot ({\x},{0+\x});
-
-  \end{tikzpicture}
-  &lt;/script&gt;
+&lt;pre&gt;&lt;code&gt;  \draw[-&amp;gt;, gray] (-3, 0) -- (3, 0);
+  \draw[-&amp;gt;, gray] (0, -3) -- (0, 3);
+  \draw[color=theme]   plot (\x,{sin(\x r)}) node[right] {sin(x)};
+  \draw[domain=-3:3,smooth,variable=\x,theme_invert] plot ({\x},{0+\x});
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;\end{tikzpicture}
+&lt;/script&gt;&lt;/p&gt;
+  &lt;/div&gt;
 &lt;p&gt;We can see that the first-degree Taylor polynomial is already accurate for values of $x$ near $0$, but rapidly becomes inaccurate as $x$ increases.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;blockquote&gt;
@@ -983,18 +1004,19 @@ The key to tangent lines is that they hav the same slope and value at a point as
 &lt;/table&gt;
 &lt;p&gt;This leads us to a second-degree Taylor polynomial of $f(x)$ for $x$ near $0$:&lt;/p&gt;
 &lt;p&gt;$f(x)\approx P_2(x)=0+1x+\frac{0}{2!}x^2$&lt;/p&gt;
+&lt;div class=&#34;graph&#34;&gt;
   &lt;script type=&#34;text/tikz&#34;&gt;
     \definecolor{theme}{HTML}{23b0ff}
   \definecolor{theme_invert}{HTML}{b64b00}
     \begin{tikzpicture}
-
-      \draw[-&gt;, gray] (-3, 0) -- (3, 0);
-      \draw[-&gt;, gray] (0, -3) -- (0, 3);
-      \draw[color=theme]   plot (\x,{sin(\x r)}) node[right] {sin(x)};
-      \draw[domain=-3:3,smooth,variable=\x,theme_invert] plot ({\x},{0+\x});
-
-  \end{tikzpicture}
-  &lt;/script&gt;
+&lt;pre&gt;&lt;code&gt;  \draw[-&amp;gt;, gray] (-3, 0) -- (3, 0);
+  \draw[-&amp;gt;, gray] (0, -3) -- (0, 3);
+  \draw[color=theme]   plot (\x,{sin(\x r)}) node[right] {sin(x)};
+  \draw[domain=-3:3,smooth,variable=\x,theme_invert] plot ({\x},{0+\x});
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;\end{tikzpicture}
+&lt;/script&gt;&lt;/p&gt;
+  &lt;/div&gt;
 &lt;/blockquote&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;3rd degree&lt;/strong&gt;&lt;/p&gt;
@@ -1026,18 +1048,19 @@ The key to tangent lines is that they hav the same slope and value at a point as
 &lt;/table&gt;
 &lt;p&gt;This leads us to a third-degree Taylor polynomial of $f(x)$ for $x$ near $0$:&lt;/p&gt;
 &lt;p&gt;$f(x)\approx P_3(x)=0+1x+\frac{0}{2!}x^2-\frac{1}{3!}x^3$&lt;/p&gt;
+&lt;div class=&#34;graph&#34;&gt;
   &lt;script type=&#34;text/tikz&#34;&gt;
     \definecolor{theme}{HTML}{23b0ff}
   \definecolor{theme_invert}{HTML}{b64b00}
     \begin{tikzpicture}
-
-      \draw[-&gt;, gray] (-3, 0) -- (3, 0);
-      \draw[-&gt;, gray] (0, -3) -- (0, 3);
-      \draw[color=theme]   plot (\x,{sin(\x r)}) node[right] {sin(x)};
-      \draw[domain=-3:3,smooth,variable=\x,theme_invert] plot ({\x},{0+\x-\x^3/6});
-
-  \end{tikzpicture}
-  &lt;/script&gt;
+&lt;pre&gt;&lt;code&gt;  \draw[-&amp;gt;, gray] (-3, 0) -- (3, 0);
+  \draw[-&amp;gt;, gray] (0, -3) -- (0, 3);
+  \draw[color=theme]   plot (\x,{sin(\x r)}) node[right] {sin(x)};
+  \draw[domain=-3:3,smooth,variable=\x,theme_invert] plot ({\x},{0+\x-\x^3/6});
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;\end{tikzpicture}
+&lt;/script&gt;&lt;/p&gt;
+  &lt;/div&gt;
 &lt;/blockquote&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;4th degree&lt;/strong&gt;&lt;/p&gt;
@@ -1073,18 +1096,19 @@ The key to tangent lines is that they hav the same slope and value at a point as
 &lt;/table&gt;
 &lt;p&gt;This leads us to a fourth-degree Taylor polynomial of $f(x)$ for $x$ near $0$:&lt;/p&gt;
 &lt;p&gt;$f(x)\approx P_4(x)=0+1x+\frac{0}{2!}x^2-\frac{1}{3!}x^3+\frac{0}{4!}x^4$&lt;/p&gt;
+&lt;div class=&#34;graph&#34;&gt;
   &lt;script type=&#34;text/tikz&#34;&gt;
     \definecolor{theme}{HTML}{23b0ff}
   \definecolor{theme_invert}{HTML}{b64b00}
     \begin{tikzpicture}
-
-      \draw[-&gt;, gray] (-3, 0) -- (3, 0);
-      \draw[-&gt;, gray] (0, -3) -- (0, 3);
-      \draw[color=theme]   plot (\x,{sin(\x r)}) node[right] {sin(x)};
-      \draw[domain=-3:3,smooth,variable=\x,theme_invert] plot ({\x},{0+\x-\x^3/6});
-
-  \end{tikzpicture}
-  &lt;/script&gt;
+&lt;pre&gt;&lt;code&gt;  \draw[-&amp;gt;, gray] (-3, 0) -- (3, 0);
+  \draw[-&amp;gt;, gray] (0, -3) -- (0, 3);
+  \draw[color=theme]   plot (\x,{sin(\x r)}) node[right] {sin(x)};
+  \draw[domain=-3:3,smooth,variable=\x,theme_invert] plot ({\x},{0+\x-\x^3/6});
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;\end{tikzpicture}
+&lt;/script&gt;&lt;/p&gt;
+  &lt;/div&gt;
 &lt;/blockquote&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;5th degree&lt;/strong&gt;&lt;/p&gt;
@@ -1124,18 +1148,19 @@ The key to tangent lines is that they hav the same slope and value at a point as
 &lt;/table&gt;
 &lt;p&gt;This leads us to a fifth-degree Taylor polynomial of $f(x)$ for $x$ near $0$:&lt;/p&gt;
 &lt;p&gt;$f(x)\approx P_6(x)=0+1x+\frac{0}{2!}x^2-\frac{1}{3!}x^3+\frac{0}{4!}x^4+\frac{1}{5!}x^5$&lt;/p&gt;
+&lt;div class=&#34;graph&#34;&gt;
   &lt;script type=&#34;text/tikz&#34;&gt;
     \definecolor{theme}{HTML}{23b0ff}
   \definecolor{theme_invert}{HTML}{b64b00}
     \begin{tikzpicture}
-
-      \draw[-&gt;, gray] (-3, 0) -- (3, 0);
-      \draw[-&gt;, gray] (0, -3) -- (0, 3);
-      \draw[color=theme]   plot (\x,{sin(\x r)}) node[right] {sin(x)};
-      \draw[domain=-3:3,smooth,variable=\x,theme_invert] plot ({\x},{0+\x-\x^3/6+\x^5/120});
-
-  \end{tikzpicture}
-  &lt;/script&gt;
+&lt;pre&gt;&lt;code&gt;  \draw[-&amp;gt;, gray] (-3, 0) -- (3, 0);
+  \draw[-&amp;gt;, gray] (0, -3) -- (0, 3);
+  \draw[color=theme]   plot (\x,{sin(\x r)}) node[right] {sin(x)};
+  \draw[domain=-3:3,smooth,variable=\x,theme_invert] plot ({\x},{0+\x-\x^3/6+\x^5/120});
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;\end{tikzpicture}
+&lt;/script&gt;&lt;/p&gt;
+  &lt;/div&gt;
 &lt;/blockquote&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;6th degree&lt;/strong&gt;&lt;/p&gt;
@@ -1179,18 +1204,19 @@ The key to tangent lines is that they hav the same slope and value at a point as
 &lt;/table&gt;
 &lt;p&gt;This leads us to a sixth-degree Taylor polynomial of $f(x)$ for $x$ near $0$:&lt;/p&gt;
 &lt;p&gt;$f(x)\approx P_6(x)=0+1x+\frac{0}{2!}x^2-\frac{1}{3!}x^3+\frac{0}{4!}x^4+\frac{1}{5!}x^5+0x^6$&lt;/p&gt;
+&lt;div class=&#34;graph&#34;&gt;
   &lt;script type=&#34;text/tikz&#34;&gt;
     \definecolor{theme}{HTML}{23b0ff}
   \definecolor{theme_invert}{HTML}{b64b00}
     \begin{tikzpicture}
-
-      \draw[-&gt;, gray] (-3, 0) -- (3, 0);
-      \draw[-&gt;, gray] (0, -3) -- (0, 3);
-      \draw[color=theme]   plot (\x,{sin(\x r)}) node[right] {sin(x)};
-      \draw[domain=-3:3,smooth,variable=\x,theme_invert] plot ({\x},{0+\x-\x^3/6+\x^5/120});
-
-  \end{tikzpicture}
-  &lt;/script&gt;
+&lt;pre&gt;&lt;code&gt;  \draw[-&amp;gt;, gray] (-3, 0) -- (3, 0);
+  \draw[-&amp;gt;, gray] (0, -3) -- (0, 3);
+  \draw[color=theme]   plot (\x,{sin(\x r)}) node[right] {sin(x)};
+  \draw[domain=-3:3,smooth,variable=\x,theme_invert] plot ({\x},{0+\x-\x^3/6+\x^5/120});
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;\end{tikzpicture}
+&lt;/script&gt;&lt;/p&gt;
+  &lt;/div&gt;
 &lt;/blockquote&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;7th degree&lt;/strong&gt;&lt;/p&gt;
@@ -1238,18 +1264,19 @@ The key to tangent lines is that they hav the same slope and value at a point as
 &lt;/table&gt;
 &lt;p&gt;This leads us to a seventh-degree Taylor polynomial of $f(x)$ for $x$ near $0$:&lt;/p&gt;
 &lt;p&gt;$f(x)\approx P_8(x)=0+1x+\frac{0}{2!}x^2-\frac{1}{3!}x^3+\frac{0}{4!}x^4+\frac{1}{5!}x^5+\frac{0}{6!}x^6-\frac{1}{7!}x^7$&lt;/p&gt;
+&lt;div class=&#34;graph&#34;&gt;
   &lt;script type=&#34;text/tikz&#34;&gt;
     \definecolor{theme}{HTML}{23b0ff}
   \definecolor{theme_invert}{HTML}{b64b00}
     \begin{tikzpicture}
-
-      \draw[-&gt;, gray] (-3, 0) -- (3, 0);
-      \draw[-&gt;, gray] (0, -3) -- (0, 3);
-      \draw[color=theme]   plot (\x,{sin(\x r)}) node[right] {sin(x)};
-      \draw[domain=-3:3,smooth,variable=\x,theme_invert] plot ({\x},{0+\x-\x^3/6-\x^7/5040});
-
-  \end{tikzpicture}
-  &lt;/script&gt;
+&lt;pre&gt;&lt;code&gt;  \draw[-&amp;gt;, gray] (-3, 0) -- (3, 0);
+  \draw[-&amp;gt;, gray] (0, -3) -- (0, 3);
+  \draw[color=theme]   plot (\x,{sin(\x r)}) node[right] {sin(x)};
+  \draw[domain=-3:3,smooth,variable=\x,theme_invert] plot ({\x},{0+\x-\x^3/6-\x^7/5040});
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;\end{tikzpicture}
+&lt;/script&gt;&lt;/p&gt;
+  &lt;/div&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;We can see how the taylor polynomial is getting closer and closer to the actual function as x is increasing. Generally, the more terms we add to the Taylor polynomial, the closer it will be to the actual function. However, the more terms we add, the more complex the polynomial becomes.&lt;/p&gt;
 &lt;h2 id=&#34;taylor-polynomials-around-xa&#34;&gt;Taylor polynomials around $x=a$&lt;/h2&gt;
@@ -1265,8 +1292,8 @@ The key to tangent lines is that they hav the same slope and value at a point as
       
       <guid>https://math.jackcrane.rocks/pages/formulas/</guid>
       <description>Formulas This page contains a list of all the formulas that are used in the reference sheets.
-8.2.3: Arc Length Arc length of a non-parametric curve $\int_a^b\sqrt{1+(f&amp;rsquo;(x))^2}dx$
-Arc length of a parametric curve $\int_a^b\sqrt{(\frac{dx}{dt})^2+(\frac{dy}{dt})^2}dx$
+8.2.3: Arc Length Arc length of a non-parametric curve $\int\limits_a^b\sqrt{1+(f&amp;rsquo;(x))^2}dx$
+Arc length of a parametric curve $\int\limits_a^b\sqrt{(\frac{dx}{dt})^2+(\frac{dy}{dt})^2}dx$
 9.2.0 Sum of a finite geometric series $S_n=a+ax+ax^2+\cdots+ax^{n-1}=\frac{a(1-x^n)}{1-x}$ where $x\neq1$
 Sum of an infinite geometric series $\lim\limits_{n\to\infin}S_n=a+ax+ax^2+\cdots+ax^{n-1}+ax^{n}+\cdots=\frac{a}{1-x}$ where $|x|&amp;lt;1$
 9.3.0 Convergence tests
@@ -1276,8 +1303,8 @@ If $\lim\limits_{n\to\infin}\int\limits_1^nf(x)dx$, converges, then $\sum{a_n}$ 
       <content>&lt;h1 id=&#34;formulas&#34;&gt;Formulas&lt;/h1&gt;
 &lt;p&gt;This page contains a list of all the formulas that are used in the reference sheets.&lt;/p&gt;
 &lt;h2 id=&#34;823-arc-length&#34;&gt;8.2.3: Arc Length&lt;/h2&gt;
-&lt;p&gt;Arc length of a non-parametric curve $\int_a^b\sqrt{1+(f&amp;rsquo;(x))^2}dx$&lt;/p&gt;
-&lt;p&gt;Arc length of a parametric curve $\int_a^b\sqrt{(\frac{dx}{dt})^2+(\frac{dy}{dt})^2}dx$&lt;/p&gt;
+&lt;p&gt;Arc length of a non-parametric curve $\int\limits_a^b\sqrt{1+(f&amp;rsquo;(x))^2}dx$&lt;/p&gt;
+&lt;p&gt;Arc length of a parametric curve $\int\limits_a^b\sqrt{(\frac{dx}{dt})^2+(\frac{dy}{dt})^2}dx$&lt;/p&gt;
 &lt;h2 id=&#34;920&#34;&gt;9.2.0&lt;/h2&gt;
 &lt;p&gt;Sum of a finite geometric series $S_n=a+ax+ax^2+\cdots+ax^{n-1}=\frac{a(1-x^n)}{1-x}$ where $x\neq1$&lt;/p&gt;
 &lt;p&gt;Sum of an infinite geometric series $\lim\limits_{n\to\infin}S_n=a+ax+ax^2+\cdots+ax^{n-1}+ax^{n}+\cdots=\frac{a}{1-x}$ where $|x|&amp;lt;1$&lt;/p&gt;

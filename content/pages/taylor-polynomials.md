@@ -1,7 +1,7 @@
 ---
 title: "10.1.0: Taylor Polynomials"
 description: "This reference sheet covers how to approximate a function using polynomials."
-weight: 10
+weight: 20
 ---
 
 # Linear Approximations with Taylor Polynomials
@@ -28,6 +28,7 @@ $g(0.4) = cos(0.4) \approx 0.921$
 
 However, as we get further away from $0$, the tangent line becomes less accurate.
 
+<div class="graph">
 <script type="text/tikz">
   \definecolor{theme}{HTML}{23b0ff}
   \definecolor{theme_invert}{HTML}{b64b00}
@@ -38,6 +39,7 @@ However, as we get further away from $0$, the tangent line becomes less accurate
     \draw[domain=-4:4,smooth,variable=\x,theme_invert] plot ({\x},{1});
   \end{tikzpicture}
 </script>
+</div>
 
 To advance past this limitation, we can use more complex equations to serve as our approximation functions, like
 
@@ -83,6 +85,7 @@ $cos(x)\approx 1+0x-\frac{1}{2}x^2=1-\frac{x^2}{2}$
 
 By plotting the original function
 
+<div class="graph">
 <script type="text/tikz">
   \definecolor{theme}{HTML}{23b0ff}
   \definecolor{theme_invert}{HTML}{b64b00}
@@ -93,6 +96,7 @@ By plotting the original function
     \draw[domain=-3:3,smooth,variable=\x,theme_invert] plot ({\x},{1-\x*\x/2});
   \end{tikzpicture}
 </script>
+</div>
 
 We can see that the quadratic approximation is much more accurate than the linear approximation across the domain of $[-\pi, \pi]$, and by doing the same thing we did to test the accuracy of the linear approximation, we can see that the quadratic approximation provides a much more accurate approximation for values that have a more varied distance from $0$.
 
@@ -145,6 +149,7 @@ Leading us to a first-degree Taylor polynomial of $f(x)$ for $x$ near $0$:
 
 $f(x)\approx P_2(x)=0+1x+\frac{1}{2}x^2$
 
+<div class="graph">
   <script type="text/tikz">
     \definecolor{theme}{HTML}{23b0ff}
   \definecolor{theme_invert}{HTML}{b64b00}
@@ -155,8 +160,10 @@ $f(x)\approx P_2(x)=0+1x+\frac{1}{2}x^2$
       \draw[color=theme]   plot (\x,{sin(\x r)}) node[right] {sin(x)};
       \draw[domain=-3:3,smooth,variable=\x,theme_invert] plot ({\x},{0+\x});
 
-  \end{tikzpicture}
-  </script>
+\end{tikzpicture}
+</script>
+
+  </div>
 
 We can see that the first-degree Taylor polynomial is already accurate for values of $x$ near $0$, but rapidly becomes inaccurate as $x$ increases.
 
@@ -175,6 +182,7 @@ This leads us to a second-degree Taylor polynomial of $f(x)$ for $x$ near $0$:
 
 $f(x)\approx P_2(x)=0+1x+\frac{0}{2!}x^2$
 
+<div class="graph">
   <script type="text/tikz">
     \definecolor{theme}{HTML}{23b0ff}
   \definecolor{theme_invert}{HTML}{b64b00}
@@ -185,8 +193,10 @@ $f(x)\approx P_2(x)=0+1x+\frac{0}{2!}x^2$
       \draw[color=theme]   plot (\x,{sin(\x r)}) node[right] {sin(x)};
       \draw[domain=-3:3,smooth,variable=\x,theme_invert] plot ({\x},{0+\x});
 
-  \end{tikzpicture}
-  </script>
+\end{tikzpicture}
+</script>
+
+  </div>
 
 </blockquote>
 
@@ -205,6 +215,7 @@ This leads us to a third-degree Taylor polynomial of $f(x)$ for $x$ near $0$:
 
 $f(x)\approx P_3(x)=0+1x+\frac{0}{2!}x^2-\frac{1}{3!}x^3$
 
+<div class="graph">
   <script type="text/tikz">
     \definecolor{theme}{HTML}{23b0ff}
   \definecolor{theme_invert}{HTML}{b64b00}
@@ -215,8 +226,10 @@ $f(x)\approx P_3(x)=0+1x+\frac{0}{2!}x^2-\frac{1}{3!}x^3$
       \draw[color=theme]   plot (\x,{sin(\x r)}) node[right] {sin(x)};
       \draw[domain=-3:3,smooth,variable=\x,theme_invert] plot ({\x},{0+\x-\x^3/6});
 
-  \end{tikzpicture}
-  </script>
+\end{tikzpicture}
+</script>
+
+  </div>
 
 </blockquote>
 
@@ -236,6 +249,7 @@ This leads us to a fourth-degree Taylor polynomial of $f(x)$ for $x$ near $0$:
 
 $f(x)\approx P_4(x)=0+1x+\frac{0}{2!}x^2-\frac{1}{3!}x^3+\frac{0}{4!}x^4$
 
+<div class="graph">
   <script type="text/tikz">
     \definecolor{theme}{HTML}{23b0ff}
   \definecolor{theme_invert}{HTML}{b64b00}
@@ -246,8 +260,10 @@ $f(x)\approx P_4(x)=0+1x+\frac{0}{2!}x^2-\frac{1}{3!}x^3+\frac{0}{4!}x^4$
       \draw[color=theme]   plot (\x,{sin(\x r)}) node[right] {sin(x)};
       \draw[domain=-3:3,smooth,variable=\x,theme_invert] plot ({\x},{0+\x-\x^3/6});
 
-  \end{tikzpicture}
-  </script>
+\end{tikzpicture}
+</script>
+
+  </div>
 
 </blockquote>
 
@@ -268,6 +284,7 @@ This leads us to a fifth-degree Taylor polynomial of $f(x)$ for $x$ near $0$:
 
 $f(x)\approx P_6(x)=0+1x+\frac{0}{2!}x^2-\frac{1}{3!}x^3+\frac{0}{4!}x^4+\frac{1}{5!}x^5$
 
+<div class="graph">
   <script type="text/tikz">
     \definecolor{theme}{HTML}{23b0ff}
   \definecolor{theme_invert}{HTML}{b64b00}
@@ -278,8 +295,10 @@ $f(x)\approx P_6(x)=0+1x+\frac{0}{2!}x^2-\frac{1}{3!}x^3+\frac{0}{4!}x^4+\frac{1
       \draw[color=theme]   plot (\x,{sin(\x r)}) node[right] {sin(x)};
       \draw[domain=-3:3,smooth,variable=\x,theme_invert] plot ({\x},{0+\x-\x^3/6+\x^5/120});
 
-  \end{tikzpicture}
-  </script>
+\end{tikzpicture}
+</script>
+
+  </div>
 
 </blockquote>
 
@@ -301,6 +320,7 @@ This leads us to a sixth-degree Taylor polynomial of $f(x)$ for $x$ near $0$:
 
 $f(x)\approx P_6(x)=0+1x+\frac{0}{2!}x^2-\frac{1}{3!}x^3+\frac{0}{4!}x^4+\frac{1}{5!}x^5+0x^6$
 
+<div class="graph">
   <script type="text/tikz">
     \definecolor{theme}{HTML}{23b0ff}
   \definecolor{theme_invert}{HTML}{b64b00}
@@ -311,8 +331,10 @@ $f(x)\approx P_6(x)=0+1x+\frac{0}{2!}x^2-\frac{1}{3!}x^3+\frac{0}{4!}x^4+\frac{1
       \draw[color=theme]   plot (\x,{sin(\x r)}) node[right] {sin(x)};
       \draw[domain=-3:3,smooth,variable=\x,theme_invert] plot ({\x},{0+\x-\x^3/6+\x^5/120});
 
-  \end{tikzpicture}
-  </script>
+\end{tikzpicture}
+</script>
+
+  </div>
 
 </blockquote>
 
@@ -335,6 +357,7 @@ This leads us to a seventh-degree Taylor polynomial of $f(x)$ for $x$ near $0$:
 
 $f(x)\approx P_8(x)=0+1x+\frac{0}{2!}x^2-\frac{1}{3!}x^3+\frac{0}{4!}x^4+\frac{1}{5!}x^5+\frac{0}{6!}x^6-\frac{1}{7!}x^7$
 
+<div class="graph">
   <script type="text/tikz">
     \definecolor{theme}{HTML}{23b0ff}
   \definecolor{theme_invert}{HTML}{b64b00}
@@ -345,8 +368,10 @@ $f(x)\approx P_8(x)=0+1x+\frac{0}{2!}x^2-\frac{1}{3!}x^3+\frac{0}{4!}x^4+\frac{1
       \draw[color=theme]   plot (\x,{sin(\x r)}) node[right] {sin(x)};
       \draw[domain=-3:3,smooth,variable=\x,theme_invert] plot ({\x},{0+\x-\x^3/6-\x^7/5040});
 
-  \end{tikzpicture}
-  </script>
+\end{tikzpicture}
+</script>
+
+  </div>
 
 </blockquote>
 

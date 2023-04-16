@@ -1,7 +1,7 @@
 ---
 title: "9.2.1: Geometric series: Medicine"
 description: "This reference sheet covers introductions to geometric series through computing the amount of medicine in a patient after n doses."
-weight: 1
+weight: 2
 ---
 
 # Geometric series: Medicine

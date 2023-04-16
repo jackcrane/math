@@ -1,7 +1,7 @@
 ---
 title: "9.2.2: Geometric series: Savings"
 description: "This reference sheet covers using geometric series to analyze savings and investments."
-weight: 1
+weight: 2
 ---
 
 # Geometric series: Savings
